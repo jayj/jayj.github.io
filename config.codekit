@@ -22,21 +22,30 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
 		},
-	"\/includes\/footer.html": {
-		"fileType": 8192,
+	"\/includes\/_footer.kit": {
+		"fileType": 2048,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/footer.html",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/includes\/_footer.kit",
+		"outputAbbreviatedPath": "\/includes\/_footer.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/includes\/header.html": {
-		"fileType": 8192,
+	"\/includes\/_header.kit": {
+		"fileType": 2048,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/header.html",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/includes\/_header.kit",
+		"outputAbbreviatedPath": "\/includes\/_header.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/includes\/_navigation.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/_navigation.kit",
+		"outputAbbreviatedPath": "\/includes\/_navigation.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
