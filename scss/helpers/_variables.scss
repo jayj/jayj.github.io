@@ -1,0 +1,115 @@
+// ===========================
+// Color definitions
+// ===========================
+
+// Grays
+$color__gray-darker:       #222  !default;
+$color__gray-dark:         #333  !default;
+$color__gray:              #999  !default;
+$color__gray-light:        #ccc  !default;
+$color__gray-lighter:      #eee  !default;
+
+
+// Main colors
+$color__primary:    #2a7ae2              !default;
+$color__text:       $color__gray-darker  !default;
+
+
+// Links
+// ===========================
+
+$link__color:                 $color__primary            !default;
+$link__color-hover:           darken($link__color, 18%)  !default;
+$link__color-visited:         $link__color               !default;
+
+
+// ===========================
+// Fonts
+// ===========================
+
+
+// Main Font
+$font__main-family:           "Open Sans", sans-serif  !default;
+$font__main-weight:           400                      !default;
+$font__main-size:             1.6rem                   !default;
+$font__main-line-height:      1.6                      !default;
+
+
+// Heading Font
+$font__heading-family:        "Merriweather", sans-serif  !default;
+$font__heading-weight:        700                         !default;
+$font__heading-size:          3.0rem                      !default;
+$font__heading-line-height:   $font__main-line-height     !default;
+
+
+// Code Font
+$font__code-family:           Menlo, Consolas, "Courier New", monospace  !default;
+$font__code-size:             1.5rem                                     !default;
+$font__code-line-height:      $font__main-line-height                    !default;
+
+
+// ===========================
+// Body
+// ===========================
+
+$body__bg-color:              #f1f1f1  !default;
+
+
+// ===========================
+// Layout
+// ===========================
+
+$size__gutter:                4.0rem  !default;
+$size__gutter--small:         2.5rem  !default;
+
+
+$size__site:                  114rem  !default; // 1140px
+
+
+$grid__columns:               12      !default;
+$grid__gutter:                2.0rem  !default;
+
+
+
+// Media query breakpoints
+$breakpoint__screen-lg:       78.75em  !default; // (1260px / 16)
+$breakpoint__screen-md:       52.5em   !default; // (840px / 16)
+$breakpoint__screen-sm:       38.75em  !default; // (620px / 16)
+$breakpoint__screen-xs:       30em     !default; // (480px / 16)
+
+
+// ===========================
+// Header
+// ===========================
+
+//$header__
+
+
+// ===========================
+// Footer
+// ===========================
+
+//$footer__
+
+
+// ===========================
+// Navigation
+// ===========================
+
+// $menu__
+
+
+// ===========================
+// Content
+// ===========================
+
+
+
+// Entries
+// ===========================
+
+$section__title-size:            $font__heading-size * 1.2  !default;
+
+
+
+

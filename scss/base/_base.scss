@@ -1,0 +1,52 @@
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+// Apply a natural box layout model to all elements, but allowing components to change
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+// Set base font size
+html {
+    font-size: 62.5%; // Makes 1 rem = 10 px
+}
+
+
+
+/* Body
+   ========================================================================== */
+
+body {
+    background-color: $body__bg-color;
+    color: $color__text;
+    font: {
+        family: $font__main-family;
+        size:   $font__main-size;
+        weight: $font__main-weight;
+    }
+    line-height: $font__main-line-height;
+    margin: 0;
+}
+
+
+/* Links
+   ========================================================================== */
+
+a {
+    color: $link__color;
+    text-decoration: none;
+
+    &:hover {
+        color: $link__color-hover;
+        text-decoration: underline;
+    }
+}
+
