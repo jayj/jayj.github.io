@@ -1,2 +1,13 @@
 /* Layout: Footer
    ========================================================================== */
+
+footer {
+	background: $color__gray-lighter;
+	text-align: center;
+	padding: 4rem 0;
+
+	font: {
+		size: 2rem;
+		weight: 300;
+	}
+}
