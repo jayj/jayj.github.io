@@ -1,5 +1,19 @@
 /* Layout: Sections
    ========================================================================== */
+
+section {
+	border-bottom: 1px solid $color__gray-light;
+	padding: 8rem 15rem;
+
+	min-height: 60vh;
+}
+
+section h2 {
+	margin: 0 0 4rem;
+	text-align: center;
+}
+
+
 .nav-fixed section:first-of-type {
 	margin-top: 10vh;
 }
