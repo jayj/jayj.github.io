@@ -6,3 +6,20 @@
         clear: both;
     }
 }
+
+
+// Breakpoint mixin
+@mixin breakpoint($point) {
+    @if $point == screen-lg {
+        @media (min-width: $breakpoint__screen-lg) { @content; }
+    }
+    @else if $point == screen-md {
+        @media (min-width: $breakpoint__screen-md) { @content; }
+    }
+    @else if $point == screen-sm {
+        @media (min-width: $breakpoint__screen-sm)  { @content; }
+    }
+    @else if $point == screen-xs {
+        @media (min-width: $breakpoint__screen-xs)  { @content; }
+    }
+}
