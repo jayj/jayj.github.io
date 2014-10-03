@@ -4,16 +4,66 @@
 /**
  * Icons
  */
-.icon {
+.icon > svg,
+svg.icon {
+    display: inline-block;
+    @include square(10rem);
+    vertical-align: middle;
+    fill: darken($color__gray, 20%);
+}
 
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
+/**
+ * Social links
+ */
 
-        path {
-            fill: $color__gray;
+.social-links {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    h3 {
+        flex: 100%;
+        font-size: 2.3rem;
+        font-weight: 300;
+    }
+
+    .icon > svg {
+        @include square(6rem);
+        transition: transform 150ms ease-in-out;
+    }
+
+    // Color each icon with their offical color when hovered
+    @each $site, $color in $social {
+        .social-#{$site}:hover svg {
+            fill: $color;
+            transform: scale(1.5);
+        }
+    }
+
+    @include breakpoint(screen-xs) {
+        .icon > svg {
+            @include square(8rem);
+        }
+    }
+
+    @include breakpoint(screen-sm) {
+        .icon > svg {
+            @include square(9rem);
+        }
+    }
+
+
+    @include breakpoint(screen-md) {
+        h3 {
+            flex: 0 1 auto;
+        }
+
+        .icon > svg {
+            @include square(10rem);
         }
     }
 }
+
+

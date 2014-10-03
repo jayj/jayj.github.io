@@ -111,5 +111,16 @@ $breakpoint__screen-xs:       30em     !default; // (480px / 16)
 $section__title-size:            $font__heading-size * 1.2  !default;
 
 
+// Social sites
+// ===========================
+
+$social:
+    ("twitter",      #01B5F2),
+    ("github",       #4183c4),
+    ("wordpress",    #21759b),
+    ("google",       #dd4b39),
+    ("linkedin",     #0e76a8);
+
+
 
 
