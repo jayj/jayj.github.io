@@ -2,9 +2,9 @@
    ========================================================================== */
 
 .site-nav {
-	background: tomato;
-	height: 10vh;
-	width: 100%;
+    background: tomato;
+    height: 10vh;
+    width: 100%;
 
     .container {
         display: flex;
@@ -13,17 +13,17 @@
         height: 100%;
     }
 
-	a {
-		color: #fff;
-		font-size: 1.8rem;
-	}
+    a {
+        color: #fff;
+        font-size: 1.8rem;
+    }
 
-	.current {
-		opacity: 0.7;
-	}
+    .current {
+        opacity: 0.7;
+    }
 }
 
 .nav-fixed .site-nav {
-	top: 0;
-	position: fixed;
+    top: 0;
+    position: fixed;
 }
