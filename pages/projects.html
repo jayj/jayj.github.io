@@ -4,14 +4,19 @@
 
         <h1 class="section-title">Projects</h1>
 
-        <ul>
-            <li>Vibstock</li>
-            <li>Jayj.dk</li>
-            <li>HTML5 tema</li>
-            <li>Cakifo</li>
-            <li>Lego??</li>
-            <li>Jysk Kontorkoncept</li>
-        </ul>
+        <script id="projects-template" type="x-tmpl-mustache">
+            {{#projects}}
+                <article class="project">
+                    <header>
+                        <h2 class="project-title">{{name}}</h2>
+
+                        {{#client}}
+                        <p>Client: {{client}}</p>
+                        {{/client}}
+                    </header>
+                </article>
+            {{/projects}}
+        </script>
 
     </div> <!-- /.container -->
 

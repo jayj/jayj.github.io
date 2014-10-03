@@ -1,4 +1,7 @@
+/* global Mustache */
+
 ( function( $ ) {
+
 
     var nav     = $( '.site-nav' ),
         body    = $( 'body' ),
@@ -35,6 +38,38 @@
         }
 
     });
+
+    /**
+     * Projects
+     */
+    function get_projects() {
+        $.getJSON( "data/projects.json", function( data ) {
+            var template = $('#projects-template').html();
+
+            Mustache.parse(template);   // optional, speeds up future uses
+
+            var rendered = Mustache.render(template, data);
+
+            $('#projects .container').append(rendered);
+        });
+    }
+
+    get_projects();
+
+
+
+
+// https://api.github.com/users/jayj/repos?sort=updated
+
+//     $.get( "https://api.github.com/users/jayj", function( data ) {
+// console.log(data);
+
+//           var template = $('#template').html();
+//         Mustache.parse(template);   // optional, speeds up future uses
+//         var rendered = Mustache.render(template, data);
+//         $('#target').html(rendered);
+
+//     });
 
 
 
