@@ -23,3 +23,16 @@
         @media (min-width: $breakpoint__screen-xs)  { @content; }
     }
 }
+
+
+
+// Sizing shortcuts
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin square($size) {
+    @include size($size, $size);
+}
+
