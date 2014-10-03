@@ -119,4 +119,6 @@ module.exports = function(grunt) {
     // Default task
     grunt.registerTask( 'default', [ 'sass', 'autoprefixer', 'svgstore', 'codekit', 'watch' ] );
 
+    grunt.registerTask( 'svg', [ 'svgstore', 'codekit' ] );
+
 };
