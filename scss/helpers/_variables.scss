@@ -3,24 +3,24 @@
 // ===========================
 
 // Grays
-$color__gray-darker:       #222  !default;
-$color__gray-dark:         #333  !default;
-$color__gray:              #999  !default;
-$color__gray-light:        #ccc  !default;
-$color__gray-lighter:      #eee  !default;
+$color__gray-darker:       #222;
+$color__gray-dark:         #333;
+$color__gray:              #999;
+$color__gray-light:        #ccc;
+$color__gray-lighter:      #eee;
 
 
 // Main colors
-$color__primary:    #2a7ae2              !default;
-$color__text:       $color__gray-darker  !default;
+$color__primary:    #2a7ae2;
+$color__text:       $color__gray-darker;
 
 
 // Links
 // ===========================
 
-$link__color:                 $color__primary            !default;
-$link__color-hover:           darken($link__color, 18%)  !default;
-$link__color-visited:         $link__color               !default;
+$link__color:                 $color__primary;
+$link__color-hover:           darken($link__color, 18%);
+$link__color-visited:         $link__color;
 
 
 // ===========================
@@ -29,61 +29,61 @@ $link__color-visited:         $link__color               !default;
 
 
 // Main Font
-$font__main-family:           "Open Sans", sans-serif  !default;
-$font__main-weight:           400                      !default;
-$font__main-size:             1.6rem                   !default;
-$font__main-line-height:      1.6                      !default;
+$font__main-family:           "Open Sans", sans-serif;
+$font__main-weight:           400;
+$font__main-size:             1.6rem;
+$font__main-line-height:      1.6;
 
 
 // Heading Font
-$font__heading-family:        "Merriweather", sans-serif  !default;
-$font__heading-weight:        700                         !default;
-$font__heading-size:          3.0rem                      !default;
-$font__heading-line-height:   $font__main-line-height     !default;
+$font__heading-family:        "Merriweather", sans-serif;
+$font__heading-weight:        700;
+$font__heading-size:          3.0rem;
+$font__heading-line-height:   $font__main-line-height;
 
 
 // Code Font
-$font__code-family:           Menlo, Consolas, "Courier New", monospace  !default;
-$font__code-size:             1.5rem                                     !default;
-$font__code-line-height:      $font__main-line-height                    !default;
+$font__code-family:           Menlo, Consolas, "Courier New", monospace;
+$font__code-size:             1.5rem;
+$font__code-line-height:      $font__main-line-height;
 
 
 // ===========================
 // Body
 // ===========================
 
-$body__bg-color:              #f1f1f1  !default;
+$body__bg-color:              #f1f1f1;
 
 
 // ===========================
 // Layout
 // ===========================
 
-$size__gutter:                4.0rem  !default;
-$size__gutter--small:         2.5rem  !default;
+$size__gutter:                4.0rem;
+$size__gutter--small:         2.5rem;
 
 
-$size__site:                  114rem  !default; // 1140px
+$size__site:                  114rem; // 1140px
 
 
-$grid__columns:               12      !default;
-$grid__gutter:                2.0rem  !default;
+$grid__columns:               12;
+$grid__gutter:                2rem;
 
 
 
 // Media query breakpoints
-$breakpoint__screen-lg:       70em     !default; // (1120px / 16)
-$breakpoint__screen-md:       52.5em   !default; // (840px / 16)
-$breakpoint__screen-sm:       38.75em  !default; // (620px / 16)
-$breakpoint__screen-xs:       30em     !default; // (480px / 16)
+$breakpoint__screen-lg:       70em;    // (1120px / 16)
+$breakpoint__screen-md:       52.5em;  // (840px / 16)
+$breakpoint__screen-sm:       38.75em; // (620px / 16)
+$breakpoint__screen-xs:       30em;    // (480px / 16)
 
 
 // ===========================
 // Header
 // ===========================
 
-$header__bg-color: #2da86d !default;
-$header__text-color: #fff !default;
+$header__bg-color: #2da86d;
+$header__text-color: #fff;
 
 
 // ===========================
@@ -110,14 +110,14 @@ $menu__text-color: #fff;
 // Entries
 // ===========================
 
-$section__title-size:            $font__heading-size * 1.2  !default;
+$section__title-size:            $font__heading-size * 1.2;
 
 
 // Icons
 // ===========================
 
-$icon__color:    darken($color__gray, 20%)  !default;
-$icon__size:     10rem                      !default;
+$icon__color:    darken($color__gray, 20%);
+$icon__size:     10rem;
 
 
 $social:
