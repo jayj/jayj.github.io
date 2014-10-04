@@ -1,4 +1,4 @@
-/* global Mustache */
+/* global Handlebars */
 
 ( function( $ ) {
 
@@ -40,21 +40,23 @@
     });
 
     /**
-     * Projects
+     * Gets projects from JSON file
      */
-    function get_projects() {
-        $.getJSON( "data/projects.json", function( data ) {
-            var template = $('#projects-template').html();
+    (function get_projects() {
+        $.getJSON( 'data/projects.json', function( data ) {
 
-            Mustache.parse(template);   // optional, speeds up future uses
+            var source = $( '#projects-template' ).html();
 
-            var rendered = Mustache.render(template, data);
+            // Let Handlebar compile the template
+            var template = Handlebars.compile(source);
+            var html  = template(data);
 
-            $('#projects .container').append(rendered);
+            // Add the compiled HTML to the page
+            $('#projects .container').append(html);
+
         });
-    }
+    })();
 
-    get_projects();
 
 
 

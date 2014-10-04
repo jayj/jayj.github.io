@@ -4,15 +4,15 @@
 
         <h1 class="section-title">Projects</h1>
 
-        <script id="projects-template" type="x-tmpl-mustache">
+        <script id="projects-template" type="text/x-handlebars-template">
             {{#projects}}
                 <article class="project">
                     <header>
                         <h2 class="project-title">{{name}}</h2>
 
-                        {{#client}}
+                        {{#if client}}
                         <p>Client: {{client}}</p>
-                        {{/client}}
+                        {{/if}}
                     </header>
                 </article>
             {{/projects}}
