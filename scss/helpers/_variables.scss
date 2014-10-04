@@ -111,8 +111,12 @@ $breakpoint__screen-xs:       30em     !default; // (480px / 16)
 $section__title-size:            $font__heading-size * 1.2  !default;
 
 
-// Social sites
+// Icons
 // ===========================
+
+$icon__color:    darken($color__gray, 20%)  !default;
+$icon__size:     10rem                      !default;
+
 
 $social:
     ("twitter",      #01B5F2),

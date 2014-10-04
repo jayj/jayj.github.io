@@ -7,9 +7,9 @@
 .icon > svg,
 svg.icon {
     display: inline-block;
-    @include square(10rem);
+    @include square($icon__size);
     vertical-align: middle;
-    fill: darken($color__gray, 20%);
+    fill: $icon__color;
 }
 
 /**
@@ -30,7 +30,7 @@ svg.icon {
     }
 
     .icon > svg {
-        @include square(6rem);
+        @include square($icon__size * 0.6);
         transition: transform 150ms ease-in-out;
     }
 
@@ -44,13 +44,13 @@ svg.icon {
 
     @include breakpoint(screen-xs) {
         .icon > svg {
-            @include square(8rem);
+            @include square($icon__size * 0.8);
         }
     }
 
     @include breakpoint(screen-sm) {
         .icon > svg {
-            @include square(9rem);
+            @include square($icon__size * 0.9);
         }
     }
 
@@ -61,7 +61,7 @@ svg.icon {
         }
 
         .icon > svg {
-            @include square(10rem);
+            @include square($icon__size);
         }
     }
 }
