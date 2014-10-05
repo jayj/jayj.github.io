@@ -41,40 +41,30 @@
 </nav>
 
 
-    <section id="about">
+    <main role="main">
+        <section id="about">
 
     <div class="container">
 
         <h1 class="section-title">About me</h1>
 
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis numquam, autem libero iusto facilis delectus dicta magnam voluptatibus nam deleniti labore veniam error, est dolore laborum possimus eum sed perspiciatis.
+            My name is Jesper.
+            My main focus is front-end development.
+        </p>
+
+
+        <p>
+            I made my first website, Jayj.dk, in 2008 and since then my website hobby became more and more serious. In 2013, I decided to begin taking a AP degree in Multimedia Design &amp; Communication at UCN in Aalborg.
         </p>
 
         <p>
-            Sektion om uddannelse. Måske helt ny sektion.
+            I'm currently on my 3th semester and looking for an 11 week internship in the beginning of 2015 (19-01-2015 to 10-04-2015).
         </p>
-
-        <!-- <div class="education">
-
-            <h4>University College of Northern Denmark</h4>
-
-            <h5>
-                <span lang="da">Multimediedesigner</span>
-                (<span lang="en">AP Degree in Multimedia Design and Communication</span>)
-            </h5>
-
-            <span class="education-date"><time>2013</time> - <time>2015</time></span>
-
-        </div> -->
-
-        <ul>
-
-        </ul>
 
         <div class="social-links">
 
-            <h3>Find me on</h3>
+            <h2>Find me on</h2>
 
             <!--
                 Icons by Laura Reen
@@ -117,24 +107,24 @@
 
 </section>
 
-    <section id="skills">
+        <section id="skills">
 
     <div class="container">
 
-        <h1 class="section-title">What I know/Skills</h1>
+        <h1 class="section-title">What I know/Skills/Proficiencies</h1>
 
         <p>
             PHP, WordPress, HTML5, responsive design, CSS3, Sass, LESS,
             Javascript, jQuery, Version control - Git and SVN,
-            C#, ASP.net
+            C#, ASP.net, Grunt, (My)SQL
         </p>
 
         <p>
-            Learning: Ruby on Rails, Angular.js,
+            Learning: Ruby on Rails, Angular.js, Mobile App Design
         </p>
 
         <p>
-            Other: Photoshop, Illustrator, InDesign, Concept development
+            Other: Photoshop, Illustrator, InDesign, Concept development, wireframing, UI/UX
         </p>
 
 
@@ -142,7 +132,7 @@
 
 </section>
 
-    <section id="code">
+        <section id="code">
 
     <h1 class="section-title">Open Source</h1>
 
@@ -150,14 +140,15 @@
 
         <!-- <ul id="target">Loading...</ul> -->
 
-        <div>
-            <a href="https://github.com/jayj">
+        <div class="grid-half">
+            <a class="column-header" href="https://github.com/jayj">
                 <svg class="icon"><use xlink:href="#icon-github" /></svg>
-                Jeg er på Github, har 9 public repos og 17 følgere.
+                <h2>I'm on Github</h2>
+                <!-- <br>9 public repos and 17 followers. -->
             </a>
 
             <ul>
-                <li><a href="#">alfred-google-music-shuffle</a> (5)</li>
+                <li><a href="#">alfred-google-music-shuffle</a></li>
                 <li><a href="#">Cakifo</a></li>
                 <li><a href="#">Jayj-HTML5</a></li>
                 <li><a href="#">jayj-quicktag</a></li>
@@ -165,17 +156,16 @@
             </ul>
         </div>
 
-        <div>
-            <a href="#" class="icon">
-                <svg><use xlink:href="#icon-wordpress" /></svg>
-                Jeg bidrager også til WordPress.
+        <div class="grid-half">
+            <a class="column-header" href="#" >
+                <svg class="icon"><use xlink:href="#icon-wordpress" /></svg>
+                <h2>I'm contributing to WordPress</h2>
             </a>
 
             <ul>
-                <li><b>17</b> bidrag til Core</li>
+                <li><b>17</b> contributions to Core</li>
                 <li><b>3</b> plugins</li>
-                <li><b>2</b> temaer</li>
-                <!-- <li>Hjælp med dansk oversættelse</li> -->
+                <li><b>2</b> themes</li>
             </ul>
         </div>
 
@@ -193,23 +183,43 @@
 
 </section>
 
-    <section id="projects">
+        <section id="projects">
 
     <div class="container">
 
         <h1 class="section-title">Projects</h1>
 
-        <script id="projects-template" type="x-tmpl-mustache">
+        <script id="projects-template" type="text/x-handlebars-template">
             {{#projects}}
                 <article class="project">
                     <header>
                         <h2 class="project-title">{{name}}</h2>
 
-                        {{#client}}
+                        {{#if client}}
                         <p>Client: {{client}}</p>
-                        {{/client}}
+                        {{/if}}
                     </header>
-                </article>
+
+                    <div class="project-images">
+
+                        <div class="project-thumbnails">
+                        {{#each images}}
+                            <a href="images/projects/{{../slug}}/{{image}}" data-image="{{../slug}}-{{@index}}">
+                            <img src="images/projects/{{../slug}}/{{image}}" width="200" height="200" alt="{{caption}}" />
+                            </a>
+                        {{/each}}
+                        </div> <!-- /.project-thumbnails -->
+
+                        {{#each images}}
+                            <figure class="project-image" data-image="{{../slug}}-{{@index}}">
+                                <figcaption>{{caption}}</figcaption>
+                                <a href="images/projects/{{../slug}}/{{image}}">
+                                    <img src="images/projects/{{../slug}}/{{image}}" alt="{{caption}}" />
+                                </a>
+                            </figure>
+                        {{/each}}
+                    </div> <!-- /.project-images -->
+                </article> <!-- /.project -->
             {{/projects}}
         </script>
 
@@ -217,7 +227,7 @@
 
 </section>
 
-    <section id="contact">
+        <section id="contact">
 
     <div class="container">
 
@@ -228,6 +238,7 @@
     </div> <!-- /.container -->
 
 </section>
+    </main>
 
     <footer>
 
@@ -237,8 +248,7 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-<script src="js/mustache.js"></script>
-
+<script src="js/handlebars.js"></script>
 <script src="js/jquery.singlePageNav.min.js"></script>
 <script src="js/navigation.js"></script>
 
