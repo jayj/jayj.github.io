@@ -2,7 +2,25 @@
     "projects": [
         {
             "name": "Vibstock",
-            "client": "Vibstock Festival"
+            "slug": "vibstock",
+            "client": "Vibstock Festival",
+            "images": [
+                {
+                    "image": "1.png",
+                    "caption": "Image caption here into two lines"
+                },
+                {
+                    "image": "2.png",
+                    "caption": "Image caption here"
+                },
+                {
+                    "image": "3.png"
+                },
+                {
+                    "image": "4.png",
+                    "caption": "Image caption here"
+                }
+            ]
         },
         {
             "name": "Jayj.dk"

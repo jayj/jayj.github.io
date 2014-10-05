@@ -54,10 +54,41 @@
             // Add the compiled HTML to the page
             $('#projects .container').append(html);
 
+            // Run the project image function after the HTML is added
+            get_project_images();
         });
     })();
 
+    /**
+     * Shows a large version of the project image when clicking on the thumbnail.
+     */
+    function get_project_images() {
 
+        var thumbnails = $( '.project-thumbnails' );
+
+        thumbnails.on( 'click mouseenter', 'a', function(e) {
+
+            // Get the data attribute to match thumbnail with full size image
+            var id = $(this).data( 'image' );
+
+            // Hide all images
+            $( '.project-image' ).hide();
+
+            // Show the requested image
+            $( '.project-image[data-image="' + id + '"]' ).show();
+
+            // Set active thumbnail
+            thumbnails.find( '.active' ).removeClass( 'active' );
+            $(this).addClass( 'active' );
+
+            e.preventDefault();
+        });
+
+        $( '.project' ).on( 'mouseleave', function() {
+            // Hide all images
+            $( '.project-image' ).hide();
+        });
+    }
 
 
 

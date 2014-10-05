@@ -10,3 +10,40 @@
 	font-weight: 400;
 	text-align: left;
 }
+
+
+/**
+ * Project images
+ */
+.project-images {
+	background: #fff;
+	padding: $size__gutter--small;
+
+}
+
+.project-thumbnails {
+	display: flex;
+	justify-content: space-between;
+}
+
+.project-image {
+	margin-top: $size__gutter;
+	display: none;
+
+	// width: 48%;
+	//
+
+
+	&:first-of-type {
+		// display: block;
+		// width: 100%;
+	}
+
+	figcaption {
+		margin-bottom: $size__gutter--small;
+	}
+
+	img {
+
+	}
+}

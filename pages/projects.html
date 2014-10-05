@@ -14,7 +14,27 @@
                         <p>Client: {{client}}</p>
                         {{/if}}
                     </header>
-                </article>
+
+                    <div class="project-images">
+
+                        <div class="project-thumbnails">
+                        {{#each images}}
+                            <a href="images/projects/{{../slug}}/{{image}}" data-image="{{../slug}}-{{@index}}">
+                            <img src="images/projects/{{../slug}}/{{image}}" width="200" height="200" alt="{{caption}}" />
+                            </a>
+                        {{/each}}
+                        </div> <!-- /.project-thumbnails -->
+
+                        {{#each images}}
+                            <figure class="project-image" data-image="{{../slug}}-{{@index}}">
+                                <figcaption>{{caption}}</figcaption>
+                                <a href="images/projects/{{../slug}}/{{image}}">
+                                    <img src="images/projects/{{../slug}}/{{image}}" alt="{{caption}}" />
+                                </a>
+                            </figure>
+                        {{/each}}
+                    </div> <!-- /.project-images -->
+                </article> <!-- /.project -->
             {{/projects}}
         </script>
 
