@@ -1,2 +1,29 @@
 /* Layout: Grid
    ========================================================================== */
+
+/**
+ * Container
+ */
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 2rem;
+
+
+
+    @include breakpoint(screen-xs) {
+
+    }
+
+   @include breakpoint(screen-sm) {
+        padding: 0 4rem;
+    }
+
+    @include breakpoint(screen-md) {
+        width: 96rem;
+    }
+
+    // @include breakpoint(screen-lg) {
+    //     width: 104rem;
+    // }
+}
