@@ -2,18 +2,28 @@
 
     <div class="container">
 
-        <h1 class="section-title">Projects</h1>
+        <h1 class="section-title">Work</h1>
 
         <script id="projects-template" type="text/x-handlebars-template">
             {{#projects}}
                 <article class="project">
-                    <header>
-                        <h2 class="project-title">{{name}}</h2>
+                    <div class="project-information">
+                        <header>
+                            <h2 class="project-title">{{name}}</h2>
 
-                        {{#if client}}
-                        <p>Client: {{client}}</p>
+                            <span class="project-type">{{type}}</span>
+                        </header>
+
+                        <div class="project-description">{{{description}}}</div>
+
+                        {{#if date}}
+                            <time class="project-date">{{{date}}}</time>
                         {{/if}}
-                    </header>
+
+                        {{#if link}}
+                            <a href="{{link}}" class="btn" role="button">Visit site</a>
+                        {{/if}}
+                    </div> <!-- /.project-information -->
 
                     <div class="project-images">
 

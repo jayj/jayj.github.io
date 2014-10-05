@@ -1,9 +1,13 @@
 {
     "projects": [
         {
-            "name": "Vibstock",
+            "name": "Vibstock Festival",
             "slug": "vibstock",
+            "type": "WordPress site",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. RESEARCH, STRATEGY, & CONCEPT, USER EXPERIENCE & INFORMATION ARCHITECTURE",
             "client": "Vibstock Festival",
+            "link": "http://vibstock.dk",
+            "date": "May &ndash; August 2014",
             "images": [
                 {
                     "image": "1.png",
