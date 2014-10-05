@@ -25,7 +25,11 @@
 @import "layout/header";
 @import "layout/menu";
 @import "layout/section";
+	@import "layout/section/about";
+	@import "layout/section/skills";
+	@import "layout/section/code";
 	@import "layout/section/project";
+	@import "layout/section/contact";
 @import "layout/footer";
 
 
