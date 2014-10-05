@@ -2,23 +2,57 @@
    ========================================================================== */
 
 .project {
+	background: #fff;
+	padding: $size__gutter;
+	margin-bottom: $size__gutter;
 
+	display: flex;
+	flex-direction: row-reverse;
+
+}
+
+/**
+ * Project information
+ */
+
+.project-information {
+	flex: 2;
+	margin-left: $size__gutter;
+
+	header {
+		border-bottom: 1px solid $color__gray-light;
+		padding-bottom: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
 }
 
 .project-title {
-	font-size: 2rem;
-	font-weight: 400;
-	text-align: left;
+	font-size: 3rem;
+	font-weight: 300;
+	margin: 0 0 1rem;
 }
+
+.project-type,
+.project-date {
+	color: #666;
+	font-size: 1.8rem;
+	font-weight: 300;
+}
+
+.project-date {
+	display: block;
+	margin: 1.5rem 0;
+}
+
 
 
 /**
  * Project images
  */
 .project-images {
-	background: #fff;
-	padding: $size__gutter--small;
+	flex: 2;
 
+	align-self: center;
 }
 
 .project-thumbnails {
