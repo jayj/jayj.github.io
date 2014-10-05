@@ -23,7 +23,7 @@ svg.icon {
     flex-wrap: wrap;
     align-items: center;
 
-    h3 {
+    h2 {
         flex: 100%;
         font-size: 2.3rem;
         font-weight: 300;
@@ -56,7 +56,7 @@ svg.icon {
 
 
     @include breakpoint(screen-md) {
-        h3 {
+        h2 {
             flex: 0 1 auto;
         }
 
@@ -65,5 +65,4 @@ svg.icon {
         }
     }
 }
-
 
