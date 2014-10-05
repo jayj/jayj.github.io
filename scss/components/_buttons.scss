@@ -1,0 +1,14 @@
+/* Component: Buttons
+   ========================================================================== */
+
+.btn {
+	display: inline-block;
+	background: tomato;
+	border-radius: 5px;
+	color: #fff;
+	padding: 1.2rem 2rem;
+
+	&:hover {
+		color: #fff;
+	}
+}
