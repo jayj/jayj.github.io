@@ -84,10 +84,10 @@
             e.preventDefault();
         });
 
-        $( '.project' ).on( 'mouseleave', function() {
-            // Hide all images
-            $( '.project-image' ).hide();
-        });
+        // Hide all images
+        // $( '.project' ).on( 'mouseleave', function() {
+        //     $( '.project-image' ).delay(2000).hide();
+        // });
     }
 
 
