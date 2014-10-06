@@ -8,6 +8,8 @@
             "client": "Vibstock Festival",
             "link": "http://vibstock.dk",
             "date": "May &ndash; August 2014",
+            "thumbnail": "thumbnail.png",
+            "thumbnail-2x": "thumbnail-2x.png",
             "images": [
                 {
                     "image": "1.png",

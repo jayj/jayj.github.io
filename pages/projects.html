@@ -26,6 +26,15 @@
                     </div> <!-- /.project-information -->
 
                     <div class="project-images">
+                        {{#if thumbnail}}
+
+                            {{#if thumbnail-2x}}
+                                <img src="images/projects/{{slug}}/{{thumbnail}}" srcset="images/projects/{{slug}}/{{thumbnail}} 1x, images/projects/{{slug}}/{{thumbnail-2x}} 2x" width="380">
+                            {{else}}
+                                <img src="images/projects/{{slug}}/{{thumbnail}}" width="380" />
+                            {{/if}}
+
+                        {{/if}}
 
                         <div class="project-thumbnails">
                         {{#each images}}
