@@ -322,21 +322,16 @@ pre > code {
    ========================================================================== */
 header[role="banner"] {
   background: #2da86d;
-  min-height: 90vh;
-  display: -webkit-box;
+  min-height: 91vh;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -363,19 +358,16 @@ header[role="banner"] h1 {
    ========================================================================== */
 .site-nav {
   background: tomato;
-  height: 10vh;
+  height: 9vh;
   width: 100%;
 }
 .site-nav .container {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -419,11 +411,9 @@ section {
 /* Section: Code
    ========================================================================== */
 #code .container {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -445,11 +435,9 @@ section {
   color: #666;
   padding: 1rem;
   border-radius: 10px;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -474,8 +462,6 @@ section {
   padding: 1rem 1rem 1rem 10rem;
 }
 .grid-half:last-of-type .column-header {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
   -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
@@ -487,29 +473,77 @@ section {
 
 /* Section: Projects
    ========================================================================== */
+.project {
+  background: #fff;
+  padding: 4rem;
+  margin-bottom: 4rem;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+/**
+ * Project information
+ */
+.project-information {
+  -webkit-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin-left: 4rem;
+}
+.project-information header {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .project-title {
-  font-size: 2rem;
-  font-weight: 400;
-  text-align: left;
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 0 0 1rem;
+}
+
+.project-type,
+.project-date {
+  color: #666;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.project-date {
+  display: block;
+  margin: 1.5rem 0;
 }
 
 /**
  * Project images
  */
-.project-images {
-  background: #fff;
-  padding: 2.5rem;
+.project-preview {
+  -webkit-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
 }
 
 .project-thumbnails {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.project-images {
+  width: 100%;
 }
 
 .project-image {
@@ -570,24 +604,20 @@ svg.icon {
  */
 .social-links {
   margin-top: 6rem;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
 .social-links h2 {
-  -webkit-box-flex: 100%;
   -webkit-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
@@ -644,7 +674,6 @@ svg.icon {
 }
 @media (min-width: 52.5em) {
   .social-links h2 {
-    -webkit-box-flex: 0;
     -webkit-flex: 0 1 auto;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
@@ -653,4 +682,17 @@ svg.icon {
     width: 10rem;
     height: 10rem;
   }
+}
+
+/* Component: Buttons
+   ========================================================================== */
+.btn {
+  display: inline-block;
+  background: tomato;
+  border-radius: 5px;
+  color: #fff;
+  padding: 1.2rem 2rem;
+}
+.btn:hover {
+  color: #fff;
 }

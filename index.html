@@ -51,6 +51,9 @@
         <p>
             My name is Jesper.
             My main focus is front-end development.
+
+            Worked WordPress since 2009 and am a Core contributor, theme author, plugin author, and translator.
+            Open for learning new stuff!
         </p>
 
 
@@ -124,7 +127,7 @@
         </p>
 
         <p>
-            Other: Photoshop, Illustrator, InDesign, Concept development, wireframing, UI/UX
+            Other: Photoshop, Illustrator, InDesign, Concept development, wireframing, UI/UX, SEO
         </p>
 
 
@@ -187,34 +190,61 @@
 
     <div class="container">
 
-        <h1 class="section-title">Projects</h1>
+        <h1 class="section-title">Work</h1>
 
         <script id="projects-template" type="text/x-handlebars-template">
             {{#projects}}
                 <article class="project">
-                    <header>
-                        <h2 class="project-title">{{name}}</h2>
+                    <div class="project-information">
+                        <header>
+                            <h2 class="project-title">{{name}}</h2>
 
-                        {{#if client}}
-                        <p>Client: {{client}}</p>
+                            <span class="project-type">{{type}}</span>
+                        </header>
+
+                        <div class="project-description">{{{description}}}</div>
+
+                        {{#if date}}
+                            <time class="project-date">{{{date}}}</time>
                         {{/if}}
-                    </header>
 
-                    <div class="project-images">
+                        {{#if link}}
+                            <a href="{{link}}" class="btn" role="button">Visit site</a>
+                        {{/if}}
+                    </div> <!-- /.project-information -->
+
+                    <div class="project-preview">
+
+                        {{#if thumbnail}}
+
+                            {{#if thumbnail-2x}}
+                                <img src="images/projects/{{slug}}/{{thumbnail}}" srcset="images/projects/{{slug}}/{{thumbnail}} 1x, images/projects/{{slug}}/{{thumbnail-2x}} 2x" width="380">
+                            {{else}}
+                                <img src="images/projects/{{slug}}/{{thumbnail}}" width="380" />
+                            {{/if}}
+
+                        {{/if}}
 
                         <div class="project-thumbnails">
                         {{#each images}}
                             <a href="images/projects/{{../slug}}/{{image}}" data-image="{{../slug}}-{{@index}}">
-                            <img src="images/projects/{{../slug}}/{{image}}" width="200" height="200" alt="{{caption}}" />
+                            <img src="images/projects/{{../slug}}/{{image}}" width="100" height="100" alt="{{title}}" />
                             </a>
                         {{/each}}
                         </div> <!-- /.project-thumbnails -->
 
+                    </div> <!-- /.project-preview -->
+
+                    <div class="project-images">
+
                         {{#each images}}
                             <figure class="project-image" data-image="{{../slug}}-{{@index}}">
-                                <figcaption>{{caption}}</figcaption>
+                                <figcaption>
+                                    {{#if title}}<h4>{{title}}</h4>{{/if}}
+                                    {{caption}}
+                                </figcaption>
                                 <a href="images/projects/{{../slug}}/{{image}}">
-                                    <img src="images/projects/{{../slug}}/{{image}}" alt="{{caption}}" />
+                                    <img src="images/projects/{{../slug}}/{{image}}" alt="{{title}}" />
                                 </a>
                             </figure>
                         {{/each}}
