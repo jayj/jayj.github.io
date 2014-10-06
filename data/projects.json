@@ -3,8 +3,8 @@
         {
             "name": "Vibstock Festival",
             "slug": "vibstock",
-            "type": "WordPress site",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. RESEARCH, STRATEGY, & CONCEPT, USER EXPERIENCE & INFORMATION ARCHITECTURE",
+            "type": "WordPress solution",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Research, strategy, & concept, user experience & information architecture",
             "client": "Vibstock Festival",
             "link": "http://vibstock.dk",
             "date": "May &ndash; August 2014",
@@ -12,23 +12,24 @@
             "thumbnail-2x": "thumbnail-2x.png",
             "images": [
                 {
-                    "image": "1.png",
+                    "image": "home.png",
                     "title": "Homepage",
                     "caption": "Image caption here into two lines"
                 },
                 {
-                    "image": "2.png",
-                    "caption": "Image caption here"
+                    "image": "api.png",
                     "title": "Integration with Instagram og Twitter APIs",
+                    "caption": "The site features a live hashtag wall with images, videos, and statuses. They are pulled from the APIs of Instagram and Twitter, and cached for a period of time. The user are able to load older updates."
                 },
                 {
-                    "image": "3.png"
+                    "image": "flow.png",
                     "title": "Application forms made easy",
+                    "caption": "The site has two application forms, made with Gravity Forms, to make it easy for the users to apply – either as a volunteer or a band. The forms are mapped together with custom post types in the backend to make it easy for the client to control all the applications."
                 },
                 {
-                    "image": "4.png",
-                    "caption": "Image caption here"
+                    "image": "wireframes.png",
                     "title": "Planning & Sketches",
+                    "caption": "The sketching and wireframing process was a crucial step. I wanted to make sure no primary features/functionality were to be left out in the tablet and mobile versions."
                 }
             ]
         },
