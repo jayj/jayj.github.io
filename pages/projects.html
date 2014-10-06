@@ -39,16 +39,19 @@
                         <div class="project-thumbnails">
                         {{#each images}}
                             <a href="images/projects/{{../slug}}/{{image}}" data-image="{{../slug}}-{{@index}}">
-                            <img src="images/projects/{{../slug}}/{{image}}" width="200" height="200" alt="{{caption}}" />
+                            <img src="images/projects/{{../slug}}/{{image}}" width="100" height="100" alt="{{title}}" />
                             </a>
                         {{/each}}
                         </div> <!-- /.project-thumbnails -->
 
                         {{#each images}}
                             <figure class="project-image" data-image="{{../slug}}-{{@index}}">
-                                <figcaption>{{caption}}</figcaption>
+                                <figcaption>
+                                    {{#if title}}<h4>{{title}}</h4>{{/if}}
+                                    {{caption}}
+                                </figcaption>
                                 <a href="images/projects/{{../slug}}/{{image}}">
-                                    <img src="images/projects/{{../slug}}/{{image}}" alt="{{caption}}" />
+                                    <img src="images/projects/{{../slug}}/{{image}}" alt="{{title}}" />
                                 </a>
                             </figure>
                         {{/each}}

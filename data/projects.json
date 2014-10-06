@@ -13,18 +13,22 @@
             "images": [
                 {
                     "image": "1.png",
+                    "title": "Homepage",
                     "caption": "Image caption here into two lines"
                 },
                 {
                     "image": "2.png",
                     "caption": "Image caption here"
+                    "title": "Integration with Instagram og Twitter APIs",
                 },
                 {
                     "image": "3.png"
+                    "title": "Application forms made easy",
                 },
                 {
                     "image": "4.png",
                     "caption": "Image caption here"
+                    "title": "Planning & Sketches",
                 }
             ]
         },
