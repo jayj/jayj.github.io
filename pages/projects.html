@@ -25,7 +25,8 @@
                         {{/if}}
                     </div> <!-- /.project-information -->
 
-                    <div class="project-images">
+                    <div class="project-preview">
+
                         {{#if thumbnail}}
 
                             {{#if thumbnail-2x}}
@@ -43,6 +44,10 @@
                             </a>
                         {{/each}}
                         </div> <!-- /.project-thumbnails -->
+
+                    </div> <!-- /.project-preview -->
+
+                    <div class="project-images">
 
                         {{#each images}}
                             <figure class="project-image" data-image="{{../slug}}-{{@index}}">
