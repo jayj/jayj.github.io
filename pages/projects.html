@@ -37,6 +37,9 @@
                     </div> <!-- /.project-preview -->
                     {{/if}}
 
+                    {{#if images}}
+                    <div class="project-images">
+
                         <div class="project-thumbnails">
                         {{#each images}}
                             <a href="images/projects/{{../slug}}/{{image}}" data-image="{{../slug}}-{{@index}}">
@@ -60,6 +63,7 @@
                             </figure>
                         {{/each}}
                     </div> <!-- /.project-images -->
+                    {{/if}}
                 </article> <!-- /.project -->
             {{/projects}}
         </script>
