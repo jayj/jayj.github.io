@@ -59,6 +59,17 @@
 .project-thumbnails {
 	display: flex;
 	justify-content: space-between;
+
+	a {
+		flex: 1;
+		line-height: 0;
+	}
+	h2 {
+		font-size: 2rem;
+        font-weight: 300;
+        margin: auto 0;
+        flex: 1;
+	}
 }
 
 .project-images {
