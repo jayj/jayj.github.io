@@ -18,7 +18,6 @@
 
 .project-information {
 	flex: 2;
-	margin-left: $size__gutter;
 
 	header {
 		border-bottom: 1px solid $color__gray-light;
@@ -57,6 +56,7 @@
 }
 
 .project-thumbnails {
+	margin-top: 3rem;
 	display: flex;
 	justify-content: space-between;
 
@@ -64,6 +64,18 @@
 		flex: 1;
 		line-height: 0;
 	}
+
+	img {
+
+		border-radius: 3px;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+	}
+
+	.active img {
+		border-color: tomato;
+		box-shadow: 0 0 6px tomato;
+	}
+
 	h2 {
 		font-size: 2rem;
         font-weight: 300;
