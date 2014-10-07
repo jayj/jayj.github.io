@@ -384,6 +384,7 @@ header[role="banner"] h1 {
 .nav-fixed .site-nav {
   top: 0;
   position: fixed;
+  z-index: 100;
 }
 
 /* Layout: Sections
