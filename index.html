@@ -213,29 +213,31 @@
                         {{/if}}
                     </div> <!-- /.project-information -->
 
+                    {{#if thumbnail}}
                     <div class="project-preview">
 
-                        {{#if thumbnail}}
-
                             {{#if thumbnail-2x}}
-                                <img src="images/projects/{{slug}}/{{thumbnail}}" srcset="images/projects/{{slug}}/{{thumbnail}} 1x, images/projects/{{slug}}/{{thumbnail-2x}} 2x" width="380">
+                                <img src="{{projectImagePath slug thumbnail}}" srcset="{{projectImagePath slug thumbnail}} 1x, {{projectImagePath slug thumbnail-2x}} 2x" width="380">
                             {{else}}
-                                <img src="images/projects/{{slug}}/{{thumbnail}}" width="380" />
+                                <img src="{{projectImagePath slug thumbnail}}" width="380" />
                             {{/if}}
 
-                        {{/if}}
+                    </div> <!-- /.project-preview -->
+                    {{/if}}
+
+                    {{#if images}}
+                    <div class="project-images">
 
                         <div class="project-thumbnails">
-                        {{#each images}}
-                            <a href="images/projects/{{../slug}}/{{image}}" data-image="{{../slug}}-{{@index}}">
-                            <img src="images/projects/{{../slug}}/{{image}}" width="100" height="100" alt="{{title}}" />
-                            </a>
-                        {{/each}}
+                            <h2>Images</h2>
+
+                            {{#each images}}
+                                <a href="{{projectImagePath ../slug image}}" data-image="{{../slug}}-{{@index}}">
+                                <img src="{{projectImagePath ../slug image}}" width="145" height="110" alt="{{title}}" />
+                                </a>
+                            {{/each}}
                         </div> <!-- /.project-thumbnails -->
 
-                    </div> <!-- /.project-preview -->
-
-                    <div class="project-images">
 
                         {{#each images}}
                             <figure class="project-image" data-image="{{../slug}}-{{@index}}">
@@ -243,12 +245,13 @@
                                     {{#if title}}<h4>{{title}}</h4>{{/if}}
                                     {{caption}}
                                 </figcaption>
-                                <a href="images/projects/{{../slug}}/{{image}}">
-                                    <img src="images/projects/{{../slug}}/{{image}}" alt="{{title}}" />
+                                <a href="{{projectImagePath ../slug image}}">
+                                    <img src="{{projectImagePath ../slug image}}" alt="{{title}}" />
                                 </a>
                             </figure>
                         {{/each}}
                     </div> <!-- /.project-images -->
+                    {{/if}}
                 </article> <!-- /.project -->
             {{/projects}}
         </script>
