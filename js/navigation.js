@@ -27,9 +27,9 @@
     /*
      * Fixed navigation when the header is not longer visible.
      */
-    var headerHeight = $( 'header' ).height();
-
     _window.on( 'scroll', function() {
+
+        var headerHeight = $( 'header[role="banner"]' ).height();
 
         if ( _window.scrollTop() > headerHeight ) {
             body.addClass( 'nav-fixed' );
