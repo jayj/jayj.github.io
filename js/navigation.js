@@ -66,7 +66,7 @@
 
         var thumbnails = $( '.project-thumbnails' );
 
-        thumbnails.on( 'click mouseenter', 'a', function(e) {
+        thumbnails.on( 'click', 'a', function(e) {
 
             // Get the data attribute to match thumbnail with full size image
             var id = $(this).data( 'image' );
