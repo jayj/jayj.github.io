@@ -25,9 +25,8 @@
                         {{/if}}
                     </div> <!-- /.project-information -->
 
+                    {{#if thumbnail}}
                     <div class="project-preview">
-
-                        {{#if thumbnail}}
 
                             {{#if thumbnail-2x}}
                                 <img src="images/projects/{{slug}}/{{thumbnail}}" srcset="images/projects/{{slug}}/{{thumbnail}} 1x, images/projects/{{slug}}/{{thumbnail-2x}} 2x" width="380">
@@ -35,7 +34,8 @@
                                 <img src="images/projects/{{slug}}/{{thumbnail}}" width="380" />
                             {{/if}}
 
-                        {{/if}}
+                    </div> <!-- /.project-preview -->
+                    {{/if}}
 
                         <div class="project-thumbnails">
                         {{#each images}}
@@ -45,7 +45,6 @@
                         {{/each}}
                         </div> <!-- /.project-thumbnails -->
 
-                    </div> <!-- /.project-preview -->
 
                     <div class="project-images">
 
