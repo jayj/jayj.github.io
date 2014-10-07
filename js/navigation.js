@@ -90,6 +90,10 @@
         // });
     }
 
+    Handlebars.registerHelper('projectImagePath', function(project, image) {
+        return 'images/projects/' + project + '/' + image;
+    });
+
 
 
 // https://api.github.com/users/jayj/repos?sort=updated
