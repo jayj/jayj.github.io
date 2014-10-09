@@ -476,31 +476,46 @@ section {
    ========================================================================== */
 .project {
   background: #fff;
-  padding: 4rem;
+  padding: 2.5rem;
   margin-bottom: 4rem;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row-reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+}
+@media (min-width: 38.75em) {
+  .project {
+    padding: 4rem;
+  }
+}
+@media (min-width: 52.5em) {
+  .project {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
 }
 
 /**
  * Project information
  */
 .project-information {
-  -webkit-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  text-align: center;
 }
 .project-information header {
   border-bottom: 1px solid #ccc;
   padding-bottom: 1.5rem;
   margin-bottom: 1.5rem;
+}
+@media (min-width: 52.5em) {
+  .project-information {
+    -webkit-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    text-align: left;
+  }
 }
 
 .project-title {
@@ -516,47 +531,62 @@ section {
   font-weight: 300;
 }
 
-.project-date {
-  display: block;
-  margin: 1.5rem 0;
+.project-date,
+.project-information .btn {
+  display: inline-block;
+  margin-top: 1.5rem;
 }
 
 /**
- * Project images
+ * Project preview
  */
 .project-preview {
-  -webkit-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
-  margin-right: 4rem;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
+  margin-top: 2rem;
   position: relative;
+  text-align: center;
 }
 .project-preview img {
+  display: block;
+  margin: 0 auto;
   -webkit-transition: opacity 275ms;
           transition: opacity 275ms;
 }
 .project-preview a:hover img {
   opacity: 0.75;
 }
-.project-preview .btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  -webkit-transition: opacity 170ms ease-in-out;
-          transition: opacity 170ms ease-in-out;
-  opacity: 0;
+@media (min-width: 38.75em) {
+  .project-preview .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    -webkit-transition: opacity 170ms ease-in-out;
+            transition: opacity 170ms ease-in-out;
+    opacity: 0;
+  }
+  .project-preview a:hover .btn {
+    opacity: 1;
+  }
 }
-.project-preview a:hover .btn {
-  opacity: 1;
+@media (min-width: 52.5em) {
+  .project-preview {
+    -webkit-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    margin-right: 4rem;
+    text-align: left;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+  }
 }
 
+/**
+ * Project thumbnails
+ */
 .project-thumbnails {
   margin-top: 3rem;
   display: -webkit-flex;
@@ -565,12 +595,14 @@ section {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 .project-thumbnails a {
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  line-height: 0;
+  -webkit-flex-basis: 20%;
+      -ms-flex-preferred-size: 20%;
+          flex-basis: 20%;
 }
 .project-thumbnails img {
   border-radius: 3px;
@@ -583,12 +615,40 @@ section {
 .project-thumbnails h2 {
   font-size: 2rem;
   font-weight: 300;
-  margin: auto 0;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  margin: 0 0 1.5rem;
+  -webkit-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+}
+@media (min-width: 52.5em) {
+  .project-thumbnails {
+    margin-top: 4rem;
+  }
+  .project-thumbnails h2,
+  .project-thumbnails a {
+    -webkit-flex: 1 auto;
+        -ms-flex: 1 auto;
+            flex: 1 auto;
+  }
+  .project-thumbnails h2 {
+    margin: auto 0;
+  }
+  .project-thumbnails a {
+    line-height: 0;
+  }
+}
+@media (min-width: 70em) {
+  .project-thumbnails h2,
+  .project-thumbnails a {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
 }
 
+/**
+ * Project images
+ */
 .project-images {
   width: 100%;
 }
