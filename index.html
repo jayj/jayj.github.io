@@ -40,7 +40,6 @@
     </div>
 </nav>
 
-
     <main role="main">
         <section id="about">
 
@@ -207,22 +206,25 @@
                         {{#if date}}
                             <time class="project-date">{{{date}}}</time>
                         {{/if}}
-
-                        {{#if link}}
-                            <a href="{{link}}" class="btn" role="button">Visit site</a>
-                        {{/if}}
                     </div> <!-- /.project-information -->
 
                     {{#if thumbnail}}
                     <div class="project-preview">
 
-                            {{#if thumbnail-2x}}
-                                <img src="{{projectImagePath slug thumbnail}}" srcset="{{projectImagePath slug thumbnail}} 1x, {{projectImagePath slug thumbnail-2x}} 2x" width="380">
-                            {{else}}
-                                <img src="{{projectImagePath slug thumbnail}}" width="380" />
-                            {{/if}}
+                        {{#if link}}
+                            <a href="{{link}}">
+                        {{/if}}
 
-                        <img src="{{projectImagePath slug thumbnail-2x}}" width="380">
+                        {{#if thumbnail-2x}}
+                            <img src="{{projectImagePath slug thumbnail}}" srcset="{{projectImagePath slug thumbnail}} 1x, {{projectImagePath slug thumbnail-2x}} 2x" width="380">
+                        {{else}}
+                            <img src="{{projectImagePath slug thumbnail}}" width="380" />
+                        {{/if}}
+
+                        {{#if link}}
+                                <span class="btn">Visit site</span>
+                            </a>
+                        {{/if}}
 
                     </div> <!-- /.project-preview -->
                     {{/if}}
@@ -235,7 +237,7 @@
 
                             {{#each images}}
                                 <a href="{{projectImagePath ../slug image}}" data-image="{{../slug}}-{{@index}}">
-                                <img src="{{projectImagePath ../slug image}}" width="145" height="110" alt="{{title}}" />
+                                    <img src="{{projectImagePath ../slug image}}" width="145" height="110" alt="{{title}}" />
                                 </a>
                             {{/each}}
                         </div> <!-- /.project-thumbnails -->
