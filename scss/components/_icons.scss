@@ -34,12 +34,8 @@ svg.icon {
         transition: transform 150ms ease-in-out;
     }
 
-    // Color each icon with their offical color when hovered
-    @each $site, $color in $social {
-        .social-#{$site}:hover svg {
-            fill: $color;
-            transform: scale(1.5);
-        }
+    .icon:hover > svg {
+        transform: scale(1.5);
     }
 
     @include breakpoint(screen-xs) {
@@ -54,7 +50,6 @@ svg.icon {
         }
     }
 
-
     @include breakpoint(screen-md) {
         h2 {
             flex: 0 1 auto;
@@ -65,4 +60,12 @@ svg.icon {
         }
     }
 }
+
+/* Color each social icon with their offical color when hovered */
+@each $site, $color in $social {
+    .icon-#{$site}:hover > svg {
+        fill: $color;
+    }
+}
+
 
