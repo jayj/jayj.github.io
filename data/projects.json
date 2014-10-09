@@ -5,7 +5,6 @@
             "slug": "vibstock",
             "type": "WordPress solution",
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Research, strategy, & concept, user experience & information architecture",
-            "client": "Vibstock Festival",
             "link": "http://vibstock.dk",
             "date": "May &ndash; August 2014",
             "thumbnail": "thumbnail.png",
@@ -34,21 +33,42 @@
             ]
         },
         {
-            "name": "Jayj.dk"
+            "name": "Jayj.dk",
+            "slug": "jayj",
+            "type": "Personal website",
+            "description": "My own website I've had since 2008.",
+            "link": "http://jayj.dk"
         },
         {
-            "name": "HTML5 template"
+            "name": "Jayj HTML5 theme",
+            "slug": "html5",
+            "type": "HTML5 theme",
+            "description": "A free HTML5 and CSS3 theme/template I created in 2009. It has had several major updates since then. It comes packaged with an Ajax powered PHP contact form and uses the CSS preprocessor LESS. It has been downloaded over 57.000 times.",
+            "link": "http://jayj.dk/themes/html5-theme/"
         },
         {
-            "name": "Cakifo"
+            "name": "Cakifo",
+            "slug": "cakifo",
+            "type": "WordPress theme",
+            "description": "A free WordPress blog theme I created in 2011. It uses the Hybrid Core theme framework, uses HTML5 and it's responsive. It has been downloaded over 58.000 times.",
+            "link": "http://jayj.dk/themes/cakifo/"
         },
         {
             "name": "Lego??",
-            "client": "UST Global & LEGO"
+            "client": "UST Global & LEGO",
+            "slug": "lego",
+            "type": "Concept",
+            "description": "",
+            "link": ""
         },
         {
             "name": "Jysk KontorKoncept",
-            "client": "Jysk KontorKoncept"
+            "client": "Jysk KontorKoncept",
+            "slug": "jkk",
+            "type": "School project",
+            "description": "1st semester project.",
+            "link": "",
+            "date": "November &ndash; December 2013"
         }
     ]
 }
