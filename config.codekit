@@ -210,11 +210,11 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
 		},
-	"\/js\/navigation.js": {
+	"\/js\/site.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/js\/navigation.js",
+		"inputAbbreviatedPath": "\/js\/site.js",
 		"outputAbbreviatedPath": "\/js\/navigation.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
