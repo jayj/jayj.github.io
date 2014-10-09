@@ -19,6 +19,10 @@
                         {{#if date}}
                             <time class="project-date">{{{date}}}</time>
                         {{/if}}
+
+                        {{#if link}}{{#unless thumbnail}}
+                            <a href="{{link}}" class="btn" role="button">Visit site</a>
+                        {{/unless}}{{/if}}
                     </div> <!-- /.project-information -->
 
                     {{#if thumbnail}}
