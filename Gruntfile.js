@@ -115,10 +115,44 @@ module.exports = function(grunt) {
 
     });
 
+    // Create task to generate project image thumbnails and save them in a subfolder
+    grunt.registerTask( 'project-thumbnails', 'Generate project thumbnails', function() {
+
+        // Read all subdirectories from the projects folder
+        grunt.file.expand( 'images/projects/*' ).forEach( function(dir) {
+
+            // Get the current cropthumb config
+            var cropthumb = grunt.config.get('cropthumb') || {};
+
+            // Set the config for the directory
+            cropthumb[dir] = {
+                options: {
+                    width: 145,
+                    height: 110,
+                    overwrite: true, // @todo set to false
+                    changeName: false,
+                    cropAmount: 0.5
+                },
+                expand: true,
+                cwd: dir,
+                src: [ '*.{png,jpg,gif}', '!thumbnail*.{png,jpg,gif}' ],
+                dest: dir + '/thumbnails/'
+            };
+
+            // Save the new cropthumb configuration
+            grunt.config.set('cropthumb', cropthumb);
+        });
+
+        // When finished run the cropping
+        grunt.task.run('cropthumb');
+    });
+
 
     // Default task
     grunt.registerTask( 'default', [ 'sass', 'autoprefixer', 'svgstore', 'codekit', 'watch' ] );
 
     grunt.registerTask( 'svg', [ 'svgstore', 'codekit' ] );
+
+    grunt.registerTask( 'images', [ 'project-thumbnails', 'imagemin' ] );
 
 };

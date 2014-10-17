@@ -14,6 +14,7 @@
     "grunt-svgstore": "~0.3.3",
     "grunt-contrib-imagemin": "~0.8.1",
     "grunt-contrib-jshint": "~0.10.0",
-    "grunt-codekit": "~0.4.1"
+    "grunt-codekit": "~0.4.1",
+    "grunt-cropthumb": "git+http://github.com/jbakse/grunt-cropthumb.git"
   }
 }
