@@ -2,7 +2,8 @@
    ========================================================================== */
 
 header[role="banner"] {
-    background: $header__bg-color;
+    background: $header__bg;
+    background-color: $header__bg-color;
     min-height: 91vh;
     display: flex;
     flex-direction: column;
