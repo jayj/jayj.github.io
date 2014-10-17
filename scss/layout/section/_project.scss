@@ -80,33 +80,11 @@
     text-align: center;
 
     img {
-        // Center the image and make sure the button won't show up on the same line
-        display: block;
-        margin: 0 auto;
-
         transition: opacity 275ms;
     }
 
     a:hover img {
         opacity: 0.75;
-    }
-
-    // Move the button inside the thumbnail and only show it on hover
-    // @todo Mobile and keyboard testing
-    @include breakpoint(screen-sm) {
-        .btn {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            box-shadow: 0 0 15px rgba(#000, 0.3);
-            transition: opacity 170ms ease-in-out;
-            opacity: 0;
-        }
-
-        a:hover .btn {
-            opacity: 1;
-        }
     }
 
     // It's now a row
