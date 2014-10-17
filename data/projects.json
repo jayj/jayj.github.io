@@ -3,69 +3,68 @@
         {
             "name": "Vibstock Festival",
             "slug": "vibstock",
-            "type": "WordPress solution",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Research, strategy, & concept, user experience & information architecture",
+            "type": "WordPress løsning",
+            "description": "Vibstock er en lille gratis musikfestival i Viborg. Projektet var et eksamensprojekt på 2. semester udført i et team på 4 personer. I projektet blev der afholdt kundemøder, lavet research, analyser, designudvikling med adskillige brugertest samt udvikling af en prototype i .NET. Efter eksamen blev siden videreudviklet i WordPress. Siden blev lanceret den 1. august.",
             "link": "http://vibstock.dk",
-            "date": "May &ndash; August 2014",
+            "date": "Maj &ndash; August 2014",
             "thumbnail": "thumbnail.png",
             "thumbnail-2x": "thumbnail-2x.png",
             "images": [
                 {
                     "image": "home.png",
-                    "title": "Homepage",
-                    "caption": "Image caption here into two lines"
+                    "title": "Forside",
+                    "caption": "Image caption here"
                 },
                 {
                     "image": "api.png",
-                    "title": "Integration with Instagram og Twitter APIs",
-                    "caption": "The site features a live hashtag wall with images, videos, and statuses. They are pulled from the APIs of Instagram and Twitter, and cached for a period of time. The user are able to load older updates."
+                    "title": "Integration med Instagram og Twitters API'er",
+                    "caption": "Siden indeholder brugerinteraktion i form af en live hashtag-væg med billeder, videoer og statusopdateringer. De bliver hentet ved brug af Instagram og Twitters API'er, hvorefter de bliver cached for et stykke tid. Brugen har desuden mulighed for at indlæse ældre opdateringer."
                 },
                 {
                     "image": "flow.png",
-                    "title": "Application forms made easy",
-                    "caption": "The site has two application forms, made with Gravity Forms, to make it easy for the users to apply – either as a volunteer or a band. The forms are mapped together with custom post types in the backend to make it easy for the client to control all the applications."
+                    "title": "Forbedring af tilmeldingsprocessen",
+                    "caption": "Et af formålene med siden var at gøre tilmeldingsprocessen bedre - både for bands og frivillige. Ved brug af Gravity Forms blev der lavet to tilmeldingsformularer, som er forbundet med administrationsdelen. På det både blev det også let for kunden at administrere ansøgningerne."
                 },
                 {
                     "image": "wireframes.png",
-                    "title": "Planning & Sketches",
-                    "caption": "The sketching and wireframing process was a crucial step. I wanted to make sure no primary features/functionality were to be left out in the tablet and mobile versions."
+                    "title": "Informationsarkitektur, wireframes og brugertest",
+                    "caption": "Før siden blev udviklet blev der lavet en brugertest for at finde ud af hvordan testpersonerne vil forvente strukturen og indholdet pa websitet ville være. Derefter blev der udviklet wireframes og designmockups før kodningen begyndte."
                 }
             ]
         },
         {
             "name": "Jayj.dk",
             "slug": "jayj",
-            "type": "Personal website",
-            "description": "My own website I've had since 2008.",
+            "type": "Personlig hjemmeside",
+            "description": "Min egen hjemmeside jeg har haft siden 2008.",
             "link": "http://jayj.dk"
         },
         {
             "name": "Jayj HTML5 theme",
             "slug": "html5",
-            "type": "HTML5 theme",
-            "description": "A free HTML5 and CSS3 theme/template I created in 2009. It has had several major updates since then. It comes packaged with an Ajax powered PHP contact form and uses the CSS preprocessor LESS. It has been downloaded over 57.000 times.",
-            "link": "http://jayj.dk/themes/html5-theme/"
+            "type": "HTML5 tema",
+            "description": "Et gratis HTML5 og CSS3 tema/template jeg lavede i 2009. Siden da har den gennemgået adskillige nye versioner. Den er responsiv, bruger CSS-processoren LESS og indeholder en kontaktformular. Den er blevet downloadet over 57.000 gange."
         },
         {
             "name": "Cakifo",
             "slug": "cakifo",
-            "type": "WordPress theme",
-            "description": "A free WordPress blog theme I created in 2011. It uses the Hybrid Core theme framework, uses HTML5 and it's responsive. It has been downloaded over 58.000 times.",
+            "type": "WordPress tema",
+            "description": "Et gratis WordPress tema jeg lavede i 2011. Den bruger frameworket Hybrid Core, HTML5 og er responsiv. Den er blevet downloadet over 58.000 gange.",
             "link": "http://jayj.dk/themes/cakifo/"
         },
         {
-            "name": "Lego??",
-            "client": "UST Global & LEGO",
-            "slug": "lego",
-            "type": "Concept",
-            "description": "",
-            "link": ""
+            "name": "Rejse-app",
+            "slug": "usa",
+            "type": "Koncept",
+            "description": "I forbindelse med uddannelsen har jeg deltaget i et projekt i samarbejde med studerende fra California State University-Fullerton, som sluttede med et 2-ugers besøg på universitet i Los Angeles.",
+            "link": "",
+            "date": "September 2014"
         },
         {
             "name": "Jysk KontorKoncept",
             "client": "Jysk KontorKoncept",
             "slug": "jkk",
-            "type": "School project",
+            "type": "Skoleprojekt",
             "description": "1st semester project.",
             "link": "",
             "date": "November &ndash; December 2013"
