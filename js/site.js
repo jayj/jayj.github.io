@@ -33,9 +33,9 @@
 
     _window.on( 'scroll', function() {
 
-        var headerHeight = header.height();
+        var headerHeight = header.height() - nav.height();
 
-        if ( _window.scrollTop() > headerHeight ) {
+        if ( _window.scrollTop() >= headerHeight ) {
             body.addClass( 'nav-fixed' );
         } else {
             body.removeClass( 'nav-fixed' );
