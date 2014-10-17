@@ -177,9 +177,6 @@
 }
 
 .close-image {
-    background: none;
-    border: 0;
-    padding: 0;
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -187,20 +184,16 @@
     transition: transform 150ms ease-in-out, opacity 100ms;
 
     &:hover {
-        transform: scale(1.5);
+        transform: scale(1.8);
     }
 
     &:focus {
         outline: none;
         opacity: 0.5;
-    }
-
-    &:active {
         transform: scale(1);
     }
 
-
     svg {
-        @include square(4rem);
+        @include square(3.5rem);
     }
 }
