@@ -102,7 +102,9 @@ $header__text-color: #fff;
 // Menu
 // ===========================
 
-$menu__bg-color: tomato;
+$menu__bg-color:         darken($header__bg-color, 15%);
+$menu__bg-color--fixed:  $color__primary;
+
 $menu__text-color: #fff;
 
 

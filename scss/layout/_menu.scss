@@ -35,6 +35,7 @@
 }
 
 .nav-fixed .site-nav {
+    background: $menu__bg-color--fixed;
     top: 0;
     position: fixed;
     z-index: $zindex__menu;
