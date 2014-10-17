@@ -12,8 +12,15 @@
      * Initiate the Single Page Nav plugin
      */
     nav.singlePageNav({
-        offset: nav.outerHeight(),
-        updateHash: true
+        offset: nav.height(),
+        updateHash: true,
+
+        // Close the navigation
+        beforeStart: function() {
+            body.removeClass( 'nav-toggled' );
+        }
+    });
+
     /* Toggle the navigation when clicking on the toggle button */
     $( '.toggle-nav' ).on( 'click', function() {
         body.toggleClass( 'nav-toggled' );
