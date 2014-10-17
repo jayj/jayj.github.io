@@ -19,11 +19,9 @@
 
                         <div class="project-description">{{{description}}}</div>
 
+                        {{#if link}}
+                            <a href="{{link}}" class="btn" role="button">Besøg site</a>
                         {{/if}}
-
-                        {{#if link}}{{#unless thumbnail}}
-                            <a href="{{link}}" class="btn" role="button">Visit site</a>
-                        {{/unless}}{{/if}}
                     </div> <!-- /.project-information -->
 
                     {{#if thumbnail}}
@@ -44,7 +42,6 @@
                         {{/if}}
 
                         {{#if link}}
-                                <span class="btn">Visit site</span>
                             </a>
                         {{/if}}
 
