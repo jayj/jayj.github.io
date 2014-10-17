@@ -11,14 +11,14 @@ $color__gray-lighter:      #eee;
 
 
 // Main colors
-$color__primary:    #2a7ae2;
+$color__primary:    tomato;
 $color__text:       $color__gray-darker;
 
 
 // Links
 // ===========================
 
-$link__color:                 $color__primary;
+$link__color:                 #2a7ae2;
 $link__color-hover:           darken($link__color, 18%);
 $link__color-visited:         $link__color;
 
