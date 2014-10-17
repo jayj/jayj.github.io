@@ -11,10 +11,14 @@
                         <header>
                             <h2 class="project-title">{{name}}</h2>
 
-                            <span class="project-type">{{type}}</span>
-                            {{#if date}}
-                                <time class="project-date">{{{date}}}</time>
-                            {{/if}}
+
+                            <div class="project-meta">
+                                <span class="project-type">{{type}}</span>
+
+                                {{#if date}}
+                                    <time class="project-date">{{{date}}}</time>
+                                {{/if}}
+                            </div>
                         </header>
 
                         <div class="project-description">{{{description}}}</div>
