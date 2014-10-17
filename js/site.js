@@ -14,6 +14,9 @@
     nav.singlePageNav({
         offset: nav.outerHeight(),
         updateHash: true
+    /* Toggle the navigation when clicking on the toggle button */
+    $( '.toggle-nav' ).on( 'click', function() {
+        body.toggleClass( 'nav-toggled' );
     });
 
     /* Scroll to top */
