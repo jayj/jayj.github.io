@@ -44,14 +44,28 @@
     margin: 0 0 1rem;
 }
 
-.project-type,
-.project-date {
+.project-meta {
     color: #666;
-    font-size: 1.8rem;
     font-weight: 300;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(screen-xs) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
-.project-date,
+.project-type {
+    font-size: 1.8rem;
+}
+
+.project-date {
+    float: right;
+    font-size: 1.5rem;
+}
+
 .project-information .btn {
     display: inline-block;
     margin-top: 1.5rem;
