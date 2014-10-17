@@ -6,6 +6,17 @@
     height: 9vh;
     width: 100%;
 
+    /**
+     * Render the menu in it's own layer to take advantage of GPU hardware acceleration
+     * https://dev.opera.com/articles/css-will-change-property/
+     */
+
+    // The old way
+    transform: translateZ(0px);
+
+    // The new way
+    will-change: transform, position;
+
     .container {
         display: flex;
         align-items: center;
