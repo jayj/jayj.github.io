@@ -7,7 +7,6 @@
         body    = $( 'body' ),
         _window = $( window );
 
-
     /**
      * Initiate the Single Page Nav plugin
      */
