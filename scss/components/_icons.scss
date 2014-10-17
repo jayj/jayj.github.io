@@ -12,10 +12,20 @@ svg.icon {
     fill: $icon__color;
 }
 
+
+/**
+ * Button icons
+ */
+button.has-icon {
+    background: none;
+    border: 0;
+    padding: 0;
+}
+
+
 /**
  * Social links
  */
-
 .social-links {
     margin-top: 6rem;
     display: flex;
