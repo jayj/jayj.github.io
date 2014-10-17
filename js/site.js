@@ -11,7 +11,6 @@
     /**
      * Initiate the Single Page Nav plugin
      */
-
     nav.singlePageNav({
         offset: nav.outerHeight(),
         updateHash: true
@@ -94,6 +93,10 @@
 
     Handlebars.registerHelper('projectImagePath', function(project, image) {
         return 'images/projects/' + project + '/' + image;
+    });
+
+    Handlebars.registerHelper('projectThumbnailPath', function(project, image) {
+        return 'images/projects/' + project + '/thumbnails/' + image;
     });
 
 
