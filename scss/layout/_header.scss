@@ -25,4 +25,10 @@ header[role="banner"] {
     @include breakpoint(screen-sm) {
         font-size: 2.4rem;
     }
+
+    @include breakpoint(screen-md) {
+        p {
+            padding: 0 $size__gutter * 3;
+        }
+    }
 }
