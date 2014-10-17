@@ -174,10 +174,41 @@
 }
 
 .project-image {
-    margin-top: $size__gutter;
     display: none;
 
     figcaption {
+        margin-top: $size__gutter; // Set here to avoid page "jump" when closing the image
         margin-bottom: $size__gutter--small;
+        position: relative;
+        padding-right: 8rem;
+    }
+}
+
+.close-image {
+    background: none;
+    border: 0;
+    padding: 0;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    transition: transform 150ms ease-in-out, opacity 100ms;
+
+    &:hover {
+        transform: scale(1.5);
+    }
+
+    &:focus {
+        outline: none;
+        opacity: 0.5;
+    }
+
+    &:active {
+        transform: scale(1);
+    }
+
+
+    svg {
+        @include square(4rem);
     }
 }

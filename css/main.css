@@ -674,11 +674,42 @@ section {
 }
 
 .project-image {
-  margin-top: 4rem;
   display: none;
 }
 .project-image figcaption {
+  margin-top: 4rem;
   margin-bottom: 2.5rem;
+  position: relative;
+  padding-right: 8rem;
+}
+
+.close-image {
+  background: none;
+  border: 0;
+  padding: 0;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  -webkit-transition: -webkit-transform 150ms ease-in-out, opacity 100ms;
+          transition: transform 150ms ease-in-out, opacity 100ms;
+}
+.close-image:hover {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.close-image:focus {
+  outline: none;
+  opacity: 0.5;
+}
+.close-image:active {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+.close-image svg {
+  width: 4rem;
+  height: 4rem;
 }
 
 /* Section: Contact

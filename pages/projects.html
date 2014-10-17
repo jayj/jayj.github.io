@@ -63,16 +63,21 @@
                             {{/each}}
                         </div> <!-- /.project-thumbnails -->
 
-
                         {{#each images}}
                             <figure class="project-image" data-image="{{../slug}}-{{@index}}">
                                 <figcaption>
                                     {{#if title}}<h4>{{title}}</h4>{{/if}}
                                     {{caption}}
+
+                                    <button class="close-image" aria-label="Close image">
+                                        <svg><use xlink:href="#icon-close" /></svg>
+                                    </button>
                                 </figcaption>
+
                                 <a href="{{projectImagePath ../slug image}}">
                                     <img src="{{projectImagePath ../slug image}}" alt="{{title}}" />
                                 </a>
+
                             </figure>
                         {{/each}}
                     </div> <!-- /.project-images -->
