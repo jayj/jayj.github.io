@@ -3,6 +3,12 @@
  *
  * Skriv kontakt info her og osv.
 */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -391,15 +397,15 @@ header[role="banner"] h1 {
   color: #fff;
   font-size: 1.8rem;
 }
-.site-nav .current {
-  opacity: 0.7;
-}
 
 .nav-fixed .site-nav {
   background: tomato;
   top: 0;
   position: fixed;
   z-index: 100;
+}
+.nav-fixed .site-nav .current {
+  opacity: 0.7;
 }
 
 /* Layout: Sections
@@ -427,71 +433,8 @@ section {
 
 /* Section: About
    ========================================================================== */
-/* Section: Skills
+/* Section: Contact
    ========================================================================== */
-/* Section: Code
-   ========================================================================== */
-#code .container {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.grid-half ul {
-  list-style: none;
-  padding: 0;
-}
-.grid-half ul li {
-  border-bottom: 1px solid #ccc;
-  padding: 1rem 10rem 1rem 1rem;
-  float: left;
-  clear: both;
-}
-.grid-half .column-header {
-  background: -webkit-linear-gradient(bottom, rgba(153, 153, 153, 0.2), transparent 100%);
-  background: linear-gradient(to top, rgba(153, 153, 153, 0.2), transparent 100%);
-  color: #666;
-  padding: 1rem;
-  border-radius: 10px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.grid-half .column-header svg {
-  fill: #ccc;
-}
-.grid-half h2 {
-  font-size: 2.2rem;
-  font-weight: 300;
-  margin-left: 1.5rem;
-}
-.grid-half:first-of-type {
-  width: 45%;
-}
-.grid-half:last-of-type {
-  text-align: right;
-  width: 50%;
-}
-.grid-half:last-of-type li {
-  float: right;
-  padding: 1rem 1rem 1rem 10rem;
-}
-.grid-half:last-of-type .column-header {
-  -webkit-flex-direction: row-reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-.grid-half:last-of-type h2 {
-  margin-left: 0;
-  margin-right: 1.5rem;
-}
-
 /* Section: Projects
    ========================================================================== */
 .project {
@@ -544,14 +487,39 @@ section {
   margin: 0 0 1rem;
 }
 
-.project-type,
-.project-date {
+.project-meta {
   color: #666;
-  font-size: 1.8rem;
   font-weight: 300;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (min-width: 30em) {
+  .project-meta {
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
-.project-date,
+.project-type {
+  font-size: 1.8rem;
+}
+
+.project-date {
+  float: right;
+  font-size: 1.5rem;
+}
+
 .project-information .btn {
   display: inline-block;
   margin-top: 1.5rem;
@@ -566,30 +534,11 @@ section {
   text-align: center;
 }
 .project-preview img {
-  display: block;
-  margin: 0 auto;
   -webkit-transition: opacity 275ms;
           transition: opacity 275ms;
 }
 .project-preview a:hover img {
   opacity: 0.75;
-}
-@media (min-width: 38.75em) {
-  .project-preview .btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    -webkit-transition: opacity 170ms ease-in-out;
-            transition: opacity 170ms ease-in-out;
-    opacity: 0;
-  }
-  .project-preview a:hover .btn {
-    opacity: 1;
-  }
 }
 @media (min-width: 52.5em) {
   .project-preview {
@@ -712,8 +661,63 @@ section {
   height: 4rem;
 }
 
-/* Section: Contact
+/* Section: Skills
    ========================================================================== */
+.grid-half ul {
+  list-style: none;
+  padding: 0;
+}
+.grid-half ul li {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 10rem 1rem 1rem;
+  float: left;
+  clear: both;
+}
+.grid-half .column-header {
+  background: -webkit-linear-gradient(bottom, rgba(153, 153, 153, 0.2), transparent 100%);
+  background: linear-gradient(to top, rgba(153, 153, 153, 0.2), transparent 100%);
+  color: #666;
+  padding: 1rem;
+  border-radius: 10px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.grid-half .column-header svg {
+  fill: #ccc;
+}
+.grid-half h2 {
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin-left: 1.5rem;
+}
+.grid-half:first-of-type {
+  width: 45%;
+  float: left;
+}
+.grid-half:last-of-type {
+  float: right;
+  width: 45%;
+  text-align: right;
+  width: 50%;
+}
+.grid-half:last-of-type li {
+  float: right;
+  padding: 1rem 1rem 1rem 10rem;
+}
+.grid-half:last-of-type .column-header {
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.grid-half:last-of-type h2 {
+  margin-left: 0;
+  margin-right: 1.5rem;
+}
+
 /* Layout: Footer
    ========================================================================== */
 footer {

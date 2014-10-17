@@ -33,9 +33,8 @@
     <div class="container">
         <!--<a href="#top">Forside</a>-->
         <a href="#about">Om mig</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projekter</a>
-        <a href="#code">Kode</a>
+        <a href="#skills">Kompetencer</a>
+        <a href="#projects">Portfolio</a>
         <a href="#contact">Kontakt</a>
     </div>
 </nav>
@@ -132,7 +131,7 @@
 
     <div class="container">
 
-        <h1 class="section-title">What I know/Skills/Proficiencies</h1>
+        <h1 class="section-title">Mine kompetencer</h1>
 
         <p>
             PHP, WordPress, HTML5, responsive design, CSS3, Sass, LESS,
@@ -154,6 +153,34 @@
             Jeg er dog åben over for lære nye sprog og teknologier.
         </p>
 
+        <div class="grid-half">
+            <a class="column-header" href="https://github.com/jayj">
+                <svg class="icon" role="presentation"><use xlink:href="#icon-github" /></svg>
+                <h2>Jeg er på Github</h2>
+                <!-- <br>9 public repos and 17 followers. -->
+            </a>
+
+            <ul>
+                <li><a href="#">alfred-google-music-shuffle</a></li>
+                <li><a href="#">Cakifo</a></li>
+                <li><a href="#">Jayj-HTML5</a></li>
+                <li><a href="#">jayj-quicktag</a></li>
+                <li><a href="#">Youtube-Profile-Field</a></li>
+            </ul>
+        </div>
+
+        <div class="grid-half">
+            <a class="column-header" href="#">
+                <svg class="icon" role="presentation"><use xlink:href="#icon-wordpress" /></svg>
+                <h2>Jeg bidrager til WordPress</h2>
+            </a>
+
+            <ul>
+                <li><b>17</b> bidrag til Core</li>
+                <li><b>3</b> plugins</li>
+                <li><b>2</b> themes</li>
+            </ul>
+        </div>
 
     </div> <!-- /.container -->
 
@@ -163,7 +190,7 @@
 
     <div class="container">
 
-        <h1 class="section-title">Work</h1>
+        <h1 class="section-title">Portfolio</h1>
 
         <script id="projects-template" type="text/x-handlebars-template">
             {{#projects}}
@@ -172,18 +199,21 @@
                         <header>
                             <h2 class="project-title">{{name}}</h2>
 
-                            <span class="project-type">{{type}}</span>
+
+                            <div class="project-meta">
+                                <span class="project-type">{{type}}</span>
+
+                                {{#if date}}
+                                    <time class="project-date">{{{date}}}</time>
+                                {{/if}}
+                            </div>
                         </header>
 
                         <div class="project-description">{{{description}}}</div>
 
-                        {{#if date}}
-                            <time class="project-date">{{{date}}}</time>
+                        {{#if link}}
+                            <a href="{{link}}" class="btn" role="button">Besøg site</a>
                         {{/if}}
-
-                        {{#if link}}{{#unless thumbnail}}
-                            <a href="{{link}}" class="btn" role="button">Visit site</a>
-                        {{/unless}}{{/if}}
                     </div> <!-- /.project-information -->
 
                     {{#if thumbnail}}
@@ -204,7 +234,6 @@
                         {{/if}}
 
                         {{#if link}}
-                                <span class="btn">Visit site</span>
                             </a>
                         {{/if}}
 
@@ -215,7 +244,7 @@
                     <div class="project-images">
 
                         <div class="project-thumbnails">
-                            <h2>Images</h2>
+                            <h2>Billeder</h2>
 
                             {{#each images}}
                                 <a href="{{projectImagePath ../slug image}}" data-image="{{../slug}}-{{@index}}">
@@ -228,9 +257,9 @@
                             <figure class="project-image" data-image="{{../slug}}-{{@index}}">
                                 <figcaption>
                                     {{#if title}}<h4>{{title}}</h4>{{/if}}
-                                    {{caption}}
+                                    {{{caption}}}
 
-                                    <button class="close-image" aria-label="Close image">
+                                    <button class="close-image" aria-label="Luk billede">
                                         <svg><use xlink:href="#icon-close" /></svg>
                                     </button>
                                 </figcaption>
@@ -251,62 +280,11 @@
 
 </section>
 
-        <section id="code">
-
-    <h1 class="section-title">Open Source</h1>
-
-    <div class="container">
-
-        <!-- <ul id="target">Loading...</ul> -->
-
-        <div class="grid-half">
-            <a class="column-header" href="https://github.com/jayj">
-                <svg class="icon" role="presentation"><use xlink:href="#icon-github" /></svg>
-                <h2>I'm on Github</h2>
-                <!-- <br>9 public repos and 17 followers. -->
-            </a>
-
-            <ul>
-                <li><a href="#">alfred-google-music-shuffle</a></li>
-                <li><a href="#">Cakifo</a></li>
-                <li><a href="#">Jayj-HTML5</a></li>
-                <li><a href="#">jayj-quicktag</a></li>
-                <li><a href="#">Youtube-Profile-Field</a></li>
-            </ul>
-        </div>
-
-        <div class="grid-half">
-            <a class="column-header" href="#" >
-                <svg class="icon" role="presentation"><use xlink:href="#icon-wordpress" /></svg>
-                <h2>I'm contributing to WordPress</h2>
-            </a>
-
-            <ul>
-                <li><b>17</b> contributions to Core</li>
-                <li><b>3</b> plugins</li>
-                <li><b>2</b> themes</li>
-            </ul>
-        </div>
-
-    </div> <!-- /.container -->
-
-
-<script id="template" type="x-tmpl-mustache">
-    {{login}} - {{name}}
-    {{avatar_url}}
-    {{html_url}}
-    {{public_repos}} repos and {{public_gists}} public_gists
-    {{followers}} followers
-
-</script>
-
-</section>
-
         <section id="contact">
 
     <div class="container">
 
-        <h1 class="section-title">Get in Touch</h1>
+        <h1 class="section-title">Kontakt mig</h1>
 
         Email, phone? or contact form
 
