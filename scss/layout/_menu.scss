@@ -1,42 +1,158 @@
 /* Layout: Menu
    ========================================================================== */
 
-.site-nav {
-    background: $menu__bg-color;
-    height: 9vh;
+.navigation {
+    position: absolute;
+    height: $menu__height;
+
+
+    // All menu items
+    a {
+        color: $menu__text-color;
+        font-size: $menu__text-size;
+    }
+
+
+    // Mobile navigation
+    @include breakpoint(screen-xs, max) {
+        top: $size__gutter--small;
+        left: $size__gutter--small;
+        text-align: left; // overwrites text-align from header
+
+        .container {
+            margin-left: 1rem;
+            padding: 0;
+            width: 30rem;
+            max-width: 80%;
+        }
+
+        a {
+            background: $menu__bg-color;
+            border-bottom: 1px solid rgba($menu__text-color, 0.15);
+            padding: 1.3rem 2rem;
+
+            // Hide the menu items by default
+            display: none;
+
+            &.current {
+                background: #222;
+            }
+
+            &:last-child {
+                border-bottom: 0;
+            }
+
+            // Show the menu items
+            .nav-toggled & {
+                display: block;
+            }
+        }
+
+        // The toggle button
+        .toggle-nav {
+            // Center the button
+            display: flex;
+            align-self: center;
+            height: 100%;
+
+            &:focus {
+                outline: 0;
+            }
+
+            svg {
+                @include square(4.8rem);
+            }
+        }
+    }
+
+
+    // Normal navigation
+    @include breakpoint(screen-xs, min) {
+        background: $menu__bg-color;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        // Don't show the text on the Home menu item
+        // @todo Make change this
+        .home {
+            color: transparent;
+        }
+
+
+        // Mark the current menu item
+        // The background has to be set on a pseudo element
+        // because of `align-items: center` on the container
+        .current {
+            position: relative;
+
+            &:before {
+                background: rgba(#fff, 0.1);
+                content: "";
+                display: block;
+                position: absolute;
+                z-index: -1;
+                height: $menu__height;
+                top: -1.9rem; // magic number
+
+                // Make it bigger than it's container
+                $size: 40%;
+                width: 100% + $size * 2;
+                left: -$size;
+            }
+        }
+
+        // Hide the toggle button
+        .toggle-nav {
+            display: none;
+        }
+
+    }
+
+}
+
+
+/**
+ * Fixed navigation
+ */
+.nav-fixed .navigation {
+    background: $menu__bg-color--fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    position: fixed;
+    z-index: $zindex__menu;
 
-    /**
-     * Render the menu in it's own layer to take advantage of GPU hardware acceleration
-     * https://dev.opera.com/articles/css-will-change-property/
-     */
+    // Show the Home menu item
+    .home {
+        color: $menu__text-color;
+    }
 
+    .current:before {
+        background: rgba(#fff, 0.2);
+    }
+
+    .toggle-nav {
+        margin-left: 1rem;
+    }
+}
+
+
+/**
+ * Render the menu in it's own layer to take advantage of GPU hardware acceleration
+ * https://dev.opera.com/articles/css-will-change-property/
+ */
+.navigation {
     // The old way
     transform: translateZ(0px);
 
     // The new way
     will-change: transform, position;
-
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 100%;
-    }
-
-    a {
-        color: $menu__text-color;
-        font-size: 1.8rem;
-    }
-}
-
-.nav-fixed .site-nav {
-    background: $menu__bg-color--fixed;
-    top: 0;
-    position: fixed;
-    z-index: $zindex__menu;
-
-    .current {
-        opacity: 0.7;
-    }
 }
