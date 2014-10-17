@@ -9,18 +9,18 @@
 
 
 // Breakpoint mixin
-@mixin breakpoint($point) {
+@mixin breakpoint($point, $type: min) {
     @if $point == screen-lg {
-        @media (min-width: $breakpoint__screen-lg) { @content; }
+        @media (#{$type}-width: $breakpoint__screen-lg) { @content; }
     }
     @else if $point == screen-md {
-        @media (min-width: $breakpoint__screen-md) { @content; }
+        @media (#{$type}-width: $breakpoint__screen-md) { @content; }
     }
     @else if $point == screen-sm {
-        @media (min-width: $breakpoint__screen-sm)  { @content; }
+        @media (#{$type}-width: $breakpoint__screen-sm)  { @content; }
     }
     @else if $point == screen-xs {
-        @media (min-width: $breakpoint__screen-xs)  { @content; }
+        @media (#{$type}-width: $breakpoint__screen-xs)  { @content; }
     }
 }
 
