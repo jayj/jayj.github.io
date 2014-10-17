@@ -3,7 +3,7 @@
 ( function( $ ) {
 
 
-    var nav     = $( '.site-nav' ),
+    var nav     = $( '.navigation' ),
         body    = $( 'body' ),
         _window = $( window );
 
