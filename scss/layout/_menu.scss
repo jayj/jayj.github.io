@@ -28,10 +28,6 @@
         color: $menu__text-color;
         font-size: 1.8rem;
     }
-
-    .current {
-        opacity: 0.7;
-    }
 }
 
 .nav-fixed .site-nav {
@@ -39,4 +35,8 @@
     top: 0;
     position: fixed;
     z-index: $zindex__menu;
+
+    .current {
+        opacity: 0.7;
+    }
 }
