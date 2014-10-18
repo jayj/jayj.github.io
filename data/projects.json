@@ -37,7 +37,9 @@
             "slug": "jayj",
             "type": "Personlig hjemmeside",
             "description": "Min egen hjemmeside jeg har haft siden 2008.",
-            "link": "http://jayj.dk"
+            "link": "http://jayj.dk",
+            "thumbnail": "thumbnail.png",
+            "thumbnail-2x": "thumbnail-2x.png"
         },
         {
             "name": "Jayj HTML5 theme",
