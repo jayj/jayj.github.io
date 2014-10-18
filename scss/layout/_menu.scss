@@ -60,6 +60,7 @@
             }
 
             svg {
+                fill: #fff;
                 @include square(4.8rem);
             }
         }
