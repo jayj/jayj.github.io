@@ -418,6 +418,7 @@ header[role="banner"] h1 {
     outline: 0;
   }
   .navigation .toggle-nav svg {
+    fill: #fff;
     width: 4.8rem;
     height: 4.8rem;
   }
@@ -839,8 +840,15 @@ svg.icon {
 }
 
 /**
- * Button icons
+ * Buttons with icons
  */
+.btn.icon > svg {
+  fill: #fff;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-left: 0.3rem;
+}
+
 button.has-icon {
   background: none;
   border: 0;
