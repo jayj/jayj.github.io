@@ -7,8 +7,10 @@
             "description": "Vibstock er en lille gratis musikfestival i Viborg. Projektet var et eksamensprojekt på 2. semester udført i et team på 4 personer. I projektet blev der afholdt kundemøder, lavet research, analyser, designudvikling med adskillige brugertest samt udvikling af en prototype i .NET. Efter eksamen blev siden videreudviklet i WordPress. Siden blev lanceret den 1. august.",
             "link": "http://vibstock.dk",
             "date": "Maj &ndash; August 2014",
-            "thumbnail": "thumbnail.png",
-            "thumbnail-2x": "thumbnail-2x.png",
+            "thumbnails": [
+                { "src": "thumbnail.png", "size": "1x" },
+                { "src": "thumbnail-2x.png", "size": "2x" }
+            ],
             "images": [
                 {
                     "image": "home.png",
@@ -38,8 +40,10 @@
             "type": "Personlig hjemmeside",
             "description": "Min egen hjemmeside jeg har haft siden 2008.",
             "link": "http://jayj.dk",
-            "thumbnail": "thumbnail.png",
-            "thumbnail-2x": "thumbnail-2x.png"
+            "thumbnails": [
+                { "src": "thumbnail.png", "size": "1x" },
+                { "src": "thumbnail-2x.png", "size": "2x" }
+            ]
         },
         {
             "name": "Jayj HTML5 theme",

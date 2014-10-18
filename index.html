@@ -220,22 +220,15 @@
                         {{/if}}
                     </div> <!-- /.project-information -->
 
-                    {{#if thumbnail}}
+
+                    {{#if thumbnails}}
                     <div class="project-preview">
 
                         {{#if link}}
                             <a href="{{link}}">
                         {{/if}}
 
-                        {{#if thumbnail-2x}}
-                            <img
-                                src="{{projectImagePath slug thumbnail}}"
-                                srcset="{{projectImagePath slug thumbnail}} 1x, {{projectImagePath slug thumbnail-2x}} 2x"
-                                width="380"
-                                alt="{{name}}">
-                        {{else}}
-                            <img src="{{projectImagePath slug thumbnail}}" width="380" alt="{{name}}" />
-                        {{/if}}
+                        {{{previewImage thumbnails name slug 380}}}
 
                         {{#if link}}
                             </a>

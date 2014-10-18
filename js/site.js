@@ -114,6 +114,24 @@
     });
 
 
+    Handlebars.registerHelper('previewImage', function(thumbs, name, slug, width) {
+        var srcset = [], image;
+
+        // Generate a comma separated string to be used in srcset
+        for( var i = 0, j = thumbs.length; i < j; i++) {
+            srcset.push( 'images/projects/' + slug + '/' + thumbs[i].src + ' ' + thumbs[i].size );
+        }
+
+        srcset = srcset.join( ', ' );
+
+        // Create the image
+        // Can't create an image object because it just returns [object HTMLImageElement]
+        image = '<img src="images/projects/' + slug + '/' + thumbs[0].src + '" srcset="' + srcset + '" width="' + width + '" alt="' + name + '" />';
+
+        return image;
+    });
+
+
 
 // https://api.github.com/users/jayj/repos?sort=updated
 
