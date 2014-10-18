@@ -14,8 +14,14 @@ svg.icon {
 
 
 /**
- * Button icons
+ * Buttons with icons
  */
+.btn.icon > svg {
+    fill: #fff;
+    @include square(1.8rem);
+    margin-left: 0.3rem;
+}
+
 button.has-icon {
     background: none;
     border: 0;
