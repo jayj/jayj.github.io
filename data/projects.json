@@ -50,7 +50,13 @@
             "name": "Jayj HTML5 theme",
             "slug": "html5",
             "type": "HTML5 tema",
-            "description": "Et gratis HTML5 og CSS3 tema/template jeg lavede i 2009. Siden da har den gennemgået adskillige nye versioner. Den er responsiv, bruger CSS-processoren LESS og indeholder en kontaktformular. Den er blevet downloadet over 57.000 gange."
+            "description": "Et gratis HTML5 og CSS3 tema/template jeg lavede i 2009. Siden da har den gennemgået adskillige nye versioner. Den er responsiv, bruger CSS-processoren LESS og indeholder en kontaktformular. Den er blevet downloadet over 57.000 gange.",
+            "link": "http://jayj.dk/themes/html5-theme/",
+            "thumbnails": [
+                { "src": "thumbnail.png",    "size": "1x" },
+                { "src": "thumbnail-2x.png", "size": "2x" },
+                { "src": "thumbnail-3x.png", "size": "3x" }
+            ]
         },
         {
             "name": "Cakifo",
