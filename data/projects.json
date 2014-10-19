@@ -41,8 +41,9 @@
             "description": "Min egen hjemmeside jeg har haft siden 2008.",
             "link": "http://jayj.dk",
             "thumbnails": [
-                { "src": "thumbnail.png", "size": "1x" },
-                { "src": "thumbnail-2x.png", "size": "2x" }
+                { "src": "thumbnail.png",    "size": "1x" },
+                { "src": "thumbnail-2x.png", "size": "2x" },
+                { "src": "thumbnail-3x.png", "size": "3x" }
             ]
         },
         {
