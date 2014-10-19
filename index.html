@@ -244,14 +244,16 @@
                             <h2>Billeder</h2>
 
                             {{#each images}}
-                                <a href="{{projectImagePath ../slug image}}" data-image="{{../slug}}-{{@index}}">
+                                <a href="{{projectImagePath ../slug image}}" data-image="{{../slug}}-{{@index}}" data-rel="{{../slug}}">
                                     <img src="{{projectThumbnailPath ../slug image}}" width="145" height="110" alt="{{title}}" />
                                 </a>
                             {{/each}}
                         </div> <!-- /.project-thumbnails -->
 
+<div class="test">
+
                         {{#each images}}
-                            <figure class="project-image" data-image="{{../slug}}-{{@index}}">
+                            <figure class="project-image" data-image="{{../slug}}-{{@index}}" id="{{../slug}}-{{@index}}">
                                 <figcaption>
                                     {{#if title}}<h4>{{title}}</h4>{{/if}}
                                     {{{caption}}}
@@ -267,6 +269,7 @@
 
                             </figure>
                         {{/each}}
+</div><!-- /.test -->
                     </div> <!-- /.project-images -->
                     {{/if}}
                 </article> <!-- /.project -->
@@ -296,21 +299,17 @@
 
 </footer>
 
-<!--
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-<script src="js/handlebars.js"></script>
-<script src="js/jquery.singlePageNav.min.js"></script>
-<script src="js/site.js"></script>
- -->
-
 
 <script src="js/LAB.min.js"></script>
 <script>
   $LAB
-  .script("//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js").wait()
-  .script("/js/handlebars.js")
-  .script("/js/jquery.singlePageNav.min.js").wait()
+  .script("//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+  .script("/js/handlebars.min.js?v=2.0.0").wait()
+  .script("/js/projects.js").wait(function() {
+      loadProjects();
+  })
+  .script("/js/jquery.singlePageNav.min.js?v=1.2.0")
+  .script("/js/jquery.colorbox.min.js?v=2.0.0-alpha").wait()
   .script("/js/site.js");
 </script>
 
