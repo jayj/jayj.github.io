@@ -40,8 +40,7 @@
      */
     var header = $( 'header[role="banner"]' );
 
-    _window.on( 'scroll', function() {
-
+    function fixedMenu() {
         var headerHeight = header.height() - nav.height();
 
         if ( _window.scrollTop() >= headerHeight ) {
@@ -49,8 +48,11 @@
         } else {
             body.removeClass( 'nav-fixed' );
         }
+    }
 
-    });
+    fixedMenu();
+
+    _window.on( 'scroll', fixedMenu);
 
     /**
      * Gets projects from JSON file
