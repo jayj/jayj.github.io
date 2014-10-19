@@ -303,7 +303,7 @@
 <script src="js/LAB.min.js"></script>
 <script>
   $LAB
-  .script("//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+  .script("//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js").wait()
   .script("/js/handlebars.min.js?v=2.0.0").wait()
   .script("/js/projects.js").wait(function() {
       loadProjects();
