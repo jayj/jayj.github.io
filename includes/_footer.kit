@@ -4,8 +4,16 @@
 
 </footer>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-<script src="js/handlebars.js"></script>
-<script src="js/jquery.singlePageNav.min.js"></script>
-<script src="js/site.js"></script>
+<script src="js/LAB.min.js"></script>
+<script>
+  $LAB
+  .script("//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+  .script("/js/handlebars.min.js?v=2.0.0").wait()
+  .script("/js/projects.js").wait(function() {
+      loadProjects();
+  })
+  .script("/js/jquery.singlePageNav.min.js?v=1.2.0")
+  .script("/js/jquery.colorbox.min.js?v=2.0.0-alpha").wait()
+  .script("/js/site.js");
+</script>

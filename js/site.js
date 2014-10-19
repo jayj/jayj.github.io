@@ -32,6 +32,9 @@
     });
 
 
+
+
+
     /*
      * Fixed navigation when the header is not longer visible.
      */
@@ -52,22 +55,22 @@
     /**
      * Gets projects from JSON file
      */
-    (function get_projects() {
-        $.getJSON( 'data/projects.json', function( data ) {
+    // (function get_projects() {
+    //     $.getJSON( 'data/projects.json', function( data ) {
 
-            var source = $( '#projects-template' ).html();
+    //         var source = $( '#projects-template' ).html();
 
-            // Let Handlebar compile the template
-            var template = Handlebars.compile(source);
-            var html  = template(data);
+    //         // Let Handlebar compile the template
+    //         var template = Handlebars.compile(source);
+    //         var html  = template(data);
 
-            // Add the compiled HTML to the page
-            $('#projects .container').append(html);
+    //         // Add the compiled HTML to the page
+    //         $('#projects .container').append(html);
 
-            // Run the project image function after the HTML is added
-            get_project_images();
-        });
-    })();
+    //         // Run the project image function after the HTML is added
+    //         get_project_images();
+    //     });
+    // })();
 
     /**
      * Shows a large version of the project image when clicking on the thumbnail.
@@ -76,7 +79,20 @@
 
         var thumbnails = $( '.project-thumbnails' );
 
-        thumbnails.on( 'click', 'a', function(e) {
+        $.colorbox( '.project-thumbnails a', {
+            type: 'inline',
+            group: function() { return $(this).attr('data-rel'); },
+            source: function() {
+                return '#' + $(this).data( 'image' );
+            },
+            width: '100%',
+            height: '100%',
+            fixed: true,
+            opacity: 1
+        });
+
+
+        thumbnails.on( 'click', 'da', function(e) {
 
             // Get the data attribute to match thumbnail with full size image
             var id = $(this).data( 'image' );
@@ -96,7 +112,8 @@
 
         // Close the images
         $( '.close-image' ).on( 'click', function() {
-            $( '.project-image' ).slideUp(200);
+            $.colorbox.close();
+            //$( '.project-image' ).slideUp(200);
         });
 
         // Hide all images
@@ -104,6 +121,8 @@
         //     $( '.project-image' ).delay(2000).hide();
         // });
     }
+
+    get_project_images();
 
     Handlebars.registerHelper('projectImagePath', function(project, image) {
         return 'images/projects/' + project + '/' + image;
