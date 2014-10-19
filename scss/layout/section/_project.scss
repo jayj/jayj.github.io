@@ -166,10 +166,10 @@
 }
 
 .project-image {
-    display: none;
+   // display: none;
 
     figcaption {
-        margin-top: $size__gutter; // Set here to avoid page "jump" when closing the image
+        //margin-top: $size__gutter; // Set here to avoid page "jump" when closing the image
         margin-bottom: $size__gutter--small;
         position: relative;
         padding-right: 8rem;
@@ -195,4 +195,164 @@
     svg {
         @include square(3.5rem);
     }
+}
+
+
+.test {
+    display: none;
+}
+
+
+
+
+
+/* Colorbox */
+
+[class|=cbox-] {
+    margin:0;
+    padding:0;
+    border:0;
+    -webkit-box-sizing:border-box;
+}
+
+.cbox-root {
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    z-index:999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    visibility: hidden;
+
+}
+
+.cbox-body {
+    background:#fff;
+    border-radius:4px;
+    box-shadow: 0 0 15px rgba(0,0,0,1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline:0;
+    cursor: default;
+
+}
+
+.cbox-content {
+  padding: 4rem 8rem;
+    overflow:auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.cbox-iframe {
+    width:100%;
+    height:100%;
+    display:block;
+    border:0;
+}
+
+.cbox-photo {
+    position: absolute;
+    top:50%;
+    left:50%;
+    max-width:none;
+    display:block;
+}
+
+.cbox-next, .cbox-prev, .cbox-current {
+    display: none;
+}
+
+.cbox-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.cbox-current {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+.cbox-next, .cbox-prev, .cbox-close {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    background:url(../images/controls.svg) 0 0 no-repeat;
+    width:22px;
+    height:22px;
+    text-indent:-999px;
+    overflow:hidden;
+    position: fixed;
+}
+/* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+.cbox-next:active, .cbox-prev:active, .cbox-close:active {
+    outline:0;
+}
+.cbox-prev {
+    background-position: -50px 0;
+    top: 50%;
+    left: 5px;
+    margin-top: -11px;
+}
+.cbox-prev:hover {
+    background-position: -50px -25px;
+}
+.cbox-next {
+    background-position: -25px 0;
+    top: 50%;
+    right: 5px;
+    margin-top: -11px;
+}
+.cbox-next:hover {
+    background-position: -25px -25px;
+}
+.cbox-close {
+    background-position: 0 0;
+    top: 5px;
+    right: 5px;
+}
+.cbox-close:hover {
+    background-position:0 -25px;
+}
+.cbox-error {
+
+}
+
+/* State */
+.cbox_disabled { display: none; }
+
+body.cbox_open {
+    overflow: hidden;
+}
+
+body.cbox_open .cbox-root {
+    cursor: pointer;
+}
+
+body.cbox_grouped .cbox-next,
+body.cbox_grouped .cbox-prev,
+body.cbox_grouped .cbox-current
+{
+    display: block;
+}
+
+body.cbox_grouped .cbox-photo {
+    cursor: pointer;
+}
+
+body.cbox_loading .cbox-content{
+    content: '';
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    /*background:rgba(255,255,255,0.5);*/
+    z-index:1;
 }
