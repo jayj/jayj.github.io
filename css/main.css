@@ -513,6 +513,9 @@ section {
   margin: 0 0 4rem;
   text-align: center;
 }
+section:target .section-title {
+  margin-top: 4rem;
+}
 
 /* Section: About
    ========================================================================== */
