@@ -1,95 +1,109 @@
+/* global Handlebars */
+/* exported load_projects, get_project_images */
 
-    /**
-     * Gets projects from JSON file
-     */
-    function loadProjects() {
-        $.getJSON( 'data/projects.json', function( data ) {
+/**
+ * Gets projects from JSON file
+ */
+function load_projects() {
+    $.getJSON( 'data/projects.json', function( data ) {
 
-            var source = $( '#projects-template' ).html();
+        var source = $( '#projects-template' ).html();
 
-            // Let Handlebar compile the template
-            var template = Handlebars.compile(source);
-            var html  = template(data);
+        // Let Handlebar compile the template
+        var template = Handlebars.compile(source);
+        var html = template(data);
 
-            // Add the compiled HTML to the page
-            $('#projects .container').append(html);
-
-            // Run the project image function after the HTML is added
-            //get_project_images();
-        });
-    };
-
-    /**
-     * Shows a large version of the project image when clicking on the thumbnail.
-     */
-    function get_project_images() {
-
-        var thumbnails = $( '.project-thumbnails' );
-
-        $.colorbox( '.project-thumbnails a', {
-            type: 'inline',
-            group: function() { return $(this).attr('data-rel'); },
-            source: function() {
-                return '#' + $(this).data( 'image' );
-            },
-            width: '100%',
-            height: '100%',
-            fixed: true,
-            opacity: 1
-        });
+        // Add the compiled HTML to the page
+        $( '#projects .container' ).append(html);
+    })
+    // Error
+    // @todo create better error message
+    .fail( function() {
+        console.log( 'error loading projects json file' );
+    });
+}
 
 
-        thumbnails.on( 'click', 'da', function(e) {
+/**
+ * Shows a large version of the project image when clicking on the thumbnail.
+ */
+function get_project_images() {
 
-            // Get the data attribute to match thumbnail with full size image
-            var id = $(this).data( 'image' );
+    //var thumbnails = $( '.project-thumbnails' );
 
-            // Hide all images
-            $( '.project-image' ).hide();
 
-            // Show the requested image
-            $( '.project-image[data-image="' + id + '"]' ).show();
+    $.colorbox( '.project-thumbnails a', {
+        type: 'inline',
+        group: '.project-thumbnails a',
+        source: function() {
+            return '#' + $(this).data( 'image' );
+        },
+        width: '90%',
+        height: '90%',
+        fixed: true,
 
-            // Set active thumbnail
-            thumbnails.find( '.active' ).removeClass( 'active' );
-            $(this).addClass( 'active' );
+        current: "{current} / {total}",
+        previous: "Forrige",
+        next: "Næste",
+        close: "Luk",
+    });
 
-            e.preventDefault();
-        });
 
-        // Close the images
-        $( '.close-image' ).on( 'click', function() {
-            $.colorbox.close();
-            //$( '.project-image' ).slideUp(200);
-        });
+    // thumbnails.on( 'click', 'a', function(e) {
 
-        // Hide all images
-        // $( '.project' ).on( 'mouseleave', function() {
-        //     $( '.project-image' ).delay(2000).hide();
-        // });
+    //     // Get the data attribute to match thumbnail with full size image
+    //     var id = $(this).data( 'image' );
+
+    //     // Hide all images
+    //     $( '.project-image' ).hide();
+
+    //     // Show the requested image
+    //     $( '.project-image[data-image="' + id + '"]' ).show();
+
+    //     // Set active thumbnail
+    //     thumbnails.find( '.active' ).removeClass( 'active' );
+    //     $(this).addClass( 'active' );
+
+    //     e.preventDefault();
+    // });
+
+    // Close the images
+    // $( '.close-image' ).on( 'click', function() {
+    //     $( '.project-image' ).slideUp(200);
+    // });
+
+    // Hide all images
+    // $( '.project' ).on( 'mouseleave', function() {
+    //     $( '.project-image' ).delay(2000).hide();
+    // });
+}
+
+
+
+Handlebars.registerHelper('projectImagePath', function(project, image) {
+    return 'images/projects/' + project + '/' + image;
+});
+
+Handlebars.registerHelper('projectThumbnailPath', function(project, image) {
+    return 'images/projects/' + project + '/thumbnails/' + image;
+});
+
+
+Handlebars.registerHelper('previewImage', function(thumbs, name, slug, width) {
+    var srcset = [];
+
+    // Generate a comma separated string to be used in srcset
+    for( var i = 0, j = thumbs.length; i < j; i++) {
+        srcset.push( 'images/projects/' + slug + '/' + thumbs[i].src + ' ' + thumbs[i].size );
     }
 
+    srcset = srcset.join( ', ' );
 
-    Handlebars.registerHelper('projectImagePath', function(project, image) {
-        return 'images/projects/' + project + '/' + image;
-    });
-
-    Handlebars.registerHelper('projectThumbnailPath', function(project, image) {
-        return 'images/projects/' + project + '/thumbnails/' + image;
-    });
+    // Create the image
+    // Can't create an image object because it just returns [object HTMLImageElement]
+    return '<img src="images/projects/' + slug + '/' + thumbs[0].src + '" srcset="' + srcset + '" width="' + width + '" alt="' + name + '" />';
+});
 
 
-    Handlebars.registerHelper('previewImage', function(thumbs, name, slug, width) {
-        var srcset = [];
 
-        // Generate a comma separated string to be used in srcset
-        for( var i = 0, j = thumbs.length; i < j; i++) {
-            srcset.push( 'images/projects/' + slug + '/' + thumbs[i].src + ' ' + thumbs[i].size );
-        }
 
-        srcset = srcset.join( ', ' );
-
-        // Create the image
-        // Can't create an image object because it just returns [object HTMLImageElement]
-        return '<img src="images/projects/' + slug + '/' + thumbs[0].src + '" srcset="' + srcset + '" width="' + width + '" alt="' + name + '" />';
-    });
