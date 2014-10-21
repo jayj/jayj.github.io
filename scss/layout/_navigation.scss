@@ -20,6 +20,7 @@
         text-align: left; // overwrites text-align from header
 
         .container {
+            // Overwrite container styles
             margin-left: 1rem;
             padding: 0;
             width: 30rem;
@@ -60,7 +61,7 @@
             }
 
             svg {
-                fill: #fff;
+                fill: $menu__text-color;
                 @include square(4.8rem);
             }
         }
@@ -75,6 +76,7 @@
         left: 0;
 
         .container {
+            // Center the items vertically and distribute them evenly on the line
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -82,7 +84,7 @@
         }
 
         // Don't show the text on the Home menu item
-        // @todo Make change this
+        // when the nav isn't fixed
         .home {
             color: transparent;
         }

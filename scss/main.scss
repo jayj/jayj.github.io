@@ -22,9 +22,14 @@
 
 @import "layout/grid";
 @import "layout/header";
-@import "layout/menu";
+@import "layout/navigation";
 @import "layout/section";
-	@import "layout/section/*";
+
+	@import "sections/about";
+	@import "sections/project";
+	@import "sections/skills";
+	@import "sections/contact";
+
 @import "layout/footer";
 
 
