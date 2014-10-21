@@ -14,11 +14,10 @@ html {
 }
 
 
-// Set base font size
+// Set base font size so 1rem = 10px
 html {
-    font-size: 62.5%; // Makes 1 rem = 10 px
+    font-size: 62.5%;
 }
-
 
 
 /* Body
@@ -49,4 +48,16 @@ a {
         text-decoration: underline;
     }
 }
+
+
+/* Headings
+   ========================================================================== */
+
+@import "base/headings";
+
+
+/* Media
+   ========================================================================== */
+
+@import "base/media";
 
