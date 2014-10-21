@@ -4,18 +4,13 @@
 
 </footer>
 
-
 <script src="js/LAB.min.js"></script>
 <script>
   $LAB
   .script("//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js").wait()
-  .script("/js/handlebars.min.js?v=2.0.0").wait()
-  .script("/js/jquery.singlePageNav.min.js?v=1.2.0").wait()
-  .script("/js/site.js")
-  .script("/js/projects.js").wait(function() {
-      loadProjects();
-  })
-  .script("/js/jquery.colorbox.min.js?v=2.0.0-alpha").wait(function() {
-  		get_project_images();
+  .script("/js/plugins.min.js").wait()
+  .script("/js/site.js").wait(function() {
+      load_projects();
+      get_project_images();
   });
 </script>
