@@ -35,6 +35,13 @@
             ]
         },
         {
+            "name": "Svens Cykelservice",
+            "slug": "cykelservice",
+            "type": "Hjemmeside & visuel identitet",
+            "description": "Hjemmeside i WordPress, logo, skilt, telefonbog, opsætning af sociale medier, banner reklame.",
+            "date": "2014"
+        },
+        {
             "name": "Jayj.dk",
             "slug": "jayj",
             "type": "Personlig hjemmeside",
