@@ -20,7 +20,7 @@
     }
 
     @include breakpoint(screen-md) {
-        width: 96rem;
+        width: $size__site--md;
     }
 
     // @include breakpoint(screen-lg) {
