@@ -2,13 +2,13 @@
    ========================================================================== */
 
 .btn {
-	display: inline-block;
-	background: tomato;
-	border-radius: 5px;
-	color: #fff;
-	padding: 1.2rem 2rem;
+    display: inline-block;
+    background: $btn__bg-color;
+    border-radius: 5px;
+    color: $btn__text-color;
+    padding: 1.2rem 2rem;
 
-	&:hover {
-		color: #fff;
-	}
+    &:hover {
+        color: $btn__text-color;
+    }
 }
