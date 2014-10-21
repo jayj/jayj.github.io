@@ -7,9 +7,9 @@
 .icon > svg,
 svg.icon {
     display: inline-block;
-    @include square($icon__size);
-    vertical-align: middle;
     fill: $icon__color;
+    vertical-align: middle;
+    @include square($icon__size);
 }
 
 
@@ -17,9 +17,9 @@ svg.icon {
  * Buttons with icons
  */
 .btn.icon > svg {
-    fill: #fff;
-    @include square(1.8rem);
+    fill: $btn__text-color;
     margin-left: 0.3rem;
+    @include square(1.8rem);
 }
 
 button.has-icon {
@@ -83,5 +83,3 @@ button.has-icon {
         fill: $color;
     }
 }
-
-

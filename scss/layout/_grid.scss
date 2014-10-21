@@ -9,21 +9,11 @@
     max-width: 100%;
     padding: 0 2rem;
 
-
-
-    @include breakpoint(screen-xs) {
-
-    }
-
-   @include breakpoint(screen-sm) {
+    @include breakpoint(screen-sm) {
         padding: 0 4rem;
     }
 
     @include breakpoint(screen-md) {
         width: $size__site--md;
     }
-
-    // @include breakpoint(screen-lg) {
-    //     width: 104rem;
-    // }
 }

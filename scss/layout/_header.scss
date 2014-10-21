@@ -4,15 +4,22 @@
 header[role="banner"] {
     background: $header__bg;
     background-color: $header__bg-color;
+
+    color: $header__text-color;
     font-size: $header__text-size;
+
+    // Set the height to 100% of the viewport
+    // @todo fallback for browsers without vh support
+    // @todo add min-height
     height: 100vh;
+
+    // Vertical and horizontially center the header content
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 1.8rem;
-    color: $header__text-color;
-    text-align: center;
+    text-align: center; // no flexbox
+
     position: relative;
 
     h1 {

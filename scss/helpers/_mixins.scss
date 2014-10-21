@@ -1,5 +1,12 @@
-%clearfix {
+// ==========================================================================
+// Mixins
+// ==========================================================================
 
+
+//
+// Clearfix placeholder
+// can be extend with @extend %clearfix;
+%clearfix {
     &:after {
         content: "";
         display: table;
@@ -8,7 +15,9 @@
 }
 
 
+//
 // Breakpoint mixin
+//
 @mixin breakpoint($point, $type: min) {
     @if $point == screen-lg {
         @media (#{$type}-width: $breakpoint__screen-lg) { @content; }
@@ -17,16 +26,17 @@
         @media (#{$type}-width: $breakpoint__screen-md) { @content; }
     }
     @else if $point == screen-sm {
-        @media (#{$type}-width: $breakpoint__screen-sm)  { @content; }
+        @media (#{$type}-width: $breakpoint__screen-sm) { @content; }
     }
     @else if $point == screen-xs {
-        @media (#{$type}-width: $breakpoint__screen-xs)  { @content; }
+        @media (#{$type}-width: $breakpoint__screen-xs) { @content; }
     }
 }
 
 
-
+//
 // Sizing shortcuts
+//
 @mixin size($width, $height) {
     width: $width;
     height: $height;
