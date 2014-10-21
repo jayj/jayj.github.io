@@ -35,8 +35,8 @@
     <div class="container">
     	<a href="#top" class="home">Forside</a>
         <a href="#about">Om mig</a>
-        <a href="#skills">Kompetencer</a>
         <a href="#projects">Portfolio</a>
+        <a href="#skills">Kompetencer</a>
         <a href="#contact">Kontakt</a>
     </div>
 </nav> <!-- /.navigation -->
@@ -126,65 +126,6 @@
             </a>
 
         </div> <!-- /.social-links -->
-
-    </div> <!-- /.container -->
-
-</section>
-
-        <section id="skills">
-
-    <div class="container">
-
-        <h1 class="section-title">Mine kompetencer</h1>
-
-        <p>
-            PHP, WordPress, HTML5, responsive design, CSS3, Sass, LESS,
-            Javascript, jQuery, Version control - Git and SVN,
-            C#, ASP.net, Grunt, (My)SQL
-        </p>
-
-        <p>
-            Learning: Ruby on Rails, Angular.js, Mobile App Design
-        </p>
-
-        <p>
-            Other: Photoshop, Illustrator, InDesign, Concept development, wireframing, UI/UX, SEO
-        </p>
-
-                <p>
-            Jeg har arbejdet med WordPress siden 2009 og har både bidraget til Core, lavet temaer og plugins samt været med til at arbejde på de danske oversættelser.
-
-            Jeg er dog åben over for lære nye sprog og teknologier.
-        </p>
-
-        <div class="grid-half">
-            <a class="column-header" href="https://github.com/jayj">
-                <svg class="icon" role="presentation"><use xlink:href="#icon-github" /></svg>
-                <h2>Jeg er på Github</h2>
-                <!-- <br>9 public repos and 17 followers. -->
-            </a>
-
-            <ul>
-                <li><a href="#">alfred-google-music-shuffle</a></li>
-                <li><a href="#">Cakifo</a></li>
-                <li><a href="#">Jayj-HTML5</a></li>
-                <li><a href="#">jayj-quicktag</a></li>
-                <li><a href="#">Youtube-Profile-Field</a></li>
-            </ul>
-        </div>
-
-        <div class="grid-half">
-            <a class="column-header" href="#">
-                <svg class="icon" role="presentation"><use xlink:href="#icon-wordpress" /></svg>
-                <h2>Jeg bidrager til WordPress</h2>
-            </a>
-
-            <ul>
-                <li><b>17</b> bidrag til Core</li>
-                <li><b>3</b> plugins</li>
-                <li><b>2</b> themes</li>
-            </ul>
-        </div>
 
     </div> <!-- /.container -->
 
@@ -280,6 +221,107 @@
 
 </section>
 
+        <section id="skills">
+
+    <div class="container">
+
+        <h1 class="section-title">Mine kompetencer</h1>
+
+        <div class="skills-list">
+
+        <div><h3>Front</h3>
+
+        <ul>
+            <li>HTML5
+            <li>CSS3
+            <li>Sass og LESS
+            <li>JavaScript
+            <li>jQuery
+            <li>Grunt
+        </ul></div>
+
+        <div><h3>Back</h3>
+
+        <ul>
+            <li>PHP
+            <li>WordPress
+            <li>ASP.NET
+            <li>C#
+            <li>SQL
+        </ul></div>
+
+        <div><h3>Design</h3>
+
+        <ul>
+            <li>App design
+            <li>Responsivt design
+            <li>Logo
+            <li>Visuel identitet
+            <li>UI/UX
+            <li>Wireframing
+        </ul></div>
+
+        <div><h3>Andet</h3>
+
+        <ul>
+            <li>Konceptudvikling
+            <li>Version control (Git og SVN)
+            <li>Photoshop. Illustrator, Indesign
+            <li>SEO
+        </ul></div>
+
+        <div><h3>Lærer</h3>
+
+        <ul>
+            <li>Ruby on Rails
+            <li>Angular.js
+        </ul></div>
+
+        </div>
+
+                <p>
+            Jeg har arbejdet med WordPress siden 2009 og har både bidraget til Core, lavet temaer og plugins samt været med til at arbejde på de danske oversættelser.
+
+            Jeg er dog åben over for lære nye sprog og teknologier.
+        </p>
+
+        <p>
+            Dansk og Engelsk. lidt tysk?
+        </p>
+
+        <div class="grid-half">
+            <a class="column-header" href="https://github.com/jayj">
+                <svg class="icon" role="presentation"><use xlink:href="#icon-github" /></svg>
+                <h2>Jeg er på Github</h2>
+                <!-- <br>9 public repos and 17 followers. -->
+            </a>
+
+            <ul>
+                <li><a href="#">alfred-google-music-shuffle</a></li>
+                <li><a href="#">Cakifo</a></li>
+                <li><a href="#">Jayj-HTML5</a></li>
+                <li><a href="#">jayj-quicktag</a></li>
+                <li><a href="#">Youtube-Profile-Field</a></li>
+            </ul>
+        </div>
+
+        <div class="grid-half">
+            <a class="column-header" href="#">
+                <svg class="icon" role="presentation"><use xlink:href="#icon-wordpress" /></svg>
+                <h2>Jeg bidrager til WordPress</h2>
+            </a>
+
+            <ul>
+                <li><b>17</b> bidrag til Core</li>
+                <li><b>3</b> plugins</li>
+                <li><b>2</b> themes</li>
+            </ul>
+        </div>
+
+    </div> <!-- /.container -->
+
+</section>
+
         <section id="contact">
 
     <div class="container">
@@ -299,19 +341,14 @@
 
 </footer>
 
-
 <script src="js/LAB.min.js"></script>
 <script>
   $LAB
   .script("//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js").wait()
-  .script("/js/handlebars.min.js?v=2.0.0").wait()
-  .script("/js/jquery.singlePageNav.min.js?v=1.2.0").wait()
-  .script("/js/site.js")
-  .script("/js/projects.js").wait(function() {
-      loadProjects();
-  })
-  .script("/js/jquery.colorbox.min.js?v=2.0.0-alpha").wait(function() {
-  		get_project_images();
+  .script("/js/plugins.min.js").wait()
+  .script("/js/site.js").wait(function() {
+      load_projects();
+      get_project_images();
   });
 </script>
 
