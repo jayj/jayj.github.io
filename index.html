@@ -9,7 +9,7 @@
     <meta name="description" content="beskrivelse">
 
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700&amp;subset=latin">
 </head>
 
 <body>
@@ -29,24 +29,25 @@
 
     </div> <!-- /.container -->
 
-	<nav class="navigation">
-	<button class="toggle-nav has-icon">
-		<svg><use xlink:href="#icon-menu" /></svg>
-	</button>
+    <nav class="navigation">
+        <button class="toggle-nav has-icon">
+            <svg><use xlink:href="#icon-menu" /></svg>
+        </button>
 
-    <div class="container">
-    	<a href="#top" class="home">Forside</a>
-        <a href="#about">Om mig</a>
-        <a href="#projects">Portfolio</a>
-        <a href="#skills">Kompetencer</a>
-        <a href="#contact">Kontakt</a>
-    </div>
-</nav> <!-- /.navigation -->
+        <div class="container">
+            <a href="#top" class="home">Forside</a>
+            <a href="#about">Om mig</a>
+            <a href="#projects">Portfolio</a>
+            <a href="#skills">Kompetencer</a>
+            <a href="#contact">Kontakt</a>
+        </div>
+    </nav> <!-- /.navigation -->
 
 </header>
 
-    <main role="main">
-        <section id="about">
+<main role="main">
+
+<section id="about">
 
     <div class="container">
 
@@ -97,31 +98,31 @@
                 http://iconfindr.com/1r8Z1aB
             -->
 
-            <a href="https://twitter.com/jayjdk" class="icon icon-twitter">
+            <a href="https://twitter.com/jayjdk" class="icon icon--twitter">
                 <svg title="Find mig på Twitter" role="img">
                     <use xlink:href="#icon-twitter" />
                 </svg>
             </a>
 
-            <a href="https://github.com/jayj" class="icon icon-github">
+            <a href="https://github.com/jayj" class="icon icon--github">
                 <svg title="Find mig på Github" role="img">
                     <use xlink:href="#icon-github" />
                 </svg>
             </a>
 
-            <a href="https://linkedin.com/pub/jesper-gundlund-johansen/96/3a2/632/" class="icon icon-linkedin">
+            <a href="https://linkedin.com/pub/jesper-gundlund-johansen/96/3a2/632/" class="icon icon--linkedin">
                 <svg title="Find mig på LinkedIn" role="img">
                     <use xlink:href="#icon-linkedin" />
                 </svg>
             </a>
 
-            <a href="https://plus.google.com/u/0/107638321835566957201" class="icon icon-google">
+            <a href="https://plus.google.com/u/0/107638321835566957201" class="icon icon--google">
                 <svg title="Find mig på Google Plus" role="img">
                     <use xlink:href="#icon-google" />
                 </svg>
             </a>
 
-            <a href="http://profiles.wordpress.org/Jayjdk" class="icon icon-wordpress">
+            <a href="http://profiles.wordpress.org/Jayjdk" class="icon icon--wordpress">
                 <svg title="Find mig på WordPress.org" role="img">
                     <use xlink:href="#icon-wordpress" />
                 </svg>
@@ -131,9 +132,9 @@
 
     </div> <!-- /.container -->
 
-</section>
+</section> <!-- /#about -->
 
-        <section id="projects">
+<section id="projects">
 
     <div class="container">
 
@@ -221,110 +222,140 @@
 
     </div> <!-- /.container -->
 
-</section>
+</section> <!-- /#projects -->
 
-        <section id="skills">
+<section id="skills">
 
     <div class="container">
 
         <h1 class="section-title">Mine kompetencer</h1>
 
-        <div class="skills-list">
+        <div class="skills-container">
 
-        <div><h3>Front</h3>
+            <div class="skills">
+                <h3>Front-end</h3>
 
-        <ul>
-            <li>HTML5
-            <li>CSS3
-            <li>Sass og LESS
-            <li>JavaScript
-            <li>jQuery
-            <li>Grunt
-        </ul></div>
+                <ul>
+                    <li>
+                        <svg><use xlink:href="#icon-code" /></svg>
+                        HTML5
+                    </li>
+                    <li>
+                        <svg><use xlink:href="#icon-code" /></svg>
+                        CSS3
+                    </li>
+                    <li>
+                        <svg><use xlink:href="#icon-code" /></svg>
+                        Sass og LESS
+                    </li>
+                    <li>
+                        <svg><use xlink:href="#icon-code" /></svg>
+                        JavaScript og jQuery
+                    </li>
+                    <li>
+                        <svg><use xlink:href="#icon-code" /></svg>
+                        Grunt
+                    </li>
 
-        <div><h3>Back</h3>
+                    <li class="divider">Nybegynder</li>
 
-        <ul>
-            <li>PHP
-            <li>WordPress
-            <li>ASP.NET
-            <li>C#
-            <li>SQL
-        </ul></div>
+                    <li>
+                        <svg><use xlink:href="#icon-code" /></svg>
+                        Angular.js
+                    </li>
+                </ul>
+            </div> <!-- /.skills -->
 
-        <div><h3>Design</h3>
+            <div class="skills">
+                <h3>Back-end</h3>
 
-        <ul>
-            <li>App design
-            <li>Responsivt design
-            <li>Logo
-            <li>Visuel identitet
-            <li>UI/UX
-            <li>Wireframing
-        </ul></div>
+                <ul>
+                    <li>
+                        <svg><use xlink:href="#icon-code" /></svg>
+                        PHP
+                    </li>
+                    <li>
+                        <svg><use xlink:href="#icon-code" /></svg>
+                        WordPress
+                    </li>
+                    <li>
+                        <svg><use xlink:href="#icon-code" /></svg>
+                        SQL
+                    </li>
 
-        <div><h3>Andet</h3>
+                    <li class="divider">Nybegynder</li>
 
-        <ul>
-            <li>Konceptudvikling
-            <li>Version control (Git og SVN)
-            <li>Photoshop. Illustrator, Indesign
-            <li>SEO
-        </ul></div>
+                    <li>
+                        <svg><use xlink:href="#icon-code" /></svg>
+                        Ruby on Rails
+                    </li>
+                    <li>
+                        <svg><use xlink:href="#icon-code" /></svg>
+                        ASP.NET
+                    </li>
+                    <li>
+                        <svg><use xlink:href="#icon-code" /></svg>
+                        C#
+                    </li>
+                </ul>
+            </div> <!-- /.skills -->
 
-        <div><h3>Lærer</h3>
+            <div class="skills">
+                <h3>Design</h3>
 
-        <ul>
-            <li>Ruby on Rails
-            <li>Angular.js
-        </ul></div>
+                <ul>
+                    <li>
+                        <svg><use xlink:href="#icon-brush" /></svg>
+                        App design
+                    </li>
+                    <li>
+                        <svg><use xlink:href="#icon-brush" /></svg>
+                        Responsivt design
+                    </li>
+                    <li>
+                        <svg><use xlink:href="#icon-brush" /></svg>
+                        Wireframing
+                    </li>
+                    <li>
+                        <svg><use xlink:href="#icon-brush" /></svg>
+                        Konceptudvikling
+                    </li>
+                    <li>
+                        <svg><use xlink:href="#icon-brush" /></svg>
+                        Visuel identitet
+                    </li>
+                    <li>
+                        <svg><use xlink:href="#icon-brush" /></svg>
+                        Logo
+                    </li>
+                </ul>
+            </div> <!-- /.skills -->
 
-        </div>
-
-                <p>
-            Jeg har arbejdet med WordPress siden 2009 og har både bidraget til Core, lavet temaer og plugins samt været med til at arbejde på de danske oversættelser.
-
-            Jeg er dog åben over for lære nye sprog og teknologier.
-        </p>
+        </div> <!-- /.skills-container -->
 
         <p>
-            Dansk og Engelsk. lidt tysk?
+            Jeg har arbejdet med WordPress siden 2009 og har 17 bidrag til Core, lavet temaer og plugins samt været med til at arbejde på de danske oversættelser.
+
+            Jeg er dog åben over for lære nye sprog og teknologier, hvilket bl.a har gjort jeg er i gang med at lære Ruby on Rails.
         </p>
 
-        <div class="grid-half">
-            <a class="column-header" href="https://github.com/jayj">
+        <div class="social-links skill-buttons">
+            <a href="https://github.com/jayj">
                 <svg class="icon" role="presentation"><use xlink:href="#icon-github" /></svg>
-                <h2>Jeg er på Github</h2>
-                <!-- <br>9 public repos and 17 followers. -->
+                Jeg er på Github
             </a>
 
-            <ul>
-                <li><a href="#">alfred-google-music-shuffle</a></li>
-                <li><a href="#">Cakifo</a></li>
-                <li><a href="#">Jayj-HTML5</a></li>
-                <li><a href="#">jayj-quicktag</a></li>
-                <li><a href="#">Youtube-Profile-Field</a></li>
-            </ul>
-        </div>
-
-        <div class="grid-half">
-            <a class="column-header" href="#">
+            <a href="#">
                 <svg class="icon" role="presentation"><use xlink:href="#icon-wordpress" /></svg>
-                <h2>Jeg bidrager til WordPress</h2>
+                Jeg bidrager til WordPress
             </a>
-
-            <ul>
-                <li><b>17</b> bidrag til Core</li>
-                <li><b>3</b> plugins</li>
-                <li><b>2</b> themes</li>
-            </ul>
         </div>
 
     </div> <!-- /.container -->
 
-</section>
+</section> <!-- #skills -->
 
-        <section id="contact">
+<section id="contact">
 
     <div class="container">
 
@@ -334,10 +365,11 @@
 
     </div> <!-- /.container -->
 
-</section>
-    </main>
+</section> <!-- #contact -->
 
-    <footer>
+</main>
+
+<footer>
 
     <a href="#top">Jesper Gundlund Johansen</a>
 
@@ -355,5 +387,4 @@
 </script>
 
 </body>
-
 </html>
