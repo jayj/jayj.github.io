@@ -15,6 +15,17 @@ function load_projects() {
 
         // Add the compiled HTML to the page
         $( '#projects .container' ).append(html);
+
+        // Go to the linked section again after loading projects
+        // we have to do this because direct links to sections after projects
+        // will end up in the middle of the projects section
+        var hash = window.location.href.split('#')[1];
+
+        if ( hash ) {
+            var section = document.getElementById(hash);
+            section.scrollIntoView(true);
+        }
+
     })
     // Error
     // @todo create better error message
