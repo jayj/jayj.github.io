@@ -1,83 +1,88 @@
 /* Section: Skills
    ========================================================================== */
 
-.skills-list {
-	display: flex;
-	flex-wrap: wrap;
+.skills-container {
+    background: #fff;
+    padding: $size__gutter;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: $size__gutter;
+}
 
-	div {
-		flex: 1;
-	}
+.skills {
+    flex: 0 30%;
+
+    margin-top: 1rem;
+
+    ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        //border-bottom: 1px solid $color__gray-lighter;
+        padding: 0.8rem 0;
+    }
+
+    .divider {
+        border-top: 1px solid $color__gray-light;
+
+        padding: 0.5rem 0 0 0;
+        margin-top: 0.8rem;
+            font-size: 1rem;
+            text-align: right;
+
+            color: $color__gray;
+
+        &:not(:empty) {
+            margin-top: 1rem;
+            margin-bottom: -1rem;
+        }
+    }
+
+    .divider ~ li {
+        color: darken($color__gray, 15%);
+    }
+
+    svg {
+        fill: $color__gray; // tomato
+        @include square(2rem);
+        vertical-align: middle;
+        margin-right: 0.6rem;
+    }
 }
 
 
+.skill-buttons {
 
+    a {
+        flex: 1;
 
+        background: linear-gradient(to top, rgba($color__gray, 0.2), transparent 100%);
+        color: #666;
+        padding: 1rem;
+        border-radius: 10px;
+        font-size: 2.2rem;
+        font-weight: 300;
+    }
 
+    a + a {
+        text-align: right;
+        display: inline-flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-left: $size__gutter;
 
+        svg {
+            margin-left: 1.5rem;
+            margin-right: 0;
+        }
+    }
 
-
-.grid-half {
-
-
-	ul {
-		list-style: none;
-		padding: 0;
-
-		li {
-			border-bottom: 1px solid $color__gray-light;
-			padding: 1rem 10rem 1rem 1rem;
-			float: left;
-			clear:both;
-		}
-	}
-
-	.column-header {
-		background: linear-gradient(to top, rgba($color__gray, 0.2), transparent 100%);
-		color: #666;
-		padding: 1rem;
-		border-radius: 10px;
-
-		svg {
-			fill: $color__gray-light;
-		}
-
-		display: flex;
-		align-items: center;
-	}
-
-	h2 {
-		font-size: 2.2rem;
-		font-weight: 300;
-		margin-left: 1.5rem;
-	}
-
-
-	&:first-of-type {
-		width: 45%;
-		float: left;
-		// background: #bada55;
-	}
-
-	&:last-of-type {
-		float: right;
-		width: 45%;
-		text-align: right;
-		li {
-			float: right;
-			padding: 1rem 1rem 1rem 10rem;
-		}
-		.column-header {
-			flex-direction: row-reverse;
-		}
-
-		h2 {
-			margin-left: 0;
-			margin-right: 1.5rem;
-		}
-
-		width: 50%;
-
-		// background: aliceblue;
-	}
+    svg {
+        fill: $color__gray-light;
+        margin-right: 1.5rem;
+    }
 }
+
