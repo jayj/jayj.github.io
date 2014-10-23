@@ -67,6 +67,8 @@ $(document).on( 'projectsLoaded', function() {
         thumbnails.find( '.active' ).removeClass( 'active' );
         thumbnail.addClass( 'active' );
 
+        // Create an event so run other functions can run when an image are selected
+        thumbnails.triggerHandler( 'imageSelected', thumbnail );
 
         e.preventDefault();
     });
