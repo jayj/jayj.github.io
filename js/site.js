@@ -56,6 +56,7 @@
 /* global Handlebars */
 /* exported load_projects, get_project_images */
 
+
 /**
  * Gets projects from JSON file
  */
@@ -71,16 +72,6 @@ function load_projects() {
         // Add the compiled HTML to the page
         $( '#projects .container' ).append(html);
 
-        // Go to the linked section again after loading projects
-        // we have to do this because direct links to sections after projects
-        // will end up in the middle of the projects section
-        var hash = window.location.href.split('#')[1];
-
-        if ( hash ) {
-            var section = document.getElementById(hash);
-            section.scrollIntoView(true);
-        }
-
         // Create an event so run other functions can run when the projects are loaded
         $(document).triggerHandler( 'projectsLoaded' );
     })
@@ -94,6 +85,19 @@ function load_projects() {
 
 /**
  * Shows a large version of the project image when clicking on the thumbnail.
+ * Go to the linked section again after loading projects.
+ *
+ * Have to do this because direct links to sections after projects
+ * will end up in the middle of the projects section
+ */
+$(document).on( 'projectsLoaded', function() {
+    var hash = window.location.href.split('#')[1];
+
+    if ( hash ) {
+        var section = document.getElementById(hash);
+        section.scrollIntoView(true);
+    }
+});
  */
 function get_project_images() {
 
