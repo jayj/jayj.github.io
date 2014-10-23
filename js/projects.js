@@ -43,20 +43,7 @@ function get_project_images() {
     //var thumbnails = $( '.project-thumbnails' );
 
 
-    $.colorbox( '.project-thumbnails a', {
-        type: 'inline',
-        group: '.project-thumbnails a',
-        source: function() {
-            return '#' + $(this).data( 'image' );
-        },
-        width: '90%',
-        height: '90%',
-        fixed: true,
 
-        current: "{current} / {total}",
-        previous: "Forrige",
-        next: "Næste",
-        close: "Luk",
     });
 
 

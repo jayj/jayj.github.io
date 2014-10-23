@@ -52,16 +52,14 @@
                             <h2>Billeder</h2>
 
                             {{#each images}}
-                                <a href="{{projectImagePath ../slug image}}" data-image="{{../slug}}-{{@index}}" data-rel="{{../slug}}">
+                                <a href="{{projectImagePath ../slug image}}" data-image="{{../slug}}-{{@index}}">
                                     <img src="{{projectThumbnailPath ../slug image}}" width="145" height="110" alt="{{title}}" />
                                 </a>
                             {{/each}}
                         </div> <!-- /.project-thumbnails -->
 
-<div class="test">
-
                         {{#each images}}
-                            <figure class="project-image" data-image="{{../slug}}-{{@index}}" id="{{../slug}}-{{@index}}">
+                            <figure class="project-image" data-image="{{../slug}}-{{@index}}">
                                 <figcaption>
                                     {{#if title}}<h4>{{title}}</h4>{{/if}}
                                     {{{caption}}}
@@ -77,7 +75,6 @@
 
                             </figure>
                         {{/each}}
-</div><!-- /.test -->
                     </div> <!-- /.project-images -->
                     {{/if}}
                 </article> <!-- /.project -->
