@@ -129,21 +129,18 @@ $(document).on( 'projectsLoaded', function() {
     });
 
 
+    // Close the active image
+    function closeImage() {
+        $( '.project-image:visible' ).slideUp(200);
+    }
+
+    $( '.close-image' ).on( 'click', closeImage);
 
 
 
 
 
 
-    // Close the images
-    // $( '.close-image' ).on( 'click', function() {
-    //     $( '.project-image' ).slideUp(200);
-    // });
-
-    // Hide all images
-    // $( '.project' ).on( 'mouseleave', function() {
-    //     $( '.project-image' ).delay(2000).hide();
-    // });
 }
 });
 
