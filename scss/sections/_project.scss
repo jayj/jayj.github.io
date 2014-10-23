@@ -166,17 +166,22 @@
 }
 
 .project-image {
-   display: none;
+    display: none;
+
+    background: #f5f5f5;
+    border-top: 1px solid darken($color__gray-lighter, 5%);
+    border-bottom: 1px solid darken($color__gray-lighter, 6%);
+    padding: $size__gutter;
+    margin-bottom: $size__gutter;
+
+    // Alternative to margin-top which can't be used case
+    // it looks weird when the section slide-up on close
+    top: $size__gutter;
+    position: relative;
 
     figcaption {
-        margin: $size__gutter 0;
-        position: relative;
         padding-right: 8rem;
-
-        background: #f5f5f5;
-        border-top: 1px solid darken($color__gray-lighter, 5%);
-        border-bottom: 1px solid darken($color__gray-lighter, 6%);
-        padding: $size__gutter;
+        margin-bottom: $size__gutter--small;
     }
 }
 
@@ -200,7 +205,3 @@
         @include square(3.5rem);
     }
 }
-
-
-
-

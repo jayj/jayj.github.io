@@ -701,15 +701,17 @@ section:target .section-title {
 
 .project-image {
   display: none;
-}
-.project-image figcaption {
-  margin: 4rem 0;
-  position: relative;
-  padding-right: 8rem;
   background: #f5f5f5;
   border-top: 1px solid #e1e1e1;
   border-bottom: 1px solid #dfdfdf;
   padding: 4rem;
+  margin-bottom: 4rem;
+  top: 4rem;
+  position: relative;
+}
+.project-image figcaption {
+  padding-right: 8rem;
+  margin-bottom: 2.5rem;
 }
 
 .close-image {
