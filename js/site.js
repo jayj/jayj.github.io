@@ -137,11 +137,28 @@ $(document).on( 'projectsLoaded', function() {
     $( '.close-image' ).on( 'click', closeImage);
 
 
+    // Keyboard navigation for the thumbnails
+    thumbnails.on( 'imageSelected', function(e, thumb) {
+        $(document).keydown(function(e) {
 
+            var left  = 37,
+                right = 39,
+                up    = 38,
+                esc   = 27;
 
+            // Left arrow
+            if ( left === e.keyCode ){
+                $(thumb).prev().click();
 
+            } else if ( right === e.keyCode ) {
+                $(thumb).next().click();
 
-}
+            } else if ( up === e.keyCode || esc === e.keyCode ) {
+                closeImage();
+
+            }
+        });
+    });
 });
 
 
