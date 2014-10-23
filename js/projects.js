@@ -29,13 +29,11 @@ function load_projects() {
 
 
 /**
- * Shows a large version of the project image when clicking on the thumbnail.
  * Go to the linked section again after loading projects.
  *
  * Have to do this because direct links to sections after projects
  * will end up in the middle of the projects section
  */
-function get_project_images() {
 $(document).on( 'projectsLoaded', function() {
     var hash = window.location.href.split('#')[1];
 
@@ -45,30 +43,41 @@ $(document).on( 'projectsLoaded', function() {
     }
 });
 
-    //var thumbnails = $( '.project-thumbnails' );
+
+/**
+ * Show image details when clicking on the thumbnails
+ */
+$(document).on( 'projectsLoaded', function() {
+
+    var thumbnails = $( '.project-thumbnails' );
+
+    thumbnails.on( 'click', 'a', function(e) {
+
+        var thumbnail = $(this),
+            id;
+
+        // Get the data attribute to match a thumbnail with a full size image
+        id = thumbnail.data( 'image' );
+
+        // Show the requested image and hide the rest
+        $( '.project-image' ).hide();
+        $( '.project-image[data-image="' + id + '"]' ).show();
+
+        // Set active thumbnail
+        thumbnails.find( '.active' ).removeClass( 'active' );
+        thumbnail.addClass( 'active' );
 
 
-
+        e.preventDefault();
     });
 
 
     // thumbnails.on( 'click', 'a', function(e) {
 
-    //     // Get the data attribute to match thumbnail with full size image
-    //     var id = $(this).data( 'image' );
 
-    //     // Hide all images
-    //     $( '.project-image' ).hide();
 
-    //     // Show the requested image
-    //     $( '.project-image[data-image="' + id + '"]' ).show();
 
-    //     // Set active thumbnail
-    //     thumbnails.find( '.active' ).removeClass( 'active' );
-    //     $(this).addClass( 'active' );
 
-    //     e.preventDefault();
-    // });
 
     // Close the images
     // $( '.close-image' ).on( 'click', function() {
@@ -80,6 +89,7 @@ $(document).on( 'projectsLoaded', function() {
     //     $( '.project-image' ).delay(2000).hide();
     // });
 }
+});
 
 
 
