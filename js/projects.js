@@ -26,6 +26,8 @@ function load_projects() {
             section.scrollIntoView(true);
         }
 
+        // Create an event so run other functions can run when the projects are loaded
+        $(document).triggerHandler( 'projectsLoaded' );
     })
     // Error
     // @todo create better error message
