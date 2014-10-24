@@ -4,7 +4,7 @@
             "name": "Vibstock Festival",
             "slug": "vibstock",
             "type": "WordPress løsning",
-            "description": "Vibstock er en lille gratis musikfestival i Viborg. Projektet var et eksamensprojekt på 2. semester udført i et team på 4 personer. I projektet blev der afholdt kundemøder, lavet research, analyser, designudvikling med adskillige brugertest samt udvikling af en prototype i .NET. Efter eksamen blev siden videreudviklet i WordPress. Siden blev lanceret den 1. august.",
+            "description": "Vibstock er en lille gratis musikfestival i Viborg. Projektet startede som et eksamensprojekt på 2. semester udført i et team på 4 personer. I projektet blev der afholdt kundemøder, lavet research, analyser, designudvikling med adskillige brugertest samt udvikling af en prototype i ASP.NET. Efter eksamen videreudviklede jeg siden i WordPress. Den blev lanceret den 1. august.",
             "link": "http://vibstock.dk",
             "date": "Maj &ndash; August 2014",
             "thumbnails": [
@@ -13,9 +13,8 @@
             ],
             "images": [
                 {
-                    "image": "home.png",
-                    "title": "Forside",
-                    "caption": "Image caption here"
+                    "image": "home.jpg",
+                    "title": "Forside"
                 },
                 {
                     "image": "api.png",
@@ -29,8 +28,8 @@
                 },
                 {
                     "image": "wireframes.png",
-                    "title": "Informationsarkitektur, wireframes og brugertest",
-                    "caption": "Før siden blev udviklet blev der lavet en brugertest for at finde ud af hvordan testpersonerne vil forvente strukturen og indholdet pa websitet ville være. Derefter blev der udviklet wireframes og designmockups før kodningen begyndte."
+                    "title": "Wireframes og brugertest",
+                    "caption": "Før siden blev udviklet blev der lavet en brugertest for at finde ud af hvordan strukturen og indholdet pa websitet skulle være. Derefter blev der udviklet wireframes og design-mockups før kodningen begyndte."
                 }
             ]
         },
@@ -38,14 +37,40 @@
             "name": "Svens Cykelservice",
             "slug": "cykelservice",
             "type": "Hjemmeside & visuel identitet",
-            "description": "Hjemmeside i WordPress, logo, skilt, telefonbog, opsætning af sociale medier, banner reklame.",
-            "date": "2014"
+            "description": "En nystartet cykelhandler i Viborg havde brug for både logo, butikskilt og hjemmeside samt opsætning af domæne, Facebook og Google+. Hjemmesiden er lavet i WordPress, men er endnu ikke lanceret.",
+            "date": "2014",
+            "thumbnails": [
+                { "src": "thumbnail.png",    "size": "1x" },
+                { "src": "thumbnail-2x.png", "size": "2x" },
+                { "src": "thumbnail-3x.png", "size": "3x" }
+            ],
+            "images": [
+                {
+                    "image": "home.jpg",
+                    "title": "Forside"
+                },
+                 {
+                    "image": "map.png",
+                    "title": "Kort og rutevejledning",
+                    "caption": "Forsiden indeholder et stort interaktivt kort. Ved brug af HTML5s Geolocation API og Google Maps kan den besøgende få en rutevejledning direkte til butikken."
+                },
+                {
+                    "image": "logos.png",
+                    "title": "Logo",
+                    "caption": "Kunden ønskede et simpelt logo, der kunne bruges i forskellige sammenhænge. Skrifttypen er Clear Sans, som bruges gennemgående i alt visuelt materiale."
+                },
+                {
+                    "image": "skilt.jpg",
+                    "title": "Butiksskilt"
+                }
+            ]
         },
         {
             "name": "Jayj.dk",
             "slug": "jayj",
             "type": "Personlig hjemmeside",
-            "description": "Min egen hjemmeside jeg har haft siden 2008.",
+            "date": "2008 &ndash;",
+            "description": "Min egen hjemmeside jeg har haft siden 2008. Lavet i WordPress og indeholder en WordPress-fokuseret blog samt showcase af mine temaer og plugins.",
             "link": "http://jayj.dk",
             "thumbnails": [
                 { "src": "thumbnail.png",    "size": "1x" },
@@ -57,7 +82,8 @@
             "name": "Jayj HTML5 theme",
             "slug": "html5",
             "type": "HTML5 tema",
-            "description": "Et gratis HTML5 og CSS3 tema/template jeg lavede i 2009. Siden da har den gennemgået adskillige nye versioner. Den er responsiv, bruger CSS-processoren LESS og indeholder en kontaktformular. Den er blevet downloadet over 57.000 gange.",
+            "date": "2009 &ndash;",
+            "description": "Et gratis HTML5 og CSS3 tema/template jeg lavede i 2009. Adskillige nye versioner er blevet frigivet siden da. Den er responsiv, bruger CSS-processoren LESS og indeholder en kontaktformular. Den er blevet downloadet over 57.000 gange.",
             "link": "http://jayj.dk/themes/html5-theme/",
             "thumbnails": [
                 { "src": "thumbnail.png",    "size": "1x" },
@@ -69,25 +95,14 @@
             "name": "Cakifo",
             "slug": "cakifo",
             "type": "WordPress tema",
-            "description": "Et gratis WordPress tema jeg lavede i 2011. Den bruger frameworket Hybrid Core, HTML5 og er responsiv. Den er blevet downloadet over 58.000 gange.",
-            "link": "http://jayj.dk/themes/cakifo/"
-        },
-        {
-            "name": "Rejse-app",
-            "slug": "usa",
-            "type": "Koncept",
-            "description": "I forbindelse med uddannelsen har jeg deltaget i et projekt i samarbejde med studerende fra California State University-Fullerton, som sluttede med et 2-ugers besøg på universitet i Los Angeles.",
-            "link": "",
-            "date": "September 2014"
-        },
-        {
-            "name": "Jysk KontorKoncept",
-            "client": "Jysk KontorKoncept",
-            "slug": "jkk",
-            "type": "Skoleprojekt",
-            "description": "1st semester project.",
-            "link": "",
-            "date": "November &ndash; December 2013"
+            "date": "2011 &ndash;",
+            "description": "Et gratis WordPress tema jeg lavede i 2011. Den bruger frameworket Hybrid Core, HTML5 og er responsiv. Den er blevet downloadet over 59.000 gange.",
+            "link": "http://jayj.dk/themes/cakifo/",
+            "thumbnails": [
+                { "src": "thumbnail.png",    "size": "1x" },
+                { "src": "thumbnail-2x.png", "size": "2x" },
+                { "src": "thumbnail-3x.png", "size": "3x" }
+            ]
         }
     ]
 }
