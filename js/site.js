@@ -163,16 +163,21 @@ $(document).on( 'projectsLoaded', function() {
 });
 
 
+/**
+ * Register custom Handlebar helpers
+ */
 
 Handlebars.registerHelper('projectImagePath', function(project, image) {
     return 'images/projects/' + project + '/' + image;
 });
+
 
 Handlebars.registerHelper('projectThumbnailPath', function(project, image) {
     return 'images/projects/' + project + '/thumbnails/' + image;
 });
 
 
+/* Create preview thumbnail with srcset support */
 Handlebars.registerHelper('previewImage', function(thumbs, name, slug, width) {
     var srcset = [];
 
