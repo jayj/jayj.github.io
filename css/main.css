@@ -536,6 +536,11 @@ section:target .section-title {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
   }
+  .project.project--has-no-preview {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 /**

@@ -6,7 +6,7 @@
 
         <script id="projects-template" type="text/x-handlebars-template">
             {{#projects}}
-                <article class="project" id="project-{{slug}}">
+                <article class="project {{#unless thumbnails}}project--has-no-preview{{/unless}}" id="project-{{slug}}">
                     <div class="project-information">
                         <header>
                             <h2 class="project-title">{{name}}</h2>
