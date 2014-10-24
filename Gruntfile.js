@@ -34,7 +34,7 @@ module.exports = function(grunt) {
             },
             images: {
                 files: [ 'images/{,*/}*' ],
-                tasks: [ 'imagemin' ]
+                tasks: [ 'newer:imagemin' ]
             },
             svgIcons: {
                 files: [ 'svg/*.svg' ],
@@ -129,7 +129,7 @@ module.exports = function(grunt) {
                 options: {
                     width: 145,
                     height: 110,
-                    overwrite: true, // @todo set to false
+                    overwrite: true,
                     changeName: false,
                     cropAmount: 0.5
                 },
@@ -144,7 +144,7 @@ module.exports = function(grunt) {
         });
 
         // When finished run the cropping
-        grunt.task.run('cropthumb');
+        grunt.task.run('newer:cropthumb');
     });
 
 
@@ -153,6 +153,6 @@ module.exports = function(grunt) {
 
     grunt.registerTask( 'svg', [ 'svgstore', 'codekit' ] );
 
-    grunt.registerTask( 'images', [ 'project-thumbnails', 'imagemin' ] );
+    grunt.registerTask( 'thumbnails', [ 'project-thumbnails', 'newer:imagemin' ] );
 
 };
