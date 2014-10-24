@@ -132,6 +132,7 @@ $(document).on( 'projectsLoaded', function() {
     // Close the active image
     function closeImage() {
         $( '.project-image:visible' ).slideUp(200);
+        thumbnails.find( '.active' ).removeClass( 'active' );
     }
 
     $( '.close-image' ).on( 'click', closeImage);
