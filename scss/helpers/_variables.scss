@@ -24,25 +24,10 @@ $color__text:       $color__gray-darker;
 // Fonts
 // ===========================
 
-
-// Main Font
 $font__main-family:           "Open Sans", sans-serif;
 $font__main-weight:           400;
 $font__main-size:             1.6rem;
 $font__main-line-height:      1.6;
-
-
-// Heading Font
-$font__heading-family:        "Merriweather", sans-serif;
-$font__heading-weight:        700;
-$font__heading-size:          3.0rem;
-$font__heading-line-height:   $font__main-line-height;
-
-
-// Code Font
-$font__code-family:           Menlo, Consolas, "Courier New", monospace;
-$font__code-size:             1.5rem;
-$font__code-line-height:      $font__main-line-height;
 
 
 // ===========================
@@ -117,7 +102,7 @@ $menu__height:  6.5rem;
 // Sections
 // ===========================
 
-$section__title-size:            $font__heading-size * 1.2;
+$section__title-size:            3.6rem;
 
 
 // ===========================
