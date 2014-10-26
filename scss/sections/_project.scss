@@ -5,6 +5,7 @@
     background: #fff;
     padding: $size__gutter--small;
     margin-bottom: $size__gutter;
+    font-size: 1.6rem;
 
     @include breakpoint(screen-sm) {
         padding: $size__gutter;

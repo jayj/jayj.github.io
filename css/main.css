@@ -255,7 +255,7 @@ body {
   background-color: #f1f1f1;
   color: #222;
   font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.6;
   margin: 0;
@@ -518,6 +518,7 @@ section:target .section-title {
   background: #fff;
   padding: 2.5rem;
   margin-bottom: 4rem;
+  font-size: 1.6rem;
 }
 @media (min-width: 38.75em) {
   .project {
@@ -765,6 +766,7 @@ section:target .section-title {
       -ms-flex: 0 30%;
           flex: 0 30%;
   margin-top: 1rem;
+  font-size: 1.6rem;
 }
 .skills ul {
   padding: 0;
