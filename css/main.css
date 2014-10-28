@@ -922,6 +922,47 @@ div.skill-buttons a + a svg {
 
 /* Section: Contact
    ========================================================================== */
+@media (min-width: 52.5em) {
+  .contact-wrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+.contact-form {
+  -webkit-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.contact-info {
+  -webkit-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+.contact-info h3 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1.4rem;
+  font-size: 2.1rem;
+  font-weight: 400;
+}
+.contact-info a {
+  display: block;
+  margin-bottom: 2rem;
+}
+@media (min-width: 52.5em) {
+  .contact-info {
+    text-align: right;
+    margin-left: 4rem;
+  }
+}
+
 /* Layout: Footer
    ========================================================================== */
 footer {
