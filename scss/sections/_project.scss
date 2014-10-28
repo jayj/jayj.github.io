@@ -123,7 +123,7 @@
 
     a {
         // Each image should fill 20%
-        flex-basis: 23%;
+        max-width: 23%;
     }
 
     img {
@@ -143,10 +143,11 @@
         flex: 100%;
     }
 
+
     @include breakpoint(screen-sm) {
         // Each image should fill 20%
         a {
-            flex-basis: 20%;
+            max-width: 20%;
         }
     }
 
