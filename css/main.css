@@ -406,6 +406,7 @@ header[role="banner"] h1 {
         -ms-flex-item-align: center;
             align-self: center;
     height: 100%;
+    width: 100%;
   }
   .navigation .toggle-nav:focus {
     outline: 0;
@@ -475,7 +476,7 @@ header[role="banner"] h1 {
   background: rgba(255, 255, 255, 0.2);
 }
 .nav-fixed .navigation .toggle-nav {
-  margin-left: 1rem;
+  padding-left: 1rem;
 }
 
 /**
