@@ -25,6 +25,7 @@
         body.toggleClass( 'nav-toggled' );
     });
 
+
     /* Scroll to top */
     $( 'footer').find( 'a[href="#top"]' ).on( 'click', function(e) {
         $( 'html, body' ).animate({ scrollTop: 0 }, 400 );

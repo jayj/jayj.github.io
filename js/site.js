@@ -25,6 +25,7 @@
         body.toggleClass( 'nav-toggled' );
     });
 
+
     /* Scroll to top */
     $( 'footer').find( 'a[href="#top"]' ).on( 'click', function(e) {
         $( 'html, body' ).animate({ scrollTop: 0 }, 400 );
@@ -87,7 +88,9 @@ function load_projects() {
  * Go to the linked section again after loading projects.
  *
  * Have to do this because direct links to sections after projects
- * will end up in the middle of the projects section
+ * will end up in the middle of the projects section.
+ *
+ * `scrollIntoView` does not work on mobile.
  */
 $(document).on( 'projectsLoaded', function() {
     var hash = window.location.href.split('#')[1];
