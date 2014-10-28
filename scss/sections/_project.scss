@@ -28,18 +28,22 @@
  * Project information
  */
 .project-information {
-    text-align: center;
-
     header {
         border-bottom: 1px solid $color__gray-light;
         padding-bottom: 1.5rem;
         margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    @include breakpoint(screen-xs) {
+        header {
+            text-align: left;
+        }
     }
 
     // It's now a row
     @include breakpoint(screen-md) {
         flex: 2;
-        text-align: left;
     }
 }
 
