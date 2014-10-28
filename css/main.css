@@ -791,10 +791,14 @@ section:target .section-title {
    ========================================================================== */
 .skills-container {
   background: #fff;
+  font-size: 1.6rem;
   padding: 4rem;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
