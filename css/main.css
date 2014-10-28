@@ -725,23 +725,32 @@ section:target .section-title {
 
 .project-image {
   display: none;
-  background: #f5f5f5;
-  border-top: 1px solid #e1e1e1;
-  border-bottom: 1px solid #dfdfdf;
-  padding: 4rem;
   margin-bottom: 4rem;
   top: 4rem;
   position: relative;
 }
 .project-image figcaption {
-  padding-right: 8rem;
   margin-bottom: 2.5rem;
+}
+.project-image figcaption h4 {
+  padding-right: 6rem;
+}
+@media (min-width: 52.5em) {
+  .project-image {
+    background: #f5f5f5;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #dfdfdf;
+    padding: 4rem;
+  }
+  .project-image figcaption {
+    padding-right: 8rem;
+  }
 }
 
 .close-image {
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  top: 0;
+  right: 0;
   -webkit-transition: -webkit-transform 150ms ease-in-out, opacity 100ms;
           transition: transform 150ms ease-in-out, opacity 100ms;
 }
@@ -760,6 +769,12 @@ section:target .section-title {
 .close-image svg {
   width: 3.5rem;
   height: 3.5rem;
+}
+@media (min-width: 52.5em) {
+  .close-image {
+    top: 2rem;
+    right: 2rem;
+  }
 }
 
 /* Section: Skills
