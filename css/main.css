@@ -381,10 +381,10 @@ header[role="banner"] h1 {
     text-align: left;
   }
   .navigation .container {
-    margin-left: 1rem;
+    margin-left: 0;
     padding: 0;
     width: 30rem;
-    max-width: 80%;
+    max-width: 90%;
   }
   .navigation a {
     background: #060505;
