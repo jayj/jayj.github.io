@@ -3,8 +3,7 @@
 ( function( $ ) {
 
     var nav     = $( '.navigation' ),
-        body    = $( 'body' ),
-        _window = $( window );
+        body    = $( 'body' );
 
     /**
      * Initiate the Single Page Nav plugin
@@ -40,16 +39,16 @@
     function fixedMenu() {
         var headerHeight = header.outerHeight() - nav.height();
 
-        if ( _window.scrollTop() >= headerHeight ) {
+        if ( window.scrollY >= headerHeight ) {
             body.addClass( 'nav-fixed' );
         } else {
             body.removeClass( 'nav-fixed' );
         }
     }
 
+    // Run on load and on scroll
     fixedMenu();
-
-    _window.on( 'scroll', fixedMenu);
+    $(window).on( 'scroll', fixedMenu);
 
 })( jQuery );
 
