@@ -978,7 +978,15 @@ button.has-icon {
   border-radius: 5px;
   color: #fff;
   padding: 1.2rem 2rem;
+  width: 100%;
+  text-align: center;
 }
 .btn:hover {
   color: #fff;
+}
+@media (min-width: 30em) {
+  .btn {
+    text-align: left;
+    width: auto;
+  }
 }
