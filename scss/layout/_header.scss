@@ -35,6 +35,8 @@ header[role="banner"] {
     }
 
     @include breakpoint(screen-md) {
+        min-height: 45rem;
+
         p {
             padding: 0 ($size__gutter * 3);
         }

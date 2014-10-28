@@ -356,6 +356,9 @@ header[role="banner"] h1 {
   }
 }
 @media (min-width: 52.5em) {
+  header[role="banner"] {
+    min-height: 45rem;
+  }
   header[role="banner"] p {
     padding: 0 12rem;
   }
