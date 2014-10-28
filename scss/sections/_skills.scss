@@ -5,14 +5,13 @@
     background: #fff;
     font-size: 1.6rem;
     padding: $size__gutter;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
     margin-bottom: $size__gutter;
 
     @include breakpoint(screen-sm) {
+        display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
         font-size: 1.4rem;
     }
 
