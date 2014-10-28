@@ -11,7 +11,7 @@ header[role="banner"] {
 
     position: relative;
     min-height: 42rem;
-    padding-top: 12rem;
+    padding-top: 8rem;
 
     // Set the height to 100% of the viewport
     //height: 100vh;
@@ -21,10 +21,15 @@ header[role="banner"] {
         text-shadow: 1px 1px 2px rgba(#000, 0.3);
     }
 
+    // Breakpoint where the name turns to two lines
+    @media (min-width: $breakpoint__screen-xs - 7.6em ) {
+        padding-top: 12rem;
+    }
+
     @include breakpoint(screen-xs) {
         font-size: ($header__text-size + 0.3);
         min-height: 45rem;
-        padding-top: 6rem;
+        padding-top: 11rem;
     }
 
     @include breakpoint(screen-sm) {
@@ -32,7 +37,7 @@ header[role="banner"] {
         padding-top: 6.5rem;
     }
 
-    // Breakpoint where the name turns into a single page
+    // Breakpoint where the name turns into a single line
     @media (min-width: $breakpoint__screen-sm + 6em ) {
         padding-top: 10rem;
     }

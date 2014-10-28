@@ -14,7 +14,7 @@
 
 
     // Mobile navigation
-    @include breakpoint(screen-xs, max) {
+    @include breakpoint(screen-sm, max) {
         top: $size__gutter--small;
         left: $size__gutter--small;
         text-align: left; // overwrites text-align from header
@@ -75,7 +75,7 @@
 
 
     // Normal navigation
-    @include breakpoint(screen-xs, min) {
+    @include breakpoint(screen-sm, min) {
         background: $menu__bg-color;
         width: 100%;
         bottom: 0;
