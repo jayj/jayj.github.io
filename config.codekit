@@ -40,7 +40,7 @@
 		"outputAbbreviatedPath": "\/images\/header.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/images\/projects\/cakifo\/thumbnail-2x.png": {
 		"fileType": 32768,
@@ -95,7 +95,7 @@
 		"outputAbbreviatedPath": "\/images\/projects\/cykelservice\/logos.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/images\/projects\/cykelservice\/map.png": {
 		"fileType": 32768,
@@ -106,7 +106,7 @@
 		"outputAbbreviatedPath": "\/images\/projects\/cykelservice\/map.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/images\/projects\/cykelservice\/skilt.jpg": {
 		"fileType": 16384,
@@ -117,7 +117,7 @@
 		"outputAbbreviatedPath": "\/images\/projects\/cykelservice\/skilt.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/images\/projects\/cykelservice\/thumbnail-2x.png": {
 		"fileType": 32768,
@@ -128,7 +128,7 @@
 		"outputAbbreviatedPath": "\/images\/projects\/cykelservice\/thumbnail-2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/images\/projects\/cykelservice\/thumbnail-3x.png": {
 		"fileType": 32768,
@@ -150,7 +150,7 @@
 		"outputAbbreviatedPath": "\/images\/projects\/cykelservice\/thumbnail.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/images\/projects\/cykelservice\/thumbnails\/home.jpg": {
 		"fileType": 16384,
@@ -161,7 +161,7 @@
 		"outputAbbreviatedPath": "\/images\/projects\/cykelservice\/thumbnails\/home.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/images\/projects\/cykelservice\/thumbnails\/logos.png": {
 		"fileType": 32768,
@@ -172,7 +172,7 @@
 		"outputAbbreviatedPath": "\/images\/projects\/cykelservice\/thumbnails\/logos.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/images\/projects\/cykelservice\/thumbnails\/map.png": {
 		"fileType": 32768,
@@ -183,7 +183,7 @@
 		"outputAbbreviatedPath": "\/images\/projects\/cykelservice\/thumbnails\/map.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/images\/projects\/cykelservice\/thumbnails\/skilt.jpg": {
 		"fileType": 16384,
@@ -194,7 +194,7 @@
 		"outputAbbreviatedPath": "\/images\/projects\/cykelservice\/thumbnails\/skilt.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/images\/projects\/html5\/home.png": {
 		"fileType": 32768,
@@ -249,7 +249,7 @@
 		"outputAbbreviatedPath": "\/images\/projects\/html5\/thumbnails\/home.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/images\/projects\/jayj\/home.jpg": {
 		"fileType": 16384,
@@ -971,6 +971,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/includes\/_social.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/_social.kit",
+		"outputAbbreviatedPath": "\/includes\/_social.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -1022,26 +1031,15 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
 		},
-	"\/js\/modernizr-2.8.3.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/js\/modernizr-2.8.3.js",
-		"outputAbbreviatedPath": "\/js\/min\/modernizr-2.8.3-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 0
-		},
 	"\/js\/navigation.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/navigation.js",
-		"outputAbbreviatedPath": "\/js\/navigation.min.js",
+		"outputAbbreviatedPath": "\/js\/min\/navigation-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
-		"outputStyle": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
 	"\/js\/plugins.js": {
@@ -1108,39 +1106,39 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/pages\/about.html": {
-		"fileType": 8192,
+	"\/pages\/_about.kit": {
+		"fileType": 2048,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/pages\/about.html",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/pages\/_about.kit",
+		"outputAbbreviatedPath": "\/pages\/_about.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/pages\/contact.html": {
-		"fileType": 8192,
+	"\/pages\/_contact.kit": {
+		"fileType": 2048,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/pages\/contact.html",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/pages\/_contact.kit",
+		"outputAbbreviatedPath": "\/pages\/_contact.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/pages\/projects.html": {
-		"fileType": 8192,
+	"\/pages\/_projects.kit": {
+		"fileType": 2048,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/pages\/projects.html",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/pages\/_projects.kit",
+		"outputAbbreviatedPath": "\/pages\/_projects.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/pages\/skills.html": {
-		"fileType": 8192,
+	"\/pages\/_skills.kit": {
+		"fileType": 2048,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/pages\/skills.html",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/pages\/_skills.kit",
+		"outputAbbreviatedPath": "\/pages\/_skills.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
