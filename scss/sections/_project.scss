@@ -7,6 +7,10 @@
     margin-bottom: $size__gutter;
     font-size: 1.6rem;
 
+    &:last-child {
+        margin-bottom: 0;
+    }
+
     @include breakpoint(screen-sm) {
         padding: $size__gutter;
     }
