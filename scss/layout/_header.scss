@@ -8,10 +8,10 @@ header[role="banner"] {
     color: $header__text-color;
     font-size: $header__text-size;
 
+    min-height: 42rem;
+
     // Set the height to 100% of the viewport
-    // @todo fallback for browsers without vh support
-    // @todo add min-height
-    height: 100vh;
+    //height: 100vh;
 
     // Vertical and horizontially center the header content
     display: flex;
@@ -28,14 +28,27 @@ header[role="banner"] {
 
     @include breakpoint(screen-xs) {
         font-size: ($header__text-size + 0.3);
+
+        justify-content: flex-start; // center won't work because of the navigation
+        min-height: 45rem;
+
+        > .container {
+            margin-top: 7rem;
+        }
     }
 
     @include breakpoint(screen-sm) {
-        font-size: ($header__text-size + 0.6);
+        font-size: ($header__text-size + 0.5);
+
+        > .container {
+            margin-top: 8rem;
+        }
     }
 
     @include breakpoint(screen-md) {
-        min-height: 45rem;
+        > .container {
+            margin-top: 10rem;
+        }
 
         p {
             padding: 0 ($size__gutter * 3);
