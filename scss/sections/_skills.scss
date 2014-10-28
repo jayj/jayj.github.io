@@ -3,17 +3,27 @@
 
 .skills-container {
     background: #fff;
+    font-size: 1.6rem;
     padding: $size__gutter;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: $size__gutter;
+
+    @include breakpoint(screen-sm) {
+        flex-direction: row;
+        font-size: 1.4rem;
+    }
+
+    @include breakpoint(screen-md) {
+        font-size: 1.6rem;
+    }
 }
 
 .skills {
     flex: 0 30%;
     margin-top: 1rem;
-    font-size: 1.6rem;
 
     ul {
         padding: 0;
@@ -54,35 +64,55 @@
 }
 
 
-.skill-buttons {
+div.skill-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 
     a {
-        flex: 1;
-
+        display: inline-flex;
+        align-items: center;
+        width: 100%;
         background: linear-gradient(to top, rgba($color__gray, 0.2), transparent 100%);
         color: #666;
         padding: 1rem;
         border-radius: 10px;
         font-size: 2.2rem;
         font-weight: 300;
+
+        svg {
+            fill: $color__gray-light;
+            margin-right: 1.5rem;
+            transition: fill 200ms ease-in-out;
+        }
+
+        &:hover svg {
+            fill: $color__gray;
+        }
     }
 
     a + a {
         text-align: right;
-        display: inline-flex;
         flex-direction: row-reverse;
-        align-items: center;
-        margin-left: $size__gutter;
 
         svg {
-            margin-left: 1.5rem;
             margin-right: 0;
+            margin-left: 1.5rem;
         }
     }
 
-    svg {
-        fill: $color__gray-light;
-        margin-right: 1.5rem;
+    @include breakpoint(screen-sm) {
+        flex-direction: row;
+
+        a {
+            flex: 1;
+            width: auto;
+        }
+
+        a + a {
+            margin-left: $size__gutter;
+        }
     }
+
 }
 

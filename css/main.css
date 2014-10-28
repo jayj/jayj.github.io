@@ -803,13 +803,25 @@ section:target .section-title {
           justify-content: space-between;
   margin-bottom: 4rem;
 }
+@media (min-width: 38.75em) {
+  .skills-container {
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 52.5em) {
+  .skills-container {
+    font-size: 1.6rem;
+  }
+}
 
 .skills {
   -webkit-flex: 0 30%;
       -ms-flex: 0 30%;
           flex: 0 30%;
   margin-top: 1rem;
-  font-size: 1.6rem;
 }
 .skills ul {
   padding: 0;
@@ -841,10 +853,25 @@ section:target .section-title {
   margin-right: 0.6rem;
 }
 
-.skill-buttons a {
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+div.skill-buttons {
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+div.skill-buttons a {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
   background: -webkit-linear-gradient(bottom, rgba(153, 153, 153, 0.2), transparent 100%);
   background: linear-gradient(to top, rgba(153, 153, 153, 0.2), transparent 100%);
   color: #666;
@@ -853,26 +880,40 @@ section:target .section-title {
   font-size: 2.2rem;
   font-weight: 300;
 }
-.skill-buttons a + a {
+div.skill-buttons a svg {
+  fill: #ccc;
+  margin-right: 1.5rem;
+  -webkit-transition: fill 200ms ease-in-out;
+          transition: fill 200ms ease-in-out;
+}
+div.skill-buttons a:hover svg {
+  fill: #999;
+}
+div.skill-buttons a + a {
   text-align: right;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 4rem;
 }
-.skill-buttons a + a svg {
-  margin-left: 1.5rem;
+div.skill-buttons a + a svg {
   margin-right: 0;
+  margin-left: 1.5rem;
 }
-.skill-buttons svg {
-  fill: #ccc;
-  margin-right: 1.5rem;
+@media (min-width: 38.75em) {
+  div.skill-buttons {
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  div.skill-buttons a {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: auto;
+  }
+  div.skill-buttons a + a {
+    margin-left: 4rem;
+  }
 }
 
 /* Section: Contact
