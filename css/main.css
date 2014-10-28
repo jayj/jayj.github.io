@@ -325,7 +325,7 @@ header[role="banner"] {
   background: linear-gradient(to bottom right, rgba(255, 99, 71, 0.15), rgba(255, 255, 255, 0)), url(../images/header.png) repeat;
   background-color: #30272b;
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   height: 100vh;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -347,12 +347,12 @@ header[role="banner"] h1 {
 }
 @media (min-width: 30em) {
   header[role="banner"] {
-    font-size: 2.1rem;
+    font-size: 2.2rem;
   }
 }
 @media (min-width: 38.75em) {
   header[role="banner"] {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
   }
 }
 @media (min-width: 52.5em) {
