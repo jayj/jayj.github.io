@@ -276,6 +276,10 @@ a:hover {
    ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
+  -webkit-hyphens: none;
+     -moz-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
 }
 
 /* Media
@@ -593,6 +597,10 @@ section:target .section-title {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-hyphens: none;
+     -moz-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
 }
 @media (min-width: 30em) {
   .project-meta {
