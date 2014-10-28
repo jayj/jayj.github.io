@@ -43,7 +43,6 @@ button.has-icon {
         flex: 100%;
         font-size: 2.3rem;
         font-weight: 300;
-        margin-bottom: 0;
     }
 
     .icon > svg {
@@ -70,6 +69,7 @@ button.has-icon {
     @include breakpoint(screen-md) {
         h2 {
             flex: 0 1 auto;
+            margin-bottom: 0;
         }
 
         .icon > svg {
