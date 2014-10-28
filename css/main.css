@@ -663,9 +663,9 @@ section:target .section-title {
           flex-wrap: wrap;
 }
 .project-thumbnails a {
-  -webkit-flex-basis: 20%;
-      -ms-flex-preferred-size: 20%;
-          flex-basis: 20%;
+  -webkit-flex-basis: 23%;
+      -ms-flex-preferred-size: 23%;
+          flex-basis: 23%;
 }
 .project-thumbnails img {
   border-radius: 3px;
@@ -682,6 +682,13 @@ section:target .section-title {
   -webkit-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
+}
+@media (min-width: 38.75em) {
+  .project-thumbnails a {
+    -webkit-flex-basis: 20%;
+        -ms-flex-preferred-size: 20%;
+            flex-basis: 20%;
+  }
 }
 @media (min-width: 52.5em) {
   .project-thumbnails {

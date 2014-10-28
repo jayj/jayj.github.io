@@ -118,7 +118,7 @@
 
     a {
         // Each image should fill 20%
-        flex-basis: 20%;
+        flex-basis: 23%;
     }
 
     img {
@@ -136,6 +136,13 @@
         font-weight: 300;
         margin-bottom: 1.5rem;
         flex: 100%;
+    }
+
+    @include breakpoint(screen-sm) {
+        // Each image should fill 20%
+        a {
+            flex-basis: 20%;
+        }
     }
 
     @include breakpoint(screen-md) {
