@@ -1,2 +1,38 @@
 /* Section: Contact
    ========================================================================== */
+
+.contact-wrapper {
+
+	@include breakpoint(screen-md) {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+}
+
+.contact-form {
+	flex: 3;
+}
+
+.contact-info {
+	flex: 2;
+	font-size: 2rem;
+	margin-bottom: $size__gutter;
+
+	h3 {
+		// Match Wufoo's heading style
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 1.4rem;
+		font-size: 2.1rem;
+		font-weight: 400;
+	}
+
+	a {
+		display: block;
+		margin-bottom: 2rem;
+	}
+
+	@include breakpoint(screen-md) {
+		text-align: right;
+		margin-left: $size__gutter;
+	}
+}
