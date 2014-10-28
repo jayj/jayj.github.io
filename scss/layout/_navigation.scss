@@ -57,13 +57,18 @@
             height: 100%;
             width: 100%; // Make the whole navigation clickable
 
-            &:focus {
-                outline: 0;
-            }
-
             svg {
                 fill: $menu__text-color;
                 @include square(4.8rem);
+            }
+
+            &:focus {
+                outline: 0;
+
+                svg {
+                    fill: $color__gray-lighter;
+                    filter: drop-shadow(0 0 10px #fff);
+                }
             }
         }
     }

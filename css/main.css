@@ -411,13 +411,18 @@ header[role="banner"] h1 {
     height: 100%;
     width: 100%;
   }
-  .navigation .toggle-nav:focus {
-    outline: 0;
-  }
   .navigation .toggle-nav svg {
     fill: #fff;
     width: 4.8rem;
     height: 4.8rem;
+  }
+  .navigation .toggle-nav:focus {
+    outline: 0;
+  }
+  .navigation .toggle-nav:focus svg {
+    fill: #eee;
+    -webkit-filter: drop-shadow(0 0 10px #fff);
+            filter: drop-shadow(0 0 10px #fff);
   }
 }
 @media (min-width: 30em) {
@@ -905,7 +910,6 @@ button.has-icon {
           flex: 100%;
   font-size: 2.3rem;
   font-weight: 300;
-  margin-bottom: 0;
 }
 .social-links .icon > svg {
   width: 6rem;
@@ -935,6 +939,7 @@ button.has-icon {
     -webkit-flex: 0 1 auto;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
+    margin-bottom: 0;
   }
   .social-links .icon > svg {
     width: 10rem;
