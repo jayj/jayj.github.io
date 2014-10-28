@@ -38,7 +38,7 @@
     var header = $( 'header[role="banner"]' );
 
     function fixedMenu() {
-        var headerHeight = header.height() - nav.height();
+        var headerHeight = header.outerHeight() - nav.height();
 
         if ( _window.scrollTop() >= headerHeight ) {
             body.addClass( 'nav-fixed' );
