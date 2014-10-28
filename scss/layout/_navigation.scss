@@ -90,6 +90,11 @@
             height: 100%;
         }
 
+
+        a {
+            display: block; // Fixes IE10 where justify-content didn't work
+        }
+
         // Don't show the text on the Home menu item
         // when the nav isn't fixed
         .home {

@@ -448,6 +448,9 @@ header[role="banner"] h1 {
             justify-content: space-between;
     height: 100%;
   }
+  .navigation a {
+    display: block;
+  }
   .navigation .home {
     color: transparent;
   }
