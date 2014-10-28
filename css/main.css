@@ -524,6 +524,9 @@ section:target .section-title {
   margin-bottom: 4rem;
   font-size: 1.6rem;
 }
+.project:last-child {
+  margin-bottom: 0;
+}
 @media (min-width: 38.75em) {
   .project {
     padding: 4rem;
