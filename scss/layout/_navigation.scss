@@ -59,7 +59,8 @@
 
             svg {
                 fill: $menu__text-color;
-                @include square(4.8rem);
+                width: 4.8rem;
+                height: 100%; // fixes IE11 bug where the icon is not centered
             }
 
             &:focus {

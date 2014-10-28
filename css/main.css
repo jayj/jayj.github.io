@@ -418,7 +418,7 @@ header[role="banner"] h1 {
   .navigation .toggle-nav svg {
     fill: #fff;
     width: 4.8rem;
-    height: 4.8rem;
+    height: 100%;
   }
   .navigation .toggle-nav:focus {
     outline: 0;
