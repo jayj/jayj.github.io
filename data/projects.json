@@ -66,6 +66,14 @@
             ]
         },
         {
+            "name": "Koncept til rejse-app",
+            "slug": "usa",
+            "type": "Koncept",
+            "date": "September 2014",
+            "description": "I forbindelse med min uddannelse, har jeg deltaget i et projekt i samarbejde UST Global, en af deres danske kunder samt studerende fra California State University-Fullerton. <br><br>Casen fra kunden var, at de ønskede et kreativ koncept til en rejse-app for deres mange rejsende medarbejdere. Projektfasen startede med et kundemøde og brugerinterview. Det lagde grundlag for udarbejdelsen af personas og scenarier, der blev brugt i konceptudviklingen. <br><br>Projektet sluttede med et 2 ugers besøg på universitet i Los Angeles og en fremlæggelse af konceptet for UST Global. For at illustere konceptet lavede jeg en interaktiv prototype af app'en ved brug af <a href='http://www.idangero.us/framework7/'>Framework7</a>. <br><br>Efterfølgende er projektet blevet overtaget af UST Global og studerende fra California State Polytechnic University. Derfor kan jeg desværre ikke vise noget visuelt derfra."
+
+        },
+        {
             "name": "Jayj.dk",
             "slug": "jayj",
             "type": "Personlig hjemmeside",
