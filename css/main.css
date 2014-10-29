@@ -1,8 +1,25 @@
+@charset "UTF-8";
 /*!
  * Portfolio for Jesper Gundlund Johansen
+ * https://gundlund.com
  *
- * Skriv kontakt info her og osv.
-*/
+ * -----------------------
+ *
+ * Kommende multimediedesigner fra Aalborg søger praktikplads
+ * fra 19. januar – 10. april 2015
+ *
+ * -----------------------
+ *
+ * Kontaktoplysninger:
+ * 	jesper@gundlund.com
+ * 	tlf. 30 82 39 09
+ *
+ * -----------------------
+ *
+ * Uncompiled filer kan ses på Github:
+ * https://github.com/jayj/jayj.github.io
+ *
+ */
 section:after {
   content: "";
   display: table;
