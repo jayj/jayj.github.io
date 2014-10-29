@@ -25,6 +25,7 @@
 @import "helpers/variables";
 @import "helpers/mixins";
 
+
 // Reset
 @import "vendor/normalize";
 
@@ -41,13 +42,13 @@
 @import "layout/header";
 @import "layout/navigation";
 @import "layout/section";
-
-	@import "sections/about";
-	@import "sections/project";
-	@import "sections/skills";
-	@import "sections/contact";
-
 @import "layout/footer";
+
+// Page sections
+@import "sections/about";
+@import "sections/project";
+@import "sections/skills";
+@import "sections/contact";
 
 
 /* =============================================================================
