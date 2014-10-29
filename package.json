@@ -12,7 +12,7 @@
     "load-grunt-tasks": "~0.6.0",
     "grunt-autoprefixer": "~1.0.1",
     "grunt-svgstore": "~0.3.3",
-    "grunt-contrib-imagemin": "~0.8.1",
+    "grunt-contrib-imagemin": "~0.9.1",
     "grunt-contrib-jshint": "~0.10.0",
     "grunt-codekit": "~0.4.1",
     "grunt-cropthumb": "git+http://github.com/jbakse/grunt-cropthumb.git",
