@@ -1072,7 +1072,7 @@ button.has-icon {
   }
 }
 
-/* Color each social icon with their offical color when hovered */
+/* Color each social icon with their official colors when hovered */
 .icon--twitter:hover > svg {
   fill: #01B5F2;
 }

@@ -55,7 +55,9 @@
             display: flex;
             align-self: center;
             height: 100%;
-            width: 100%; // Make the whole navigation clickable
+
+            // Make the whole navigation clickable
+            width: 100%;
 
             svg {
                 fill: $menu__text-color;
@@ -92,7 +94,7 @@
 
 
         a {
-            display: block; // Fixes IE10 where justify-content didn't work
+            display: block; // Fixes IE10 bug where justify-content didn't work
         }
 
         // Don't show the text on the Home menu item

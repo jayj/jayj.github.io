@@ -78,7 +78,7 @@ button.has-icon {
     }
 }
 
-/* Color each social icon with their offical color when hovered */
+/* Color each social icon with their official colors when hovered */
 @each $site, $color in $social {
     .icon--#{$site}:hover > svg {
         fill: $color;
