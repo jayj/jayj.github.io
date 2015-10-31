@@ -113,6 +113,27 @@ module.exports = function(grunt) {
             }
         },
 
+        buildcontrol: {
+            options: {
+                dir: 'build',
+                commit: true,
+                push: true,
+                message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+            },
+            pages: {
+                options: {
+                    remote: 'git@github.com:jayj/jayj.github.io.git',
+                    branch: 'master'
+                }
+            },
+            local: {
+                options: {
+                    remote: '../',
+                    branch: 'build'
+                }
+            }
+        }
+
     });
 
     // Create task to generate project image thumbnails and save them in a subfolder
