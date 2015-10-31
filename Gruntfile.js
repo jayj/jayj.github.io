@@ -26,7 +26,7 @@ module.exports = function(grunt) {
             },
             js: {
                 files: [ 'js/*.js' ],
-                tasks: [ 'jshint:js' ]
+                tasks: [ 'eslint:js' ]
             },
             css: {
                 files: [ 'scss/{,*/}*.scss' ],
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
             },
             grunt: {
                 files: [ 'Gruntfile.js' ],
-                tasks: [ 'jshint:grunt' ]
+                tasks: [ 'eslint:grunt' ]
             }
         },
 
@@ -46,7 +46,7 @@ module.exports = function(grunt) {
         codekit: {
             dev: {
                 files: { 'index.html' : 'index.kit' }
-            },
+            }
         },
 
         // Compile Sass
@@ -72,7 +72,7 @@ module.exports = function(grunt) {
 
                 processors: [
                     require('pixrem')(), // add fallbacks for rem units
-                    require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
+                    require('autoprefixer')({browsers: 'last 2 versions'}) // add vendor prefixes
                 ]
             },
             dev: {
@@ -85,12 +85,12 @@ module.exports = function(grunt) {
         },
 
         // Make sure there are no obvious mistakes in the JS files
-        jshint: {
+        eslint: {
             js: {
-                src: [ 'js/*.js' ]
+                src: ['src/js/*.js', '!src/js/*.min.js']
             },
             grunt: {
-                src: [ 'Gruntfile.js' ]
+                src: ['Gruntfile.js']
             }
         },
 

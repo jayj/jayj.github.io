@@ -1,5 +1,3 @@
-/* global Handlebars */
-
 ( function( $ ) {
 
     var nav     = $( '.navigation' ),
