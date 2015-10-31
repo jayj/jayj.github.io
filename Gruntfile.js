@@ -63,11 +63,26 @@ module.exports = function(grunt) {
             }
         },
 
-        // Autoprefix the compiled CSS
-        autoprefixer: {
-            global: {
-                src: 'css/main.css',
-                dest: 'css/main.css'
+        // Process the compiled CSS
+        postcss: {
+            options: {
+                // Source maps
+                map: {
+                    inline: false,
+                    annotation: 'src/css/'
+                },
+
+                processors: [
+                    require('pixrem')(), // add fallbacks for rem units
+                    require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
+                ]
+            },
+            dev: {
+                src: 'src/css/*.css'
+            },
+            build: {
+                options: { map: false },
+                src: 'build/css/*.css'
             }
         },
 
@@ -134,9 +149,9 @@ module.exports = function(grunt) {
 
 
     // Default task
-    grunt.registerTask( 'default', [ 'sass', 'autoprefixer', 'svgstore', 'codekit', 'watch' ] );
+    grunt.registerTask( 'default', [ 'sass', 'postcss:dev', 'svgstore', 'codekit', 'watch' ] );
 
-    grunt.registerTask( 'build', [ 'sass', 'autoprefixer', 'svgstore', 'codekit' ] );
+    grunt.registerTask( 'build', [ 'sass', 'postcss:build', 'svgstore', 'codekit' ] );
 
     grunt.registerTask( 'svg', [ 'svgstore', 'codekit' ] );
 

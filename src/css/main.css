@@ -136,7 +136,6 @@ figure {
 }
 
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -197,8 +196,7 @@ input {
 
 input[type="checkbox"],
 input[type="radio"] {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
 }
 
@@ -209,7 +207,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input[type="search"] {
   -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -251,15 +248,13 @@ th {
    Base
    ========================================================================== */
 html {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-  -moz-box-sizing: inherit;
-       box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
@@ -272,6 +267,7 @@ body {
   background-color: #f1f1f1;
   color: #222;
   font-family: "Open Sans", sans-serif;
+  font-size: 18px;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.6;
@@ -321,6 +317,7 @@ figure {
 .container {
   margin: 0 auto;
   max-width: 100%;
+  padding: 0 20px;
   padding: 0 2rem;
 }
 @media (min-width: 38.75em) {
@@ -337,15 +334,18 @@ figure {
 /* Layout: Header
    ========================================================================== */
 header[role="banner"] {
-  background: -webkit-linear-gradient(top left, rgba(255, 99, 71, 0.15), rgba(255, 255, 255, 0)), url(../images/header.png) repeat;
   background: linear-gradient(to bottom right, rgba(255, 99, 71, 0.15), rgba(255, 255, 255, 0)), url(../images/header.png) repeat;
   background-color: #30272b;
   color: #fff;
+  font-size: 19px;
   font-size: 1.9rem;
   text-align: center;
   position: relative;
+  min-height: 420px;
   min-height: 42rem;
+  padding-top: 120px;
   padding-top: 12rem;
+  padding-bottom: 40px;
   padding-bottom: 4rem;
 }
 header[role="banner"] h1 {
@@ -380,10 +380,12 @@ header[role="banner"] h1 {
    ========================================================================== */
 .navigation {
   position: absolute;
+  height: 65px;
   height: 6.5rem;
 }
 .navigation a {
   color: #fff;
+  font-size: 18px;
   font-size: 1.8rem;
 }
 @media (max-width: 38.75em) {
@@ -417,8 +419,8 @@ header[role="banner"] h1 {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-align-self: center;
-        -ms-flex-item-align: center;
+    -ms-flex-item-align: center;
+        -webkit-align-self: center;
             align-self: center;
     height: 100%;
     width: 100%;
@@ -499,6 +501,7 @@ header[role="banner"] h1 {
   background: rgba(255, 255, 255, 0.2);
 }
 .nav-fixed .navigation .toggle-nav {
+  padding-left: 10px;
   padding-left: 1rem;
 }
 
@@ -516,6 +519,7 @@ header[role="banner"] h1 {
    ========================================================================== */
 section {
   border-bottom: 1px solid #ccc;
+  padding: 60px 0;
   padding: 6rem 0;
   min-height: 60vh;
   -webkit-hyphens: auto;
@@ -526,11 +530,14 @@ section {
 }
 
 .section-title {
+  font-size: 24px;
   font-size: 2.4rem;
+  margin: 0 0 40px 0;
   margin: 0 0 4rem 0;
   text-align: center;
 }
 section:target .section-title {
+  margin-top: 40px;
   margin-top: 4rem;
 }
 
@@ -539,7 +546,9 @@ section:target .section-title {
 footer {
   background: #eee;
   text-align: center;
+  padding: 40px 0;
   padding: 4rem 0;
+  font-size: 20px;
   font-size: 2rem;
   font-weight: 300;
 }
@@ -550,8 +559,11 @@ footer {
    ========================================================================== */
 .project {
   background: #fff;
+  padding: 25px;
   padding: 2.5rem;
+  margin-bottom: 40px;
   margin-bottom: 4rem;
+  font-size: 16px;
   font-size: 1.6rem;
 }
 .project:last-child {
@@ -586,7 +598,9 @@ footer {
  */
 .project-information header {
   border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
   padding-bottom: 1.5rem;
+  margin-bottom: 15px;
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -604,8 +618,10 @@ footer {
 }
 
 .project-title {
+  font-size: 30px;
   font-size: 3rem;
   font-weight: 300;
+  margin-bottom: 10px;
   margin-bottom: 1rem;
 }
 
@@ -638,16 +654,19 @@ footer {
 }
 
 .project-type {
+  font-size: 18px;
   font-size: 1.8rem;
 }
 
 .project-date {
   float: right;
+  font-size: 15px;
   font-size: 1.5rem;
 }
 
 .project-information .btn {
   display: inline-block;
+  margin-top: 15px;
   margin-top: 1.5rem;
 }
 
@@ -655,13 +674,13 @@ footer {
  * Project preview
  */
 .project-preview {
+  margin-top: 20px;
   margin-top: 2rem;
   position: relative;
   text-align: center;
 }
 .project-preview img {
-  -webkit-transition: opacity 275ms;
-          transition: opacity 275ms;
+  transition: opacity 275ms;
 }
 .project-preview a:hover img {
   opacity: 0.75;
@@ -673,8 +692,8 @@ footer {
             flex: 2;
     margin-right: 4rem;
     text-align: left;
-    -webkit-align-self: center;
-        -ms-flex-item-align: center;
+    -ms-flex-item-align: center;
+        -webkit-align-self: center;
             align-self: center;
   }
 }
@@ -683,6 +702,7 @@ footer {
  * Project thumbnails
  */
 .project-thumbnails {
+  margin-top: 30px;
   margin-top: 3rem;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -706,8 +726,10 @@ footer {
   box-shadow: 0 0 6px tomato;
 }
 .project-thumbnails h2 {
+  font-size: 20px;
   font-size: 2rem;
   font-weight: 300;
+  margin-bottom: 15px;
   margin-bottom: 1.5rem;
   -webkit-flex: 100%;
       -ms-flex: 100%;
@@ -753,14 +775,18 @@ footer {
 
 .project-image {
   display: none;
+  margin-bottom: 40px;
   margin-bottom: 4rem;
+  top: 40px;
   top: 4rem;
   position: relative;
 }
 .project-image figcaption {
+  margin-bottom: 25px;
   margin-bottom: 2.5rem;
 }
 .project-image figcaption h4 {
+  padding-right: 60px;
   padding-right: 6rem;
 }
 @media (min-width: 52.5em) {
@@ -779,23 +805,23 @@ footer {
   position: absolute;
   top: 0;
   right: 0;
-  -webkit-transition: -webkit-transform 150ms ease-in-out, opacity 100ms;
-          transition: transform 150ms ease-in-out, opacity 100ms;
+  transition: -webkit-transform 150ms ease-in-out, opacity 100ms;
+  transition: transform 150ms ease-in-out, opacity 100ms;
 }
 .close-image:hover {
   -webkit-transform: scale(1.8);
-      -ms-transform: scale(1.8);
           transform: scale(1.8);
 }
 .close-image:focus {
   outline: none;
   opacity: 0.5;
   -webkit-transform: scale(1);
-      -ms-transform: scale(1);
           transform: scale(1);
 }
 .close-image svg {
+  width: 35px;
   width: 3.5rem;
+  height: 35px;
   height: 3.5rem;
 }
 @media (min-width: 52.5em) {
@@ -809,8 +835,11 @@ footer {
    ========================================================================== */
 .skills-container {
   background: #fff;
+  font-size: 16px;
   font-size: 1.6rem;
+  padding: 40px;
   padding: 4rem;
+  margin-bottom: 40px;
   margin-bottom: 4rem;
 }
 @media (min-width: 38.75em) {
@@ -840,6 +869,7 @@ footer {
   -webkit-flex: 0 30%;
       -ms-flex: 0 30%;
           flex: 0 30%;
+  margin-top: 10px;
   margin-top: 1rem;
 }
 .skills ul {
@@ -847,18 +877,24 @@ footer {
   list-style: none;
 }
 .skills li {
+  padding: 8px 0;
   padding: 0.8rem 0;
 }
 .skills .divider {
   border-top: 1px solid #ccc;
+  padding: 5px 0 0 0;
   padding: 0.5rem 0 0 0;
+  margin-top: 8px;
   margin-top: 0.8rem;
+  font-size: 10px;
   font-size: 1rem;
   text-align: right;
   color: #999;
 }
 .skills .divider:not(:empty) {
+  margin-top: 10px;
   margin-top: 1rem;
+  margin-bottom: -10px;
   margin-bottom: -1rem;
 }
 .skills .divider ~ li {
@@ -866,9 +902,12 @@ footer {
 }
 .skills svg {
   fill: #999;
+  width: 20px;
   width: 2rem;
+  height: 20px;
   height: 2rem;
   vertical-align: middle;
+  margin-right: 6px;
   margin-right: 0.6rem;
 }
 
@@ -891,19 +930,20 @@ div.skill-buttons a {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  background: -webkit-linear-gradient(bottom, rgba(153, 153, 153, 0.2), transparent 100%);
   background: linear-gradient(to top, rgba(153, 153, 153, 0.2), transparent 100%);
   color: #666;
+  padding: 10px;
   padding: 1rem;
   border-radius: 10px;
+  font-size: 22px;
   font-size: 2.2rem;
   font-weight: 300;
 }
 div.skill-buttons a svg {
   fill: #ccc;
+  margin-right: 15px;
   margin-right: 1.5rem;
-  -webkit-transition: fill 200ms ease-in-out;
-          transition: fill 200ms ease-in-out;
+  transition: fill 200ms ease-in-out;
 }
 div.skill-buttons a:hover svg {
   fill: #999;
@@ -916,6 +956,7 @@ div.skill-buttons a + a {
 }
 div.skill-buttons a + a svg {
   margin-right: 0;
+  margin-left: 15px;
   margin-left: 1.5rem;
 }
 @media (min-width: 38.75em) {
@@ -958,17 +999,22 @@ div.skill-buttons a + a svg {
   -webkit-flex: 2;
       -ms-flex: 2;
           flex: 2;
+  font-size: 20px;
   font-size: 2rem;
+  margin-bottom: 40px;
   margin-bottom: 4rem;
 }
 .contact-info h3 {
   border-bottom: 1px solid #ccc;
+  padding-bottom: 14px;
   padding-bottom: 1.4rem;
+  font-size: 21px;
   font-size: 2.1rem;
   font-weight: 400;
 }
 .contact-info a {
   display: block;
+  margin-bottom: 20px;
   margin-bottom: 2rem;
 }
 @media (min-width: 52.5em) {
@@ -991,7 +1037,9 @@ svg.icon {
   display: inline-block;
   fill: #666666;
   vertical-align: middle;
+  width: 100px;
   width: 10rem;
+  height: 100px;
   height: 10rem;
 }
 
@@ -1000,8 +1048,11 @@ svg.icon {
  */
 .btn.icon > svg {
   fill: #fff;
+  margin-left: 3px;
   margin-left: 0.3rem;
+  width: 18px;
   width: 1.8rem;
+  height: 18px;
   height: 1.8rem;
 }
 
@@ -1015,6 +1066,7 @@ button.has-icon {
  * Social links
  */
 .social-links {
+  margin-top: 40px;
   margin-top: 4rem;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1033,18 +1085,20 @@ button.has-icon {
   -webkit-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
+  font-size: 23px;
   font-size: 2.3rem;
   font-weight: 300;
 }
 .social-links .icon > svg {
+  width: 60px;
   width: 6rem;
+  height: 60px;
   height: 6rem;
-  -webkit-transition: -webkit-transform 150ms ease-in-out;
-          transition: transform 150ms ease-in-out;
+  transition: -webkit-transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
 }
 .social-links .icon:hover > svg {
   -webkit-transform: scale(1.5);
-      -ms-transform: scale(1.5);
           transform: scale(1.5);
 }
 @media (min-width: 30em) {
@@ -1100,6 +1154,7 @@ button.has-icon {
   background: tomato;
   border-radius: 5px;
   color: #fff;
+  padding: 12px 20px;
   padding: 1.2rem 2rem;
   width: 100%;
   text-align: center;
@@ -1113,3 +1168,5 @@ button.has-icon {
     width: auto;
   }
 }
+
+/*# sourceMappingURL=main.css.map */
