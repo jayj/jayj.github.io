@@ -16,11 +16,11 @@
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-copy": "^0.8.2",
     "grunt-contrib-imagemin": "^0.9.4",
-    "grunt-contrib-sass": "~0.8.1",
     "grunt-contrib-watch": "~0.6.1",
     "grunt-eslint": "^17.3.1",
     "grunt-newer": "~0.8.0",
     "grunt-postcss": "^0.7.0",
+    "grunt-sass": "^1.1.0",
     "grunt-svgstore": "~0.3.3",
     "load-grunt-tasks": "~0.6.0",
     "pixrem": "^3.0.0"

@@ -268,6 +268,7 @@ body {
   color: #222;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
+  font-size: 18px;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.6;
@@ -280,6 +281,7 @@ a {
   color: #2a7ae2;
   text-decoration: none;
 }
+
 a:hover {
   color: #154f9b;
   text-decoration: underline;
@@ -318,13 +320,16 @@ figure {
   margin: 0 auto;
   max-width: 100%;
   padding: 0 20px;
+  padding: 0 20px;
   padding: 0 2rem;
 }
+
 @media (min-width: 38.75em) {
   .container {
     padding: 0 4rem;
   }
 }
+
 @media (min-width: 52.5em) {
   .container {
     width: 96rem;
@@ -338,20 +343,26 @@ header[role="banner"] {
   background-color: #30272b;
   color: #fff;
   font-size: 19px;
+  font-size: 19px;
   font-size: 1.9rem;
   text-align: center;
   position: relative;
   min-height: 420px;
+  min-height: 420px;
   min-height: 42rem;
+  padding-top: 120px;
   padding-top: 120px;
   padding-top: 12rem;
   padding-bottom: 40px;
+  padding-bottom: 40px;
   padding-bottom: 4rem;
 }
+
 header[role="banner"] h1 {
   margin-top: 0;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
+
 @media (min-width: 30em) {
   header[role="banner"] {
     font-size: 2.2rem;
@@ -359,17 +370,20 @@ header[role="banner"] h1 {
     padding-top: 11rem;
   }
 }
+
 @media (min-width: 38.75em) {
   header[role="banner"] {
     font-size: 2.4rem;
     padding-top: 6.5rem;
   }
 }
+
 @media (min-width: 44.75em) {
   header[role="banner"] {
     padding-top: 10rem;
   }
 }
+
 @media (min-width: 52.5em) {
   header[role="banner"] p {
     padding: 0 12rem;
@@ -381,13 +395,17 @@ header[role="banner"] h1 {
 .navigation {
   position: absolute;
   height: 65px;
+  height: 65px;
   height: 6.5rem;
 }
+
 .navigation a {
   color: #fff;
   font-size: 18px;
+  font-size: 18px;
   font-size: 1.8rem;
 }
+
 @media (max-width: 38.75em) {
   .navigation {
     top: 2.5rem;
@@ -439,6 +457,7 @@ header[role="banner"] h1 {
             filter: drop-shadow(0 0 10px #fff);
   }
 }
+
 @media (min-width: 38.75em) {
   .navigation {
     background: #060505;
@@ -494,13 +513,17 @@ header[role="banner"] h1 {
   position: fixed;
   z-index: 100;
 }
+
 .nav-fixed .navigation .home {
   color: #fff;
 }
+
 .nav-fixed .navigation .current:before {
   background: rgba(255, 255, 255, 0.2);
 }
+
 .nav-fixed .navigation .toggle-nav {
+  padding-left: 10px;
   padding-left: 10px;
   padding-left: 1rem;
 }
@@ -520,6 +543,7 @@ header[role="banner"] h1 {
 section {
   border-bottom: 1px solid #ccc;
   padding: 60px 0;
+  padding: 60px 0;
   padding: 6rem 0;
   min-height: 60vh;
   -webkit-hyphens: auto;
@@ -531,12 +555,16 @@ section {
 
 .section-title {
   font-size: 24px;
+  font-size: 24px;
   font-size: 2.4rem;
+  margin: 0 0 40px 0;
   margin: 0 0 40px 0;
   margin: 0 0 4rem 0;
   text-align: center;
 }
+
 section:target .section-title {
+  margin-top: 40px;
   margin-top: 40px;
   margin-top: 4rem;
 }
@@ -547,7 +575,9 @@ footer {
   background: #eee;
   text-align: center;
   padding: 40px 0;
+  padding: 40px 0;
   padding: 4rem 0;
+  font-size: 20px;
   font-size: 20px;
   font-size: 2rem;
   font-weight: 300;
@@ -560,20 +590,26 @@ footer {
 .project {
   background: #fff;
   padding: 25px;
+  padding: 25px;
   padding: 2.5rem;
+  margin-bottom: 40px;
   margin-bottom: 40px;
   margin-bottom: 4rem;
   font-size: 16px;
+  font-size: 16px;
   font-size: 1.6rem;
 }
+
 .project:last-child {
   margin-bottom: 0;
 }
+
 @media (min-width: 38.75em) {
   .project {
     padding: 4rem;
   }
 }
+
 @media (min-width: 52.5em) {
   .project {
     display: -webkit-flex;
@@ -599,16 +635,20 @@ footer {
 .project-information header {
   border-bottom: 1px solid #ccc;
   padding-bottom: 15px;
+  padding-bottom: 15px;
   padding-bottom: 1.5rem;
+  margin-bottom: 15px;
   margin-bottom: 15px;
   margin-bottom: 1.5rem;
   text-align: center;
 }
+
 @media (min-width: 30em) {
   .project-information header {
     text-align: left;
   }
 }
+
 @media (min-width: 52.5em) {
   .project-information {
     -webkit-flex: 2;
@@ -619,8 +659,10 @@ footer {
 
 .project-title {
   font-size: 30px;
+  font-size: 30px;
   font-size: 3rem;
   font-weight: 300;
+  margin-bottom: 10px;
   margin-bottom: 10px;
   margin-bottom: 1rem;
 }
@@ -639,6 +681,7 @@ footer {
       -ms-hyphens: none;
           hyphens: none;
 }
+
 @media (min-width: 30em) {
   .project-meta {
     -webkit-flex-direction: row;
@@ -655,17 +698,20 @@ footer {
 
 .project-type {
   font-size: 18px;
+  font-size: 18px;
   font-size: 1.8rem;
 }
 
 .project-date {
   float: right;
   font-size: 15px;
+  font-size: 15px;
   font-size: 1.5rem;
 }
 
 .project-information .btn {
   display: inline-block;
+  margin-top: 15px;
   margin-top: 15px;
   margin-top: 1.5rem;
 }
@@ -675,16 +721,20 @@ footer {
  */
 .project-preview {
   margin-top: 20px;
+  margin-top: 20px;
   margin-top: 2rem;
   position: relative;
   text-align: center;
 }
+
 .project-preview img {
   transition: opacity 275ms;
 }
+
 .project-preview a:hover img {
   opacity: 0.75;
 }
+
 @media (min-width: 52.5em) {
   .project-preview {
     -webkit-flex: 2;
@@ -703,6 +753,7 @@ footer {
  */
 .project-thumbnails {
   margin-top: 30px;
+  margin-top: 30px;
   margin-top: 3rem;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -714,32 +765,40 @@ footer {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
 }
+
 .project-thumbnails a {
   max-width: 23%;
 }
+
 .project-thumbnails img {
   border-radius: 3px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 }
+
 .project-thumbnails .active img {
   border-color: tomato;
   box-shadow: 0 0 6px tomato;
 }
+
 .project-thumbnails h2 {
+  font-size: 20px;
   font-size: 20px;
   font-size: 2rem;
   font-weight: 300;
+  margin-bottom: 15px;
   margin-bottom: 15px;
   margin-bottom: 1.5rem;
   -webkit-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
 }
+
 @media (min-width: 38.75em) {
   .project-thumbnails a {
     max-width: 20%;
   }
 }
+
 @media (min-width: 52.5em) {
   .project-thumbnails {
     margin-top: 4rem;
@@ -757,6 +816,7 @@ footer {
     line-height: 0;
   }
 }
+
 @media (min-width: 70em) {
   .project-thumbnails h2,
   .project-thumbnails a {
@@ -776,19 +836,26 @@ footer {
 .project-image {
   display: none;
   margin-bottom: 40px;
+  margin-bottom: 40px;
   margin-bottom: 4rem;
+  top: 40px;
   top: 40px;
   top: 4rem;
   position: relative;
 }
+
 .project-image figcaption {
+  margin-bottom: 25px;
   margin-bottom: 25px;
   margin-bottom: 2.5rem;
 }
+
 .project-image figcaption h4 {
+  padding-right: 60px;
   padding-right: 60px;
   padding-right: 6rem;
 }
+
 @media (min-width: 52.5em) {
   .project-image {
     background: #f5f5f5;
@@ -808,22 +875,28 @@ footer {
   transition: -webkit-transform 150ms ease-in-out, opacity 100ms;
   transition: transform 150ms ease-in-out, opacity 100ms;
 }
+
 .close-image:hover {
   -webkit-transform: scale(1.8);
           transform: scale(1.8);
 }
+
 .close-image:focus {
   outline: none;
   opacity: 0.5;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
+
 .close-image svg {
+  width: 35px;
   width: 35px;
   width: 3.5rem;
   height: 35px;
+  height: 35px;
   height: 3.5rem;
 }
+
 @media (min-width: 52.5em) {
   .close-image {
     top: 2rem;
@@ -836,12 +909,16 @@ footer {
 .skills-container {
   background: #fff;
   font-size: 16px;
+  font-size: 16px;
   font-size: 1.6rem;
+  padding: 40px;
   padding: 40px;
   padding: 4rem;
   margin-bottom: 40px;
+  margin-bottom: 40px;
   margin-bottom: 4rem;
 }
+
 @media (min-width: 38.75em) {
   .skills-container {
     display: -webkit-flex;
@@ -859,6 +936,7 @@ footer {
     font-size: 1.4rem;
   }
 }
+
 @media (min-width: 52.5em) {
   .skills-container {
     font-size: 1.6rem;
@@ -870,43 +948,59 @@ footer {
       -ms-flex: 0 30%;
           flex: 0 30%;
   margin-top: 10px;
+  margin-top: 10px;
   margin-top: 1rem;
 }
+
 .skills ul {
   padding: 0;
   list-style: none;
 }
+
 .skills li {
+  padding: 8px 0;
   padding: 8px 0;
   padding: 0.8rem 0;
 }
+
 .skills .divider {
   border-top: 1px solid #ccc;
   padding: 5px 0 0 0;
+  padding: 5px 0 0 0;
   padding: 0.5rem 0 0 0;
   margin-top: 8px;
+  margin-top: 8px;
   margin-top: 0.8rem;
+  font-size: 10px;
   font-size: 10px;
   font-size: 1rem;
   text-align: right;
   color: #999;
 }
+
 .skills .divider:not(:empty) {
+  margin-top: 10px;
   margin-top: 10px;
   margin-top: 1rem;
   margin-bottom: -10px;
+  margin-bottom: -10px;
   margin-bottom: -1rem;
 }
+
 .skills .divider ~ li {
   color: #737373;
 }
+
 .skills svg {
   fill: #999;
   width: 20px;
+  width: 20px;
   width: 2rem;
+  height: 20px;
   height: 20px;
   height: 2rem;
   vertical-align: middle;
+  margin-right: 6px;
   margin-right: 6px;
   margin-right: 0.6rem;
 }
@@ -922,6 +1016,7 @@ div.skill-buttons {
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
+
 div.skill-buttons a {
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -933,32 +1028,41 @@ div.skill-buttons a {
   background: linear-gradient(to top, rgba(153, 153, 153, 0.2), transparent 100%);
   color: #666;
   padding: 10px;
+  padding: 10px;
   padding: 1rem;
   border-radius: 10px;
+  font-size: 22px;
   font-size: 22px;
   font-size: 2.2rem;
   font-weight: 300;
 }
+
 div.skill-buttons a svg {
   fill: #ccc;
+  margin-right: 15px;
   margin-right: 15px;
   margin-right: 1.5rem;
   transition: fill 200ms ease-in-out;
 }
+
 div.skill-buttons a:hover svg {
   fill: #999;
 }
+
 div.skill-buttons a + a {
   text-align: right;
   -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
+
 div.skill-buttons a + a svg {
   margin-right: 0;
   margin-left: 15px;
+  margin-left: 15px;
   margin-left: 1.5rem;
 }
+
 @media (min-width: 38.75em) {
   div.skill-buttons {
     -webkit-flex-direction: row;
@@ -1000,23 +1104,31 @@ div.skill-buttons a + a svg {
       -ms-flex: 2;
           flex: 2;
   font-size: 20px;
+  font-size: 20px;
   font-size: 2rem;
+  margin-bottom: 40px;
   margin-bottom: 40px;
   margin-bottom: 4rem;
 }
+
 .contact-info h3 {
   border-bottom: 1px solid #ccc;
   padding-bottom: 14px;
+  padding-bottom: 14px;
   padding-bottom: 1.4rem;
+  font-size: 21px;
   font-size: 21px;
   font-size: 2.1rem;
   font-weight: 400;
 }
+
 .contact-info a {
   display: block;
   margin-bottom: 20px;
+  margin-bottom: 20px;
   margin-bottom: 2rem;
 }
+
 @media (min-width: 52.5em) {
   .contact-info {
     text-align: right;
@@ -1038,7 +1150,9 @@ svg.icon {
   fill: #666666;
   vertical-align: middle;
   width: 100px;
+  width: 100px;
   width: 10rem;
+  height: 100px;
   height: 100px;
   height: 10rem;
 }
@@ -1049,9 +1163,12 @@ svg.icon {
 .btn.icon > svg {
   fill: #fff;
   margin-left: 3px;
+  margin-left: 3px;
   margin-left: 0.3rem;
   width: 18px;
+  width: 18px;
   width: 1.8rem;
+  height: 18px;
   height: 18px;
   height: 1.8rem;
 }
@@ -1067,6 +1184,7 @@ button.has-icon {
  */
 .social-links {
   margin-top: 40px;
+  margin-top: 40px;
   margin-top: 4rem;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1081,38 +1199,47 @@ button.has-icon {
       -ms-flex-align: center;
           align-items: center;
 }
+
 .social-links h2 {
   -webkit-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
   font-size: 23px;
+  font-size: 23px;
   font-size: 2.3rem;
   font-weight: 300;
 }
+
 .social-links .icon > svg {
   width: 60px;
+  width: 60px;
   width: 6rem;
+  height: 60px;
   height: 60px;
   height: 6rem;
   transition: -webkit-transform 150ms ease-in-out;
   transition: transform 150ms ease-in-out;
 }
+
 .social-links .icon:hover > svg {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }
+
 @media (min-width: 30em) {
   .social-links .icon > svg {
     width: 8rem;
     height: 8rem;
   }
 }
+
 @media (min-width: 38.75em) {
   .social-links .icon > svg {
     width: 9rem;
     height: 9rem;
   }
 }
+
 @media (min-width: 52.5em) {
   .social-links h2 {
     -webkit-flex: 0 1 auto;
@@ -1155,18 +1282,19 @@ button.has-icon {
   border-radius: 5px;
   color: #fff;
   padding: 12px 20px;
+  padding: 12px 20px;
   padding: 1.2rem 2rem;
   width: 100%;
   text-align: center;
 }
+
 .btn:hover {
   color: #fff;
 }
+
 @media (min-width: 30em) {
   .btn {
     text-align: left;
     width: auto;
   }
 }
-
-/*# sourceMappingURL=main.css.map */

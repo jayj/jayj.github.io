@@ -29,7 +29,7 @@ module.exports = function(grunt) {
                 tasks: [ 'eslint:js' ]
             },
             css: {
-                files: [ 'scss/{,*/}*.scss' ],
+                files: [ 'src/scss/{,*/}*.scss' ],
                 tasks: [ 'sass', 'autoprefixer' ]
             },
             svgIcons: {
@@ -51,12 +51,13 @@ module.exports = function(grunt) {
 
         // Compile Sass
         sass: {
-            global: {
+            dev: {
                 options: {
-                    style: 'expanded'
+                    outputStyle: 'expanded',
+                    sourceMap: true,
                 },
                 files: {
-                    'css/main.css': 'scss/main.scss'
+                    'src/css/main.css': 'src/scss/main.scss'
                 }
             }
         },
@@ -64,12 +65,6 @@ module.exports = function(grunt) {
         // Process the compiled CSS
         postcss: {
             options: {
-                // Source maps
-                map: {
-                    inline: false,
-                    annotation: 'src/css/'
-                },
-
                 processors: [
                     require('pixrem')(), // add fallbacks for rem units
                     require('autoprefixer')({browsers: 'last 2 versions'}) // add vendor prefixes
@@ -79,7 +74,6 @@ module.exports = function(grunt) {
                 src: 'src/css/*.css'
             },
             build: {
-                options: { map: false },
                 src: 'build/css/*.css'
             }
         },
