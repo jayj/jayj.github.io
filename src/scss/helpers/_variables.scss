@@ -1,0 +1,133 @@
+// ==========================================================================
+// Variables
+// ==========================================================================
+
+
+// ===========================
+// Color definitions
+// ===========================
+
+// Grays
+$color__gray-darker:       #222;
+$color__gray-dark:         #333;
+$color__gray:              #999;
+$color__gray-light:        #ccc;
+$color__gray-lighter:      #eee;
+
+
+// Main colors
+$color__primary:    tomato;
+$color__text:       $color__gray-darker;
+
+
+// ===========================
+// Fonts
+// ===========================
+
+$font__main-family:           "Open Sans", sans-serif;
+$font__main-weight:           400;
+$font__main-size:             1.8rem;
+$font__main-line-height:      1.6;
+
+
+// ===========================
+// Body
+// ===========================
+
+$body__bg-color:              #f1f1f1;
+
+
+// ===========================
+// Links
+// ===========================
+
+$link__color:                 #2a7ae2;
+$link__color-hover:           darken($link__color, 18%);
+$link__color-visited:         $link__color;
+
+
+// ===========================
+// Layout
+// ===========================
+
+$size__gutter:                4.0rem;
+$size__gutter--small:         2.5rem;
+
+
+$size__site--md:              96rem;
+
+
+// Media query breakpoints
+$breakpoint__screen-lg:       70em;    // (1120px / 16)
+$breakpoint__screen-md:       52.5em;  // (840px / 16)
+$breakpoint__screen-sm:       38.75em; // (620px / 16)
+$breakpoint__screen-xs:       30em;    // (480px / 16)
+
+
+// Z-index
+$zindex__menu:                100;
+
+// ===========================
+// Header
+// ===========================
+
+$header__bg-color:   #30272b;                          // #f71570
+$header__bg:         linear-gradient(to bottom right, rgba($color__primary, 0.15), rgba(#fff, 0) ), url(../images/header.png) repeat;
+
+$header__text-color: #fff;
+$header__text-size:  1.9rem;
+
+
+// ===========================
+// Footer
+// ===========================
+
+//$footer__
+
+
+// ===========================
+// Menu
+// ===========================
+
+$menu__bg-color:         darken($header__bg-color, 15%);
+$menu__bg-color--fixed:  $color__primary;
+
+$menu__text-color: #fff;
+$menu__text-size:  1.8rem;
+
+$menu__height:  6.5rem;
+
+
+// ===========================
+// Sections
+// ===========================
+
+$section__title-size:            3.6rem;
+
+
+// ===========================
+// Buttons
+// ===========================
+
+$btn__bg-color:   $color__primary;
+$btn__text-color: #fff;
+
+
+// ===========================
+// Icons
+// ===========================
+
+$icon__color:    darken($color__gray, 20%);
+$icon__size:     10rem;
+
+
+$social:
+    ("twitter",      #01B5F2),
+    ("github",       #4183c4),
+    ("wordpress",    #21759b),
+    ("google",       #dd4b39),
+    ("linkedin",     #0e76a8);
+
+
+
+

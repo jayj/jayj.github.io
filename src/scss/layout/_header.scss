@@ -1,0 +1,46 @@
+/* Layout: Header
+   ========================================================================== */
+
+header[role="banner"] {
+    background: $header__bg;
+    background-color: $header__bg-color;
+
+    color: $header__text-color;
+    font-size: $header__text-size;
+    text-align: center;
+
+    position: relative;
+    min-height: 42rem;
+    padding-top: 12rem;
+    padding-bottom: 4rem;
+
+    // Set the height to 100% of the viewport
+    //height: 100vh;
+
+    h1 {
+        margin-top: 0;
+        text-shadow: 1px 1px 2px rgba(#000, 0.3);
+    }
+
+    @include breakpoint(screen-xs) {
+        font-size: ($header__text-size + 0.3);
+        min-height: 45rem;
+        padding-top: 11rem;
+    }
+
+    @include breakpoint(screen-sm) {
+        font-size: ($header__text-size + 0.5);
+        padding-top: 6.5rem;
+    }
+
+    // Breakpoint where the name turns into a single line
+    @media (min-width: $breakpoint__screen-sm + 6em ) {
+        padding-top: 10rem;
+    }
+
+    @include breakpoint(screen-md) {
+        p {
+            padding: 0 ($size__gutter * 3);
+        }
+    }
+}

@@ -1,0 +1,86 @@
+/* Component: Icons
+   ========================================================================== */
+
+/**
+ * Icons
+ */
+.icon > svg,
+svg.icon {
+    display: inline-block;
+    fill: $icon__color;
+    vertical-align: middle;
+    @include square($icon__size);
+}
+
+
+/**
+ * Buttons with icons
+ */
+.btn.icon > svg {
+    fill: $btn__text-color;
+    margin-left: 0.3rem;
+    @include square(1.8rem);
+}
+
+button.has-icon {
+    background: none;
+    border: 0;
+    padding: 0;
+}
+
+
+/**
+ * Social links
+ */
+.social-links {
+    margin-top: $size__gutter;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    h2 {
+        flex: 100%;
+        font-size: 2.3rem;
+        font-weight: 300;
+    }
+
+    .icon > svg {
+        @include square($icon__size * 0.6);
+        transition: transform 150ms ease-in-out;
+    }
+
+    .icon:hover > svg {
+        transform: scale(1.5);
+    }
+
+    @include breakpoint(screen-xs) {
+        .icon > svg {
+            @include square($icon__size * 0.8);
+        }
+    }
+
+    @include breakpoint(screen-sm) {
+        .icon > svg {
+            @include square($icon__size * 0.9);
+        }
+    }
+
+    @include breakpoint(screen-md) {
+        h2 {
+            flex: 0 1 auto;
+            margin-bottom: 0;
+        }
+
+        .icon > svg {
+            @include square($icon__size);
+        }
+    }
+}
+
+/* Color each social icon with their official colors when hovered */
+@each $site, $color in $social {
+    .icon--#{$site}:hover > svg {
+        fill: $color;
+    }
+}
