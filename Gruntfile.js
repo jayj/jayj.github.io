@@ -124,6 +124,31 @@ module.exports = function(grunt) {
             }
         },
 
+        // Copy files to build folder
+        copy: {
+            options: {},
+            build: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'src/',
+                        src: [
+                            'index.html',
+                            'css/*.css',
+                            'js/**/*.js',
+                            '!js/**/*.dev.js',
+                            'data/**/*',
+                            'images/**/*'
+                        ],
+                        dest: 'build/'
+                    },
+                    { src: 'CNAME', dest: 'build/' }
+                ]
+            }
+        },
+
+        clean: ['build/'],
+
         buildcontrol: {
             options: {
                 dir: 'build',
@@ -151,7 +176,7 @@ module.exports = function(grunt) {
     // Default task
     grunt.registerTask( 'default', [ 'sass', 'postcss:dev', 'svgstore', 'codekit', 'watch' ] );
 
-    grunt.registerTask( 'build', [ 'sass', 'postcss:build', 'svgstore', 'codekit' ] );
+    grunt.registerTask( 'build', [ 'sass', 'postcss:build', 'svgstore', 'codekit', 'clean', 'copy' ] );
 
     grunt.registerTask( 'svg', [ 'svgstore', 'codekit' ] );
 
