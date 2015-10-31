@@ -32,10 +32,6 @@ module.exports = function(grunt) {
                 files: [ 'scss/{,*/}*.scss' ],
                 tasks: [ 'sass', 'autoprefixer' ]
             },
-            images: {
-                files: [ 'images/{,*/}*' ],
-                tasks: [ 'newer:imagemin' ]
-            },
             svgIcons: {
                 files: [ 'svg/*.svg' ],
                 tasks: [ 'svgstore', 'codekit' ]
@@ -92,7 +88,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: 'images/',
                     dest: 'images/',
-                    src: [ '**/*.{png,jpg,gif}' ]
+                    src: ['**/*.{png,jpg,gif}']
                 }]
             }
         },
@@ -136,44 +132,13 @@ module.exports = function(grunt) {
 
     });
 
-    // Create task to generate project image thumbnails and save them in a subfolder
-    grunt.registerTask( 'project-thumbnails', 'Generate project thumbnails', function() {
-
-        // Read all subdirectories from the projects folder
-        grunt.file.expand( 'images/projects/*' ).forEach( function(dir) {
-
-            // Get the current cropthumb config
-            var cropthumb = grunt.config.get('cropthumb') || {};
-
-            // Set the config for the directory
-            cropthumb[dir] = {
-                options: {
-                    width: 145,
-                    height: 110,
-                    overwrite: true,
-                    changeName: false,
-                    cropAmount: 0.5
-                },
-                expand: true,
-                cwd: dir,
-                src: [ '*.{png,jpg,gif}', '!thumbnail*.{png,jpg,gif}' ],
-                dest: dir + '/thumbnails/'
-            };
-
-            // Save the new cropthumb configuration
-            grunt.config.set('cropthumb', cropthumb);
-        });
-
-        // When finished run the cropping
-        grunt.task.run('newer:cropthumb');
-    });
-
 
     // Default task
     grunt.registerTask( 'default', [ 'sass', 'autoprefixer', 'svgstore', 'codekit', 'watch' ] );
 
+    grunt.registerTask( 'build', [ 'sass', 'autoprefixer', 'svgstore', 'codekit' ] );
+
     grunt.registerTask( 'svg', [ 'svgstore', 'codekit' ] );
 
-    grunt.registerTask( 'thumbnails', [ 'project-thumbnails', 'newer:imagemin' ] );
 
 };
