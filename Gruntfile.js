@@ -44,10 +44,8 @@ module.exports = function(grunt) {
 
         // Compile .kit files to HTML
         codekit: {
-            global: {
-                files : {
-                    'index.html' : 'index.kit'
-                }
+            dev: {
+                files: { 'index.html' : 'index.kit' }
             },
         },
 
