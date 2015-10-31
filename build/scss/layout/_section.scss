@@ -1,0 +1,24 @@
+/* Layout: Sections
+   ========================================================================== */
+
+section {
+    border-bottom: 1px solid $color__gray-light;
+    padding: 6rem 0;
+    min-height: 60vh;
+    hyphens: auto;
+    word-wrap: break-word;
+
+    @extend %clearfix;
+}
+
+.section-title {
+    font-size: 2.4rem;
+    margin: 0 0 4rem 0;
+    text-align: center;
+
+    // Create space between title and menu when the section is directly linked
+    // this is not triggered by the menu, only direct links
+    section:target & {
+        margin-top: 4rem;
+    }
+}
