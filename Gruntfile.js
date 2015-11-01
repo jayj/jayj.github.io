@@ -170,7 +170,13 @@ module.exports = function(grunt) {
     grunt.registerTask('bs-init', function() {
         var done = this.async();
         browserSync({
-            server: './src'
+            //server: './src'
+            server: {
+                baseDir: "src",
+                routes: {
+                    "/bower_components": "bower_components"
+                }
+            }
         }, function() {
             done();
         });
