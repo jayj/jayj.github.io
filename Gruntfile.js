@@ -29,7 +29,7 @@ module.exports = function(grunt) {
             },
             css: {
                 files: ['scss/**/*.scss'],
-                tasks: ['sass', 'postcss', 'bs-reload-css']
+                tasks: ['sass', 'bs-reload-css']
             },
             svgIcons: {
                 files: ['svg/*.svg'],
@@ -68,9 +68,6 @@ module.exports = function(grunt) {
                     require('pixrem')(), // add fallbacks for rem units
                     require('autoprefixer')({browsers: 'last 2 versions'}) // add vendor prefixes
                 ]
-            },
-            dev: {
-                src: 'src/css/*.css'
             },
             build: {
                 src: 'build/css/*.css'
@@ -221,7 +218,7 @@ module.exports = function(grunt) {
 
 
     // Default task
-    grunt.registerTask( 'default', [ 'sass', 'postcss:dev', 'svgstore', 'codekit', 'babel' ] );
+    grunt.registerTask( 'default', [ 'sass', 'svgstore', 'codekit', 'babel' ] );
 
     grunt.registerTask( 'server', ['default', 'bs-init', 'watch'] );
 
