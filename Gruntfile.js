@@ -208,6 +208,16 @@ module.exports = function(grunt) {
         });
     });
 
+    grunt.registerTask('bs-build', function() {
+        var done = this.async();
+        browserSync({
+            server: './build',
+            port: 3100
+        }, function() {
+            done();
+        });
+    });
+
     grunt.registerTask('bs-reload-css', function() {
         browserSync.reload(['*.css']);
     });
@@ -225,4 +235,5 @@ module.exports = function(grunt) {
     grunt.registerTask( 'build', [ 'sass', 'postcss:build', 'svgstore', 'codekit', 'babel', 'clean', 'copy' ] );
 
     grunt.registerTask( 'svg', [ 'svgstore', 'codekit' ] );
+    grunt.registerTask( 'build-server', ['bs-build', 'watch'] ); // server doesn't work without watch task
 };
