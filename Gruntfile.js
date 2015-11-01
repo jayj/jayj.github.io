@@ -25,7 +25,7 @@ module.exports = function(grunt) {
             },
             js: {
                 files: ['js/*.js'],
-                tasks: ['eslint:js', 'bs-reload-all']
+                tasks: ['eslint:js', 'babel:dev', 'bs-reload-all']
             },
             css: {
                 files: ['scss/**/*.scss'],
@@ -77,10 +77,28 @@ module.exports = function(grunt) {
             }
         },
 
+        // Compile ES6 to ES5 using Babel
+        babel: {
+            options: {
+                sourceMap: true,
+                presets: ['es2015']
+            },
+            dev: {
+                files: [{
+                    expand: true,
+                    src: ['src/js/*.es6.js'],
+                    dest: '',
+                    rename: function(dest, src) {
+                        return dest + src.replace('.es6','');
+                    }
+                }]
+            }
+        },
+
         // Make sure there are no obvious mistakes in the JS files
         eslint: {
             js: {
-                src: ['src/js/*.js', '!src/js/*.min.js']
+                src: ['src/js/*.es6.js']
             },
             grunt: {
                 src: ['Gruntfile.js']
@@ -126,8 +144,8 @@ module.exports = function(grunt) {
                         src: [
                             'index.html',
                             'css/*.css',
-                            'js/**/*.js',
-                            '!js/**/*.dev.js',
+                            'js/*.js',
+                            '!js/*.es6.js',
                             'data/**/*',
                             'images/**/*'
                         ],
@@ -192,11 +210,11 @@ module.exports = function(grunt) {
 
 
     // Default task
-    grunt.registerTask( 'default', [ 'sass', 'postcss:dev', 'svgstore', 'codekit', 'watch' ] );
+    grunt.registerTask( 'default', [ 'sass', 'postcss:dev', 'svgstore', 'codekit', 'babel' ] );
 
-    grunt.registerTask( 'server', ['bs-init', 'watch'] );
+    grunt.registerTask( 'server', ['default', 'bs-init', 'watch'] );
 
-    grunt.registerTask( 'build', [ 'sass', 'postcss:build', 'svgstore', 'codekit', 'clean', 'copy' ] );
+    grunt.registerTask( 'build', [ 'sass', 'postcss:build', 'svgstore', 'codekit', 'babel', 'clean', 'copy' ] );
 
     grunt.registerTask( 'svg', [ 'svgstore', 'codekit' ] );
 };
