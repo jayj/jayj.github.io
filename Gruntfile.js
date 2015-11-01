@@ -110,7 +110,7 @@ module.exports = function(grunt) {
             },
             default: {
                 files: {
-                    'includes/svg-defs.svg': [ 'svg/*.svg' ]
+                    'src/includes/svg-defs.svg': [ 'src/svg/*.svg' ]
                 }
             }
         },
@@ -193,6 +193,4 @@ module.exports = function(grunt) {
     grunt.registerTask( 'build', [ 'sass', 'postcss:build', 'svgstore', 'codekit', 'clean', 'copy' ] );
 
     grunt.registerTask( 'svg', [ 'svgstore', 'codekit' ] );
-
-
 };
