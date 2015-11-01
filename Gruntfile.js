@@ -151,7 +151,18 @@ module.exports = function(grunt) {
                         ],
                         dest: 'build/'
                     },
-                    { src: 'CNAME', dest: 'build/' }
+                    {
+                        flatten: true,
+                        src: [
+                            'bower_components/handlebars/handlebars.min.js',
+                            'bower_components/single-page-nav/jquery.singlePageNav.min.js'
+                        ],
+                        dest: 'build/js/lib/'
+                    },
+                    {
+                        src: 'CNAME',
+                        dest: 'build/'
+                    }
                 ]
             }
         },
