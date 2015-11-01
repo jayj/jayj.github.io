@@ -149,14 +149,6 @@ module.exports = function(grunt) {
                         dest: 'build/'
                     },
                     {
-                        flatten: true,
-                        src: [
-                            'bower_components/handlebars/handlebars.min.js',
-                            'bower_components/single-page-nav/jquery.singlePageNav.min.js'
-                        ],
-                        dest: 'build/js/lib/'
-                    },
-                    {
                         src: 'CNAME',
                         dest: 'build/'
                     }
@@ -165,6 +157,17 @@ module.exports = function(grunt) {
         },
 
         clean: ['build/'],
+
+        // Concat bower components
+        concat: {
+            build: {
+                src: [
+                    'bower_components/handlebars/handlebars.min.js',
+                    'bower_components/single-page-nav/jquery.singlePageNav.min.js'
+                ],
+                dest: 'build/js/libs.js'
+            }
+        },
 
         buildcontrol: {
             options: {
@@ -185,6 +188,23 @@ module.exports = function(grunt) {
                     branch: 'build'
                 }
             }
+        },
+
+        htmlbuild: {
+            dist: {
+                src: 'build/index.html',
+                dest: 'build/',
+                options: {
+                    beautify: false,
+                    relative: true,
+                    scripts: {
+                        bundle: {
+                            cwd: 'build',
+                            files: ['js/libs.js']
+                        }
+                    }
+                }
+            }
         }
 
     });
@@ -196,11 +216,10 @@ module.exports = function(grunt) {
     grunt.registerTask('bs-init', function() {
         var done = this.async();
         browserSync({
-            //server: './src'
             server: {
-                baseDir: "src",
+                baseDir: 'src',
                 routes: {
-                    "/bower_components": "bower_components"
+                    '/bower_components': 'bower_components'
                 }
             }
         }, function() {
@@ -227,13 +246,12 @@ module.exports = function(grunt) {
     });
 
 
-    // Default task
+    // Dev tasks
     grunt.registerTask( 'default', [ 'sass', 'svgstore', 'codekit', 'babel' ] );
-
+    grunt.registerTask( 'svg', [ 'svgstore', 'codekit' ] );
     grunt.registerTask( 'server', ['default', 'bs-init', 'watch'] );
 
-    grunt.registerTask( 'build', [ 'sass', 'postcss:build', 'svgstore', 'codekit', 'babel', 'clean', 'copy' ] );
-
-    grunt.registerTask( 'svg', [ 'svgstore', 'codekit' ] );
+    // Build tasks
+    grunt.registerTask( 'build', [ 'clean', 'sass', 'svgstore', 'codekit', 'babel', 'copy', 'postcss:build', 'concat:build', 'htmlbuild' ] );
     grunt.registerTask( 'build-server', ['bs-build', 'watch'] ); // server doesn't work without watch task
 };
