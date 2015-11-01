@@ -1,5 +1,7 @@
 /* globals module, require */
 
+var browserSync = require('browser-sync');
+
 module.exports = function(grunt) {
 
     'use strict';
@@ -14,38 +16,35 @@ module.exports = function(grunt) {
         // Watch for file changes
         watch: {
             options: {
-                livereload: false
+                cwd: { files: 'src' },
+                spawn: false
             },
             site: {
-                files: [
-                    'index.kit',
-                    'includes/*',
-                    'pages/*'
-                ],
-                tasks: [ 'codekit' ]
+                files: ['index.kit', 'includes/**/*.kit', 'pages/**/*.kit'],
+                tasks: ['codekit', 'bs-reload-all']
             },
             js: {
-                files: [ 'js/*.js' ],
-                tasks: [ 'eslint:js' ]
+                files: ['js/*.js'],
+                tasks: ['eslint:js', 'bs-reload-all']
             },
             css: {
-                files: [ 'src/scss/{,*/}*.scss' ],
-                tasks: [ 'sass', 'autoprefixer' ]
+                files: ['scss/**/*.scss'],
+                tasks: ['sass', 'postcss', 'bs-reload-css']
             },
             svgIcons: {
-                files: [ 'svg/*.svg' ],
-                tasks: [ 'svgstore', 'codekit' ]
+                files: ['svg/*.svg'],
+                tasks: ['svgstore', 'codekit', 'bs-reload-all']
             },
             grunt: {
-                files: [ 'Gruntfile.js' ],
-                tasks: [ 'eslint:grunt' ]
+                files: ['../Gruntfile.js'],
+                tasks: ['eslint:grunt']
             }
         },
 
         // Compile .kit files to HTML
         codekit: {
             dev: {
-                files: { 'index.html' : 'index.kit' }
+                files: { 'src/index.html' : 'src/index.kit' }
             }
         },
 
@@ -54,7 +53,7 @@ module.exports = function(grunt) {
             dev: {
                 options: {
                     outputStyle: 'expanded',
-                    sourceMap: true,
+                    sourceMap: true
                 },
                 files: {
                     'src/css/main.css': 'src/scss/main.scss'
@@ -164,9 +163,32 @@ module.exports = function(grunt) {
 
     });
 
+    /**
+     * Init BrowserSync manually as I can't get grunt-browser-sync to watch files
+     * http://www.shakyshane.com/javascript/nodejs/browser-sync/2014/08/24/browser-sync-plus-grunt/
+     */
+    grunt.registerTask('bs-init', function() {
+        var done = this.async();
+        browserSync({
+            server: './src'
+        }, function() {
+            done();
+        });
+    });
+
+    grunt.registerTask('bs-reload-css', function() {
+        browserSync.reload(['*.css']);
+    });
+
+    grunt.registerTask('bs-reload-all', function() {
+        browserSync.reload(true);
+    });
+
 
     // Default task
     grunt.registerTask( 'default', [ 'sass', 'postcss:dev', 'svgstore', 'codekit', 'watch' ] );
+
+    grunt.registerTask( 'server', ['bs-init', 'watch'] );
 
     grunt.registerTask( 'build', [ 'sass', 'postcss:build', 'svgstore', 'codekit', 'clean', 'copy' ] );
 
