@@ -371,7 +371,7 @@
                 <span class="phone">tlf. 30 82 39 09</span>
             </div>
 
-            <div class="contact-form" id="wufoo-rk93us20xvoqv5"></div>
+            <div class="contact-form">Form here.</div>
 
         </div>
 
@@ -439,26 +439,6 @@
     .script("/js/site.js").wait(function() {
         load_projects();
     })
-    .script("//www.wufoo.com/scripts/embed/form.js").wait(function() {
-        // Load Wufoo contact form
-        var rk93us20xvoqv5,
-            options = {
-                'userName':   'jespergj',
-                'formHash':   'rk93us20xvoqv5',
-                'autoResize': true,
-                'height':     '497',
-                'async':      true,
-                'host':       'wufoo.com',
-                'header':     'show',
-                'ssl':        true
-            };
-
-            try {
-                rk93us20xvoqv5 = new WufooForm();
-                rk93us20xvoqv5.initialize(options);
-                rk93us20xvoqv5.display();
-            } catch (e) {};
-    });
 </script>
 <script src="../../bower_components/handlebars/handlebars.min.js"></script>
 <script src="../../bower_components/single-page-nav/jquery.singlePageNav.min.js"></script>
