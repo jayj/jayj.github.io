@@ -2,7 +2,7 @@
     "projects": [
         {
             "name": "Spiir app",
-            "slug": "Spiir",
+            "slug": "spiir",
             "type": "iOS og Android app",
             "description": "Som udvikler hos Spiir har jeg været med til at lave vores iOS og Android app. Spiir app'en er lavet til at være din penge assistent, som holder styr på forbrug, penge og budgetter for dig. App'en er en hybrid app med Ionic, Angular og Typescript.",
             "date": "Lanceret maj 2016",
