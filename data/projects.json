@@ -1,11 +1,23 @@
 {
     "projects": [
         {
+            "name": "Spiir app",
+            "slug": "Spiir",
+            "type": "iOS og Android app",
+            "description": "Som udvikler hos Spiir har jeg været med til at lave vores iOS og Android app. Spiir app'en er lavet til at være din penge assistent, som holder styr på forbrug, penge og budgetter for dig. App'en er en hybrid app med Ionic, Angular og Typescript.",
+            "date": "Lanceret maj 2016",
+            "app_link": "https://spiir.app.link/hc1kFACkMz",
+            "thumbnails": [
+                { "src": "thumbnail.png", "size": "1x" },
+                { "src": "thumbnail-2x.png", "size": "2x" }
+            ],
+            "images": []
+        },
+        {
             "name": "Vibstock Festival",
             "slug": "vibstock",
             "type": "WordPress løsning",
             "description": "Vibstock er en lille gratis musikfestival i Viborg. Projektet startede som et eksamensprojekt på 2. semester udført i et team på 4 personer. I projektet blev der afholdt kundemøder, lavet research, analyser, designudvikling med adskillige brugertest samt udvikling af en prototype i ASP.NET. Efter eksamen videreudviklede jeg siden i WordPress. Den blev lanceret den 1. august.",
-            "link": "http://vibstock.dk",
             "date": "Maj &ndash; August 2014",
             "thumbnails": [
                 { "src": "thumbnail.png", "size": "1x" },
@@ -37,8 +49,9 @@
             "name": "Svens Cykelservice",
             "slug": "cykelservice",
             "type": "Hjemmeside & visuel identitet",
-            "description": "En nystartet cykelhandler i Viborg havde brug for både logo, butikskilt, hjemmeside samt opsætning af domæne, Facebook og Google+. Hjemmesiden er lavet i WordPress, men er endnu ikke lanceret.",
+            "description": "En nystartet cykelhandler i Viborg havde brug for både logo, butikskilt, hjemmeside samt opsætning af domæne, Facebook og Google+. Hjemmesiden er lavet i WordPress.",
             "date": "2014",
+            "link": "https://svenscykelservice.dk",
             "thumbnails": [
                 { "src": "thumbnail.png",    "size": "1x" },
                 { "src": "thumbnail-2x.png", "size": "2x" },
