@@ -991,7 +991,7 @@ div.skill-buttons a + a svg {
 /* Section: Contact
    ========================================================================== */
 #contact {
-  min-height: 2vh;
+  min-height: 25vh;
 }
 
 .contact-info {
