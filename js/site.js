@@ -150,6 +150,9 @@ $(document).on( 'projectsLoaded', function() {
         $( '.project-image' ).hide();
         $( '.project-image[data-image="' + id + '"]' ).show();
 
+        var image = $( '.project-image[data-image="' + id + '"] img' );
+        image.attr('src', image.data('src'));
+
         // Set active thumbnail
         thumbnails.find( '.active' ).removeClass( 'active' );
         thumbnail.addClass( 'active' );
