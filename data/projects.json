@@ -23,27 +23,7 @@
                 { "src": "thumbnail.png", "size": "1x" },
                 { "src": "thumbnail-2x.png", "size": "2x" }
             ],
-            "images": [
-                {
-                    "image": "home.jpg",
-                    "title": "Forside"
-                },
-                {
-                    "image": "api.png",
-                    "title": "Integration med Instagram og Twitters API'er",
-                    "caption": "Siden indeholder en hashtag-væg med billeder, videoer og statusopdateringer. De bliver hentet ved brug af Instagram og Twitters API'er, hvorefter de bliver cached på serveren. Brugeren har mulighed for at hente ældre opdateringer, som bliver indlæst via Ajax."
-                },
-                {
-                    "image": "flow.png",
-                    "title": "Forbedring af tilmeldingsprocessen",
-                    "caption": "Et af formålene med projektet var at gøre tilmeldingsprocessen bedre - både for bands og frivillige. Ved brug af Gravity Forms blev der lavet to tilmeldingsformularer, som er forbundet med administrationsdelen. På det både blev det også let for kunden at administrere ansøgningerne."
-                },
-                {
-                    "image": "wireframes.png",
-                    "title": "Wireframes og brugertest",
-                    "caption": "Før siden blev udviklet, blev der lavet en brugertest, for at finde ud af hvordan strukturen og indholdet pa websitet skulle være. Derefter blev der udviklet wireframes og design-mockups før kodningen af prototypen begyndte."
-                }
-            ]
+            "images": []
         },
         {
             "name": "Svens Cykelservice",
