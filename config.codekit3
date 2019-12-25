@@ -7,25 +7,17 @@
 		"uuidString": "A4D7AEDC-911A-4674-A7FE-DAEFB29CAEA8"
 		}
 	],
-"creatorBuild": "29156",
+"creatorBuild": "31934",
 "files": {
 	"/css/main.css": {
 		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
-		"oAP": "/css/main-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/data/projects.json": {
-		"ft": 524288,
 		"oA": 1,
-		"oAP": "/data/projects-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
+		"oAP": "/css/main-min.css",
+		"oF": 1,
+		"oS": 3
 		},
 	"/images/header.png": {
 		"ft": 32768,
@@ -46,356 +38,6 @@
 		"oAP": "/images/header.psd",
 		"oF": 0
 		},
-	"/images/projects/cakifo/thumbnail-2x.png": {
-		"ft": 32768,
-		"iS": 89995,
-		"oA": 0,
-		"oAP": "/images/projects/cakifo/thumbnail-2x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/images/projects/cakifo/thumbnail-3x.png": {
-		"ft": 32768,
-		"iS": 249893,
-		"oA": 0,
-		"oAP": "/images/projects/cakifo/thumbnail-3x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/images/projects/cakifo/thumbnail.png": {
-		"ft": 32768,
-		"iS": 21458,
-		"oA": 0,
-		"oAP": "/images/projects/cakifo/thumbnail.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/images/projects/cykelservice/home.jpg": {
-		"ft": 16384,
-		"iS": 279396,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/images/projects/cykelservice/home.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/images/projects/cykelservice/logos.png": {
-		"ft": 32768,
-		"iS": 48119,
-		"oA": 0,
-		"oAP": "/images/projects/cykelservice/logos.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/images/projects/cykelservice/map.png": {
-		"ft": 32768,
-		"iS": 97123,
-		"oA": 0,
-		"oAP": "/images/projects/cykelservice/map.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/images/projects/cykelservice/skilt.jpg": {
-		"ft": 16384,
-		"iS": 63261,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/images/projects/cykelservice/skilt.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/images/projects/cykelservice/thumbnail-2x.png": {
-		"ft": 32768,
-		"iS": 59483,
-		"oA": 0,
-		"oAP": "/images/projects/cykelservice/thumbnail-2x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/images/projects/cykelservice/thumbnail-3x.png": {
-		"ft": 32768,
-		"iS": 160255,
-		"oA": 0,
-		"oAP": "/images/projects/cykelservice/thumbnail-3x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/images/projects/cykelservice/thumbnail.png": {
-		"ft": 32768,
-		"iS": 18705,
-		"oA": 0,
-		"oAP": "/images/projects/cykelservice/thumbnail.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/images/projects/cykelservice/thumbnails/home.jpg": {
-		"ft": 16384,
-		"iS": 4870,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/images/projects/cykelservice/thumbnails/home.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/images/projects/cykelservice/thumbnails/logos.png": {
-		"ft": 32768,
-		"iS": 6940,
-		"oA": 0,
-		"oAP": "/images/projects/cykelservice/thumbnails/logos.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/images/projects/cykelservice/thumbnails/map.png": {
-		"ft": 32768,
-		"iS": 11341,
-		"oA": 0,
-		"oAP": "/images/projects/cykelservice/thumbnails/map.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/images/projects/cykelservice/thumbnails/skilt.jpg": {
-		"ft": 16384,
-		"iS": 10978,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/images/projects/cykelservice/thumbnails/skilt.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/images/projects/html5/home.png": {
-		"ft": 32768,
-		"iS": 153073,
-		"oA": 0,
-		"oAP": "/images/projects/html5/home.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/images/projects/html5/thumbnail-2x.png": {
-		"ft": 32768,
-		"iS": 72005,
-		"oA": 0,
-		"oAP": "/images/projects/html5/thumbnail-2x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/images/projects/html5/thumbnail-3x.png": {
-		"ft": 32768,
-		"iS": 190403,
-		"oA": 0,
-		"oAP": "/images/projects/html5/thumbnail-3x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/images/projects/html5/thumbnail.png": {
-		"ft": 32768,
-		"iS": 22634,
-		"oA": 0,
-		"oAP": "/images/projects/html5/thumbnail.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/images/projects/html5/thumbnails/home.png": {
-		"ft": 32768,
-		"iS": 5712,
-		"oA": 0,
-		"oAP": "/images/projects/html5/thumbnails/home.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/images/projects/jayj/home.jpg": {
-		"ft": 16384,
-		"iS": 364086,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/images/projects/jayj/home.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/images/projects/jayj/thumbnail-2x.png": {
-		"ft": 32768,
-		"iS": 66640,
-		"oA": 0,
-		"oAP": "/images/projects/jayj/thumbnail-2x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/images/projects/jayj/thumbnail-3x.png": {
-		"ft": 32768,
-		"iS": 214518,
-		"oA": 0,
-		"oAP": "/images/projects/jayj/thumbnail-3x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/images/projects/jayj/thumbnail.png": {
-		"ft": 32768,
-		"iS": 18385,
-		"oA": 0,
-		"oAP": "/images/projects/jayj/thumbnail.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/images/projects/jayj/thumbnails/home.jpg": {
-		"ft": 16384,
-		"iS": 3547,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/images/projects/jayj/thumbnails/home.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/images/projects/spiir/thumbnail-2x.png": {
-		"ft": 32768,
-		"iS": 177416,
-		"oA": 0,
-		"oAP": "/images/projects/spiir/thumbnail-2x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/images/projects/spiir/thumbnail.png": {
-		"ft": 32768,
-		"iS": 65722,
-		"oA": 0,
-		"oAP": "/images/projects/spiir/thumbnail.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/images/projects/vibstock/thumbnail-2x.png": {
-		"ft": 32768,
-		"iS": 94123,
-		"oA": 0,
-		"oAP": "/images/projects/vibstock/thumbnail-2x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/images/projects/vibstock/thumbnail.png": {
-		"ft": 32768,
-		"iS": 28244,
-		"oA": 0,
-		"oAP": "/images/projects/vibstock/thumbnail.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/includes/_footer.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/includes/_footer.html",
-		"oF": 0
-		},
-	"/includes/_header.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/includes/_header.html",
-		"oF": 0
-		},
-	"/includes/_navigation.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/includes/_navigation.html",
-		"oF": 0
-		},
-	"/includes/_social.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/includes/_social.html",
-		"oF": 0
-		},
-	"/includes/svg-defs.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 1,
-		"oAP": "/includes/svg-defs.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -403,432 +45,6 @@
 		"oA": 2,
 		"oAP": "/index.html",
 		"oF": 0
-		},
-	"/index.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/index.html",
-		"oF": 0
-		},
-	"/js/handlebars.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/js/min/handlebars.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/js/jquery.singlePageNav.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/js/min/jquery.singlePageNav.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/js/navigation.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/js/min/navigation-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/js/plugins.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/plugins.min.js",
-		"oF": 2,
-		"sC": 0,
-		"tS": 0
-		},
-	"/js/plugins.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/min/plugins.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/js/projects.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/js/min/projects-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/js/site.dev.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "/js/site.js",
-		"oF": 2,
-		"sC": 1,
-		"tS": 0
-		},
-	"/js/site.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/min/site-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/pages/_about.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/pages/_about.html",
-		"oF": 0
-		},
-	"/pages/_contact.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/pages/_contact.html",
-		"oF": 0
-		},
-	"/pages/_projects.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/pages/_projects.html",
-		"oF": 0
-		},
-	"/pages/_skills.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/pages/_skills.html",
-		"oF": 0
-		},
-	"/scss/base/_base.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 5,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/scss/css/_base.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/scss/components/_buttons.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 5,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/scss/css/_buttons.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/scss/components/_icons.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 5,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/scss/css/_icons.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/scss/helpers/_mixins.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 5,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/scss/css/_mixins.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/scss/helpers/_variables.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 5,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/scss/css/_variables.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/scss/layout/_footer.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 5,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/scss/css/_footer.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/scss/layout/_grid.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 5,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/scss/css/_grid.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/scss/layout/_header.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 5,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/scss/css/_header.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/scss/layout/_navigation.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 5,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/scss/css/_navigation.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/scss/layout/_section.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 5,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/scss/css/_section.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/scss/main.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 5,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/css/main.css",
-		"oF": 1,
-		"oS": 1,
-		"uL": 1
-		},
-	"/scss/sections/_about.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 5,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/scss/css/_about.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/scss/sections/_contact.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 5,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/scss/css/_contact.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/scss/sections/_project.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 5,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/scss/css/_project.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/scss/sections/_skills.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 5,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/scss/css/_skills.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/scss/vendor/_normalize.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 5,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/scss/css/_normalize.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/svg/brush.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/svg/brush.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/svg/close.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/svg/close.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/svg/code.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/svg/code.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/svg/external.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/svg/external.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/svg/github.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/svg/github.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/svg/linkedin.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/svg/linkedin.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/svg/menu.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/svg/menu.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/svg/twitter.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/svg/twitter.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/svg/wordpress.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/svg/wordpress.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
 		}
 	},
 "hooks": [
@@ -844,6 +60,7 @@
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
+	"allowInjectionReloads": 1,
 	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
@@ -855,6 +72,7 @@
 	"babelConfigType": 0,
 	"babelCustomPluginsList": "",
 	"babelCustomPresetsList": "",
+	"babelExcludeString": "/\\/node_modules\\//, /\\/core-js\\//, /\\/bower_components\\//",
 	"babelInsertModuleIDs": 0,
 	"babelModuleID": "",
 	"babelNoComments": 0,
@@ -994,6 +212,9 @@
 		"modules-umd": {
 			"active": 0
 			},
+		"named-capturing-groups-regex": {
+			"active": 0
+			},
 		"new-target": {
 			"active": 0
 			},
@@ -1025,6 +246,9 @@
 			"active": 0
 			},
 		"parameters": {
+			"active": 0
+			},
+		"partial-application": {
 			"active": 0
 			},
 		"pipeline-operator": {
@@ -1119,11 +343,10 @@
 			}
 		},
 	"babelRetainLines": 0,
+	"babelUseBuiltInsType": 0,
 	"bowerAbbreviatedPath": "bower_components",
-	"bowerAutoCreateInfoFile": 1,
-	"bowerInstallDevDependencies": 0,
-	"bowerSaveDependencies": 1,
-	"bowerSaveDevDependencies": 0,
+	"bowerForceLatestOnConflict": 1,
+	"bowerTargetDependencyListType": 1,
 	"bowerUseExactVersion": 0,
 	"browserRefreshDelay": 0,
 	"browserslistString": ">0.2%, last 2 versions, Firefox ESR, not dead",
@@ -1268,6 +491,7 @@
 			"flagValue": -1
 			}
 		},
+	"environmentVariablesString": "NODE_ENV:::production",
 	"esLintConfigFileHandlingType": 0,
 	"esLintECMAVersion": 7,
 	"esLintEnvironmentsMask": 1,
@@ -1369,6 +593,10 @@
 			"optionString": "'all'"
 			},
 		"default-case": {
+			"active": 0,
+			"optionString": ""
+			},
+		"default-param-last": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -1718,6 +946,10 @@
 			},
 		"no-implied-eval": {
 			"active": 0,
+			"optionString": ""
+			},
+		"no-import-assign": {
+			"active": 1,
 			"optionString": ""
 			},
 		"no-inline-comments": {
@@ -2128,6 +1360,10 @@
 			"active": 0,
 			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
 			},
+		"prefer-named-capture-group": {
+			"active": 0,
+			"optionString": ""
+			},
 		"prefer-numeric-literals": {
 			"active": 0,
 			"optionString": ""
@@ -2139,6 +1375,10 @@
 		"prefer-promise-reject-errors": {
 			"active": 0,
 			"optionString": "{'allowEmptyReject': false}"
+			},
+		"prefer-regex-literals": {
+			"active": 0,
+			"optionString": ""
 			},
 		"prefer-rest-params": {
 			"active": 0,
@@ -2748,7 +1988,6 @@
 		"autoOutputPathStyle": 2,
 		"createSourceMap": 0,
 		"enableJavascript": 0,
-		"ieCompatibility": 1,
 		"mathStyle": 0,
 		"outputStyle": 0,
 		"rewriteURLStyle": 0,
@@ -2881,8 +2120,16 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
+	"npmAbbreviatedPath": "",
+	"npmCreatePackageLock": 1,
+	"npmInstallOptionalDependencies": 0,
+	"npmSaveExactVersion": 0,
+	"npmTargetDependencyListType": 1,
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
+	"rollupExternals": "",
+	"rollupReplacements": "process.env.NODE_ENV:::$NODE_ENV,,,ENVIRONMENT:::$NODE_ENV",
+	"rollupTreeshakingEnabled": 1,
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, /storage/framework/sessions, node_modules",
 	"sourceFolderName": "source",
 	"susyVersion": 3,
